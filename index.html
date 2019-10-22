@@ -53,7 +53,7 @@
 			</ul>
 		</nav>
 		<a class="btn_telefon slideanim2" href="tel:+51112345667" ><i class="material-icons">phone</i></a>
-		<a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=4915252179680" ><i class="fab fa-whatsapp"></i></a>
+		<a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=491762295702" ><i class="fab fa-whatsapp"></i></a>
 
 		<img class="slideanim3" src="img/logo.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 800px;height: auto;z-index: 2;top: 20%;right: 0px;left: 0px;"/>
 		<!--
@@ -87,42 +87,42 @@
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-								<div class="card" style="width: 100%; background: rgb(255, 255, 255, 0.8);">
-										<img src="img/shisha.svg" class="card-img-top" alt="...">
+								<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0);">
+										<img src="img/shisha.svg" class="card-img-top" alt="..." style="margin-top: 65px; margin-bottom:65px;">
 										<div class="card-body">
 										  <h5 class="card-title">Standard Shisha</h5>
 										  <p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
-										  <a href="https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Standard-Shisha%20AlFakhir%20ZitroneMinz%20an%20folgende%20Adresse%20geliefert%20bekommen:" class="btn btn-success btn-lg"><i class="fab fa-whatsapp"></i> Whatsapp Bestellung</a>
+										  <a class="btn btn-success btn-lg" id="standard-shisha"><i class="fab fa-whatsapp"></i> WhatsApp Bestellung</a>
 										</div>
 								</div>
 						</div>
 						<div class="carousel-item">
-								<div class="card" style="width: 100%; background: rgb(255, 255, 255, 0.8);">
-										<img src="img/shisha.svg" class="card-img-top" alt="...">
+								<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0);">
+										<img src="img/shisha.svg" class="card-img-top" alt="..." style="margin-top: 65px; margin-bottom:65px;">
 										<div class="card-body">
 										  <h5 class="card-title">Premium Shisha</h5>
 										  <p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
-										  <a class="btn btn-success btn-lg" onclick="getLocation()" id="premium-shisha"><i class="fab fa-whatsapp"></i> Whatsapp Bestellung</a>
+										  <a class="btn btn-success btn-lg" id="premium-shisha"><i class="fab fa-whatsapp"></i> WhatsApp Bestellung</a>
 										</div>
 								</div>
 					</div>
 						<div class="carousel-item">
-								<div class="card" style="width: 100%; background: rgb(255, 255, 255, 0.8);">
-										<img src="img/shisha.svg" class="card-img-top" alt="...">
+								<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0);" >
+										<img src="img/shisha.svg" class="card-img-top" alt="..." style="margin-top: 65px; margin-bottom:65px;">
 										<div class="card-body">
 										  <h5 class="card-title">Classic Shisha</h5>
 										  <p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
-										  <a href="https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20geliefert%20bekommen:" class="btn btn-success btn-lg"><i class="fab fa-whatsapp"></i> Whatsapp Bestellung</a>
+										  <a class="btn btn-success btn-lg" id="classic-shisha"><i class="fab fa-whatsapp"></i> WhatsApp Bestellung</a>
 										</div>
 								</div>
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					  <span style="color:var(--grundfarbe);" class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span style="display: inline-block;width: 30px;height: 30px;background-color: var(--grundfarbe);border: 1px solid var(--grau);" class="carousel-control-prev-icon" aria-hidden="true"></span>
 					  <span class="sr-only">Previous</span>
 					</a>
 					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					  <span style="color: var(--grundfarbe);" class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span style="display: inline-block;width: 30px;height: 30px;background-color: var(--grundfarbe);border: 1px solid var(--grau);" class="carousel-control-next-icon" aria-hidden="true"></span>
 					  <span class="sr-only">Next</span>
 					</a>
 				  </div>
@@ -501,22 +501,44 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 	</script>
 
 <!-- LOCATION SEND-->
+<script type="text/javascript">
+$(document).ready(function(){
+	var x = document.getElementById("classic-shisha");
+	var y = document.getElementById("standard-shisha");
+	var z = document.getElementById("premium-shisha");
+	console.log("Funktion gestartet");
+	x.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort per WhatsApp manuell senden möchtest!";
+			x.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20geliefert%20bekommen:";
+			y.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort per WhatsApp manuell senden möchtest!";
+			y.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Standard-Shisha%20AlFakhir%20ZitroneMinz%20an%20folgende%20Adresse%20geliefert%20bekommen:";
+			z.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort per WhatsApp manuell senden möchtest!";
+			z.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Premium-Shisha%20Social-Smoke%20WildberryChill%20an%20folgende%20Adresse%20geliefert%20bekommen:";
+	if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition);
+		  } else {
+			};
+		  function showPosition(position) {
+		  x.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20geliefert%20bekommen:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
+		  x.innerHTML = "<i class='fab fa-whatsapp'></i> WhatsApp Bestellung";
+		  y.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Standard-Shisha%20AlFakhir%20ZitroneMinz%20an%20folgende%20Adresse%20geliefert%20bekommen:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
+		  y.innerHTML = "<i class='fab fa-whatsapp'></i> WhatsApp Bestellung";
+		  z.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Premium-Shisha%20Social-Smoke%20WildberryChill%20an%20folgende%20Adresse%20geliefert%20bekommen:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
+		  z.innerHTML =	"<i class='fab fa-whatsapp'></i> WhatsApp Bestellung";
+		}
+}); 
+</script>
+
 <script>
 		var x = document.getElementById("premium-shisha");
 		function getLocation() {
-		  if (navigator.geolocation) {
-			navigator.geolocation.getCurrentPosition(showPosition);
+		  if (!navigator.geolocation) {
+			x.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort in WhatsApp manuell senden möchtest!"; 
 		  } else {
-			x.innerHTML = "Geolocation is not supported by this browser.";
+			navigator.geolocation.getCurrentPosition(showPosition);
+			x.innerHTML = "Standort wurde aktiviert. Klick hier für WhatsApp-Bestellung!"; 
 		  }
 		}
-		
 		function showPosition(position) {
-		/*
-		  x.innerHTML = "Latitude: " + position.coords.latitude +
-		  "<br>Longitude: " + position.coords.longitude;
-		  */
-		  
-		  x.href = "https://wa.me/4917622295701?text=Hallo%20Team%20Shisha2u.%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
+		  x.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 		}
 </script>

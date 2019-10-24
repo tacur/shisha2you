@@ -74,110 +74,115 @@
 		<a href="#auswahl"><span></span></a>
 </section>
 <div id="auswahl" class="container-fluid slideanim" style="background: linear-gradient(
-	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/shisha.svg) no-repeat center center;">
-	<br>
-	<br>
-	<br>
+	rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 	<h4 class="">Unsere Auswahl</h4>
 	<div class="middle">
 		<div class="row">
 			<div class="col-sm-4">
-							<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0);">
-								<img src="img/shisha.svg" class="card-img-top" alt="..."
-									style="margin-top: 10px; margin-bottom:10px;">
-								<div class="card-body">
-									<h5 class="card-title">Premium Shisha</h5>
-									<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
-									<div class="row">
-											<div class="col-sm-6">
-											  <div class="form-group">
-												<select class="selectpicker form-control" style="height: auto;" onchange="premiumshishawahl()" id="premiumshishaoutput" data-width="auto" >
-														<option selected>Geschmack auswählen</option>
-													<option>Wildberry-Chill</option>
-												  <option>Lemon-Chill</option>
-												  <option>Shisha2you-Mix</option>
-												</select>
-											  </div>
-											</div>
-											<div class="col-sm-6">
-												<a href="#0" id="premiumshishainput" value="" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00" data-name="Premium-Shisha">In den Warenkorb</a>
-											</div>
-										  </div>
-										  <div class="row">
-												<div class="col-sm-6">
-													</div>
-													<div class="col-sm-6"><a style="background: green;" class="cd-add-to-cart" id="premium-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
-										  </div>
+				<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+					<img src="img/shisha.svg" class="card-img-top" alt="..."
+						style="margin-top: 10px; margin-bottom:10px;">
+					<div class="card-body">
+						<h5 class="card-title">Premium Shisha</h5>
+						<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
+						<div class="row">
+							<div class="col-sm-6" style="min-width: 100%;">
+								<div class="form-group">
+									<select class="selectpicker form-control" style="height: auto;"
+										onchange="premiumshishawahl()" id="premiumshishaoutput" data-width="auto">
+										<option selected>Geschmack</option>
+										<option>Wildberry-Chill</option>
+										<option>Lemon-Chill</option>
+										<option>Shisha2you-Mix</option>
+										<option >Purple-Haze</option>
+									</select>
 								</div>
 							</div>
-			</div>
-				<div class="col-sm-4 ">
-					<div class="card bg-dark" style="width: 100%; background: rgba(255, 255, 255, 0);">
-						<img src="img/shisha.svg" class="card-img-top" alt="..."
-							style="margin-top: 10px; margin-bottom:10px;">
-						<div class="card-body">
-							<h5 class="card-title">Classic Shisha</h5>
-							<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
-							<div class="row">
-								<div class="col-sm-6">
-								  <div class="form-group">
-									<select class="selectpicker form-control" style="height: auto;" onchange="classicshishawahl()" id="classicshishaoutput" data-width="auto" >
-											<option selected>Geschmack auswählen</option>
-										<option>Lemon-Fresh</option>
-									  <option>Wildberry-Fresh</option>
-									  <option>Love 66</option>
-									</select>
-								  </div>
-								</div>
-								<div class="col-sm-6">
-									<a href="#0" id="classicshishainput" value="" class="cd-add-to-cart js-cd-add-to-cart" data-price="13.00" data-name="Classic-Shisha">In den Warenkorb</a>
-								</div>
-							  </div>
-							  <div class="row">
-									<div class="col-sm-6">
-										</div>
-										<div class="col-sm-6"><a style="background: green;" class="cd-add-to-cart" id="classic-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
-							  </div>
+							<div class="col-sm-6" style="min-width: 100%;">
+								<a href="#0" id="premiumshishainput" style="min-width: 100%;" value="" class="cd-add-to-cart js-cd-add-to-cart"
+									data-price="15.00" data-name="Premium-Shisha">In den Warenkorb</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6" style="min-width: 100%;">
+							</div>
+							<div class="col-sm-6" style="min-width: 100%;"><a style="background: green; min-width: 100%;" class="cd-add-to-cart"
+									id="premium-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
 						</div>
 					</div>
 				</div>
-
-
-				<div class="col-sm-4 ">
-					<div class="card bg-dark mb-3" style="width: 100%; background: rgba(255, 255, 255, 0);">
-						<img src="img/shisha.svg" class="card-img-top" alt="..."
-							style="margin-top: 10px; margin-bottom:10px;">
-						<div class="card-body">
-							<h5 class="card-title">Standard Shisha</h5>
-							<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
-							<div class="row">
-									<div class="col-sm-6">
-									  <div class="form-group">
-										<select class="selectpicker form-control" style="height: auto;" onchange="standardshishawahl()" id="standardshishaoutput" data-width="auto" >
-												<option selected>Geschmack auswählen</option>
-											<option>Zitrone-Minze</option>
-										  <option>Doppelapfel</option>
-										  <option>Cola</option>
-										</select>
-									  </div>
-									</div>
-									<div class="col-sm-6">
-										<a href="#0" id="standardshishainput" value="" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00" data-name="Standard-Shisha">In den Warenkorb</a>
-									</div>
-								  </div>
-								  <div class="row">
-										<div class="col-sm-6">
-											</div>
-											<div class="col-sm-6"><a style="background: green;" class="cd-add-to-cart" id="standard-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
-								  </div>
-								
-
+			</div>
+			<div class="col-sm-4 ">
+				<div class="card bg-dark" style="width: 100%; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+					<img src="img/shisha.svg" class="card-img-top" alt="..."
+						style="margin-top: 10px; margin-bottom:10px;">
+					<div class="card-body">
+						<h5 class="card-title">Classic Shisha</h5>
+						<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
+						<div class="row">
+							<div class="col-sm-6" style="min-width: 100%;">
+								<div class="form-group">
+									<select class="selectpicker form-control" style="height: auto;"
+										onchange="classicshishawahl()" id="classicshishaoutput" data-width="auto">
+										<option selected>Geschmack?</option>
+										<option>Lemon-Fresh</option>
+										<option>Molokko</option>
+										<option>Wildberry-Fresh</option>
+										<option>Love 66</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6" style="min-width: 100%;">
+								<a href="#0" id="classicshishainput" value="" style="min-width: 100%;" class="cd-add-to-cart js-cd-add-to-cart"
+									data-price="13.00" data-name="Classic-Shisha">In den Warenkorb</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6" style="min-width: 100%;">
+							</div>
+							<div class="col-sm-6" style="min-width: 100%;"><a style="background: green;min-width: 100%;" class="cd-add-to-cart"
+									id="classic-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 ">
+				<div class="card bg-dark mb-3" style="width: 100%; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+					<img src="img/shisha.svg" class="card-img-top" alt="..."
+						style="margin-top: 10px; margin-bottom:10px;">
+					<div class="card-body">
+						<h5 class="card-title">Standard Shisha</h5>
+						<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
+						<div class="row">
+							<div class="col-sm-6" style="min-width: 100%;">
+								<div class="form-group">
+									<select class="selectpicker form-control" style="height: auto;"
+										onchange="standardshishawahl()" id="standardshishaoutput" data-width="auto">
+										<option selected>Geschmack?</option>
+										<option>Traube-Minze</option>
+										<option>Zitrone-Minze</option>
+										<option>Doppelapfel</option>
+										<option>Cola</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6" style="min-width: 100%;">
+								<a href="#0" id="standardshishainput" value="" style="min-width: 100%;" class="cd-add-to-cart js-cd-add-to-cart"
+									data-price="10.00" data-name="Standard-Shisha">In den Warenkorb</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6" style="min-width: 100%;">
+							</div>
+							<div class="col-sm-6" style="min-width: 100%;"><a style="background: green; min-width: 100%;" class="cd-add-to-cart"
+									id="standard-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 <section id="section06" class="demo">
 		<a href="#menu"><span></span></a>
 </section>
@@ -185,7 +190,7 @@
 <!-- /////// MENU  /////////// -->
 
 <div id="menu" class="container-fluid slideanim" style="background: linear-gradient(
-	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/shisha.svg) no-repeat center center;">
+	rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/shisha.svg) no-repeat center center;">
 	<br>
 	<br>
 	<br>
@@ -211,7 +216,7 @@
 <hr class="style-two">
 
 <div id="social-media" class="container-fluid slideanim" style="background: linear-gradient(
-rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat center center;">
+rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat center center;">
 <br>
 <br>
 <br>
@@ -275,25 +280,19 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 
 <hr class="style-two">
 <div id="kontakt" class="container-fluid slideanim" style="background: linear-gradient(
-	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/phone.svg) no-repeat center center;">
-	<br>
-	<br>
+	rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/phone.svg) no-repeat center center;">
 <h4 class="">KONTAKT</h4>
-<div >
   <h5>Kontaktieren Sie uns per Telefon oder E-Mail.</h5>
   <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-3"><p><a class="btn_s" href="tel:+49 511 12345678"><i class="material-icons">phone</i></a><h3> +49 511 12345678</h3></p></div>
 	<div class="col-sm-3">
 		<p><a class="btn_s" href="mailto:kontakt@shisha2u.de?subject=Kontaktanfrage"><i class="material-icons">email</i> </a><h3>kontakt@shisha2u.de</h3></p>
-		<br> 
-		<p><a class="btn_s" href="mailto:lieferung@shisha2u.de?subject=Lieferungsanfrage"><i class="material-icons">email</i> </a><h3>lieferung@shisha2u.de</h3></p></div>
+	</div>
 		<div class="col-sm-3"></div>
 	</div>
 </div>
-<br>
-<br>
-</div>
+
 
 <section id="section06" class="demo">
 		<a href="#anfahrt"><span></span></a>
@@ -302,9 +301,7 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 <!-- ///////// ANFAHRT /////// -->
 <hr class="style-two">
 <div id="anfahrt" class="container-fluid slideanim" style="background: linear-gradient(
-	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/moto2.svg) no-repeat center center;">
-	<br>
-	<br>
+	rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/moto2.svg) no-repeat center center;">
 	<h4 class="">Anfahrt</h4>
 	<div class="row">
 		<div class="col-sm-3"></div>
@@ -316,8 +313,6 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 		</div>
 		<div class="col-sm-3"></div>
 	</div>
-	<br>
-<br>
 </div>
 
 <!--///////// FOOTER ///////////-->
@@ -350,13 +345,13 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 			</header>
 			
 			<div class="cd-cart__body">
-				<ul>
+				<ul id="warenkorb">
 					<!-- products added to the cart will be inserted here using JavaScript -->
 				</ul>
 			</div>
 
-			<footer class="cd-cart__footer">
-				<a href="#0" class="cd-cart__checkout">
+			<footer class="cd-cart__footer" >
+				<a href="" class="cd-cart__checkout" id="warenkorb-whatsapp" onclick="getWarenkorb()">
           <em>Zur Bestellung - €<span>0</span>
             <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
             </svg>
@@ -570,26 +565,6 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 	  });
 	})
 </script>
-<!-- BANNER CAROUSEL -->
-	<script>
-		/*
-		var myIndex = 0;
-		carousel();
-		
-		function carousel() {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-		  }
-		  myIndex++;
-		  if (myIndex > x.length) {myIndex = 1}    
-		  x[myIndex-1].style.display = "block";  
-		  setTimeout(carousel, 7000); // Change image every 2 seconds
-		}
-		*/
-		</script>
-
 
 	<script type="text/javascript">
 	//#### COOKIE Meldung ######
@@ -632,10 +607,25 @@ $(document).ready(function(){
 </script>
 
 <script>
-/*
-var x = document.getElementById("premium-shisha");
-		function getLocation() {
-		  if (!navigator.geolocation) {
+		function getWarenkorb() {
+			var items = document.getElementsByClassName("cd-cart__product");
+			var warenausgang = document.getElementById("warenkorb-whatsapp");
+			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u,'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
+			console.log("Funktion drin.");
+			console.log(items.id);
+			for (i = 0; i < items.length; i++) {
+				/*var dw = items[i].data-name;
+				console.log(items[i].id);
+				console.log(items[i].value);
+				console.log("Name: " + items[i].getAttribute('data-name'));
+				console.log("Preis: " + items[i].getAttribute('data-price'));
+				*/
+				x = x + "%201x" + items[i].getAttribute('data-name') + "%20" + items[i].getAttribute('data-price') + "€%20";
+				console.log("Link: " + x);
+				
+				}
+				warenausgang.href = x;
+		/*  if (!navigator.geolocation) {
 			x.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort in WhatsApp manuell senden möchtest!"; 
 		  } else {
 			navigator.geolocation.getCurrentPosition(showPosition);
@@ -644,8 +634,10 @@ var x = document.getElementById("premium-shisha");
 		}
 		function showPosition(position) {
 		  x.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
-		}
 		*/
+		}
+		
+	
 </script>
 
 <script>

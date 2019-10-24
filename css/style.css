@@ -2624,8 +2624,8 @@ Parallax
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 5%;
-    right: 2%;
+    bottom: 4%;
+    left: 3%;
     z-index: 7;
     font-size: 12px;
     border: none;

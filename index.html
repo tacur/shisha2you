@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/stylewarenkorb.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -70,9 +71,117 @@
 </div>
 
 <section id="section10" class="demo">
+		<a href="#auswahl"><span></span></a>
+</section>
+<div id="auswahl" class="container-fluid slideanim" style="background: linear-gradient(
+	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/shisha.svg) no-repeat center center;">
+	<br>
+	<br>
+	<br>
+	<h4 class="">Unsere Auswahl</h4>
+	<div class="middle">
+		<div class="row">
+			<div class="col-sm-4">
+							<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0);">
+								<img src="img/shisha.svg" class="card-img-top" alt="..."
+									style="margin-top: 10px; margin-bottom:10px;">
+								<div class="card-body">
+									<h5 class="card-title">Premium Shisha</h5>
+									<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
+									<div class="row">
+											<div class="col-sm-6">
+											  <div class="form-group">
+												<select class="selectpicker form-control" style="height: auto;" onchange="premiumshishawahl()" id="premiumshishaoutput" data-width="auto" >
+														<option selected>Geschmack auswählen</option>
+													<option>Wildberry-Chill</option>
+												  <option>Lemon-Chill</option>
+												  <option>Shisha2you-Mix</option>
+												</select>
+											  </div>
+											</div>
+											<div class="col-sm-6">
+												<a href="#0" id="premiumshishainput" value="" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00" data-name="Premium-Shisha">In den Warenkorb</a>
+											</div>
+										  </div>
+										  <div class="row">
+												<div class="col-sm-6">
+													</div>
+													<div class="col-sm-6"><a style="background: green;" class="cd-add-to-cart" id="premium-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
+										  </div>
+								</div>
+							</div>
+			</div>
+				<div class="col-sm-4 ">
+					<div class="card bg-dark" style="width: 100%; background: rgba(255, 255, 255, 0);">
+						<img src="img/shisha.svg" class="card-img-top" alt="..."
+							style="margin-top: 10px; margin-bottom:10px;">
+						<div class="card-body">
+							<h5 class="card-title">Classic Shisha</h5>
+							<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
+							<div class="row">
+								<div class="col-sm-6">
+								  <div class="form-group">
+									<select class="selectpicker form-control" style="height: auto;" onchange="classicshishawahl()" id="classicshishaoutput" data-width="auto" >
+											<option selected>Geschmack auswählen</option>
+										<option>Lemon-Fresh</option>
+									  <option>Wildberry-Fresh</option>
+									  <option>Love 66</option>
+									</select>
+								  </div>
+								</div>
+								<div class="col-sm-6">
+									<a href="#0" id="classicshishainput" value="" class="cd-add-to-cart js-cd-add-to-cart" data-price="13.00" data-name="Classic-Shisha">In den Warenkorb</a>
+								</div>
+							  </div>
+							  <div class="row">
+									<div class="col-sm-6">
+										</div>
+										<div class="col-sm-6"><a style="background: green;" class="cd-add-to-cart" id="classic-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
+							  </div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-sm-4 ">
+					<div class="card bg-dark mb-3" style="width: 100%; background: rgba(255, 255, 255, 0);">
+						<img src="img/shisha.svg" class="card-img-top" alt="..."
+							style="margin-top: 10px; margin-bottom:10px;">
+						<div class="card-body">
+							<h5 class="card-title">Standard Shisha</h5>
+							<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
+							<div class="row">
+									<div class="col-sm-6">
+									  <div class="form-group">
+										<select class="selectpicker form-control" style="height: auto;" onchange="standardshishawahl()" id="standardshishaoutput" data-width="auto" >
+												<option selected>Geschmack auswählen</option>
+											<option>Zitrone-Minze</option>
+										  <option>Doppelapfel</option>
+										  <option>Cola</option>
+										</select>
+									  </div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#0" id="standardshishainput" value="" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00" data-name="Standard-Shisha">In den Warenkorb</a>
+									</div>
+								  </div>
+								  <div class="row">
+										<div class="col-sm-6">
+											</div>
+											<div class="col-sm-6"><a style="background: green;" class="cd-add-to-cart" id="standard-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
+								  </div>
+								
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<section id="section06" class="demo">
 		<a href="#menu"><span></span></a>
 </section>
-
+<hr class="style-two">
 <!-- /////// MENU  /////////// -->
 
 <div id="menu" class="container-fluid slideanim" style="background: linear-gradient(
@@ -83,56 +192,10 @@
 	<h4 class="">Unsere Auswahl</h4>
 	<div class="middle">
 	<div class="row">
-	<div class="col-sm-6">
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-								<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0);">
-										<img src="img/shisha.svg" class="card-img-top" alt="..." style="margin-top: 65px; margin-bottom:65px;">
-										<div class="card-body">
-										  <h5 class="card-title">Standard Shisha</h5>
-										  <p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
-										  <a class="btn btn-success btn-lg" id="standard-shisha"><i class="fab fa-whatsapp"></i> WhatsApp Bestellung</a>
-										</div>
-								</div>
-						</div>
-						<div class="carousel-item">
-								<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0);">
-										<img src="img/shisha.svg" class="card-img-top" alt="..." style="margin-top: 65px; margin-bottom:65px;">
-										<div class="card-body">
-										  <h5 class="card-title">Premium Shisha</h5>
-										  <p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
-										  <a class="btn btn-success btn-lg" id="premium-shisha"><i class="fab fa-whatsapp"></i> WhatsApp Bestellung</a>
-										</div>
-								</div>
-					</div>
-						<div class="carousel-item">
-								<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0);" >
-										<img src="img/shisha.svg" class="card-img-top" alt="..." style="margin-top: 65px; margin-bottom:65px;">
-										<div class="card-body">
-										  <h5 class="card-title">Classic Shisha</h5>
-										  <p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
-										  <a class="btn btn-success btn-lg" id="classic-shisha"><i class="fab fa-whatsapp"></i> WhatsApp Bestellung</a>
-										</div>
-								</div>
-						</div>
-					</div>
-					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					  <span style="display: inline-block;width: 30px;height: 30px;background-color: var(--grundfarbe);border: 1px solid var(--grau);" class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					  <span style="display: inline-block;width: 30px;height: 30px;background-color: var(--grundfarbe);border: 1px solid var(--grau);" class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="sr-only">Next</span>
-					</a>
-				  </div>
-	</div>
-	<div class="col-sm-6 ">
+	<div class="col-sm-12 ">
 		<br>
 		<h5>Schau dir unser komplettes Angebot an:</h3>
 		<a class="btn_menu" style="text-decoration-line: none;" href="#"><h3>Shishakarte</h3>
-	      </a>
-	      <a class="btn_menu" style="text-decoration-line: none;" href="#"><h3>Snackkarte</h3>
 	      </a>
 	      <a class="btn_menu" style="text-decoration-line: none;" href="#"><h3>Getränkekarte</h3>
 	      </a>
@@ -140,8 +203,6 @@
 	</div>
   </div>
 </div>
-<br>
-<br>
 <section id="section06" class="demo">
 		<a href="#social-media"><span></span></a>
 </section>
@@ -174,21 +235,22 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 	      </a>
   	</div>
   </div>
+  <br>
+<br>
 </div>
-<br>
-<br>
+
 <section id="section06" class="demo">
 		<a href="#lieferzeiten"><span></span></a>
 </section>
 
 <!-- ///////// Lieferzeiten  /////// -->
 <hr class="style-two">
-<div id="lieferzeiten" class="container-fluid slideanim" >
+<div id="lieferzeiten" class="container-fluid slideanim" style="background: linear-gradient(
+	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/moto.svg) no-repeat center center;">
 		<br>
 		<br>
-  <h4 class="">LIEFERZEITEN</h4>
-		<div style="text-align: center; background: linear-gradient(
-			rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/moto.svg) no-repeat center center;">
+  <h4>LIEFERZEITEN</h4>
+		<div style="text-align: center;">
 				<h5>Unsere Lieferzeiten</h5>
 				<hr class="style-two">
 				<p><h3> Montags-Freitags</h3></p>
@@ -203,20 +265,21 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 				<p><h3>17:00 - 23:00</h3></p>
 				<br>
 	</div>
+	<br>
+<br>
 </div>
-<br>
-<br>
+
 <section id="section06" class="demo">
 	<a href="#kontakt"><span></span></a>
 </section>
 
 <hr class="style-two">
-<div id="kontakt" class="container-fluid slideanim" >
+<div id="kontakt" class="container-fluid slideanim" style="background: linear-gradient(
+	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/phone.svg) no-repeat center center;">
 	<br>
 	<br>
 <h4 class="">KONTAKT</h4>
-<div style="background: linear-gradient(
-	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/phone.svg) no-repeat center center;">
+<div >
   <h5>Kontaktieren Sie uns per Telefon oder E-Mail.</h5>
   <div class="row">
 	<div class="col-sm-3"></div>
@@ -228,9 +291,10 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 		<div class="col-sm-3"></div>
 	</div>
 </div>
+<br>
+<br>
 </div>
-<br>
-<br>
+
 <section id="section06" class="demo">
 		<a href="#anfahrt"><span></span></a>
 </section>
@@ -252,9 +316,10 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 		</div>
 		<div class="col-sm-3"></div>
 	</div>
+	<br>
+<br>
 </div>
-<br>
-<br>
+
 <!--///////// FOOTER ///////////-->
 <hr class="style-two">
 <footer class="container-fluid text-center" style="color: var(--grundfarbe); padding-bottom: 20px;">
@@ -266,14 +331,52 @@ rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/people.svg) no-repeat 
 
 <!-- /////// NAVIGATE TOP BUTTON /////-->
 <button class="back-to-top" id="myBtn" title="Go to top"><i class="material-icons">vertical_align_top</i></button>
-</main>
 
+<!--////////// WARENKORB //////////-->
+<div class="cd-cart cd-cart--empty js-cd-cart">
+	<a href="#0" class="cd-cart__trigger text-replace">
+		Warenkorb
+		<ul class="cd-cart__count"> <!-- cart items count -->
+			<li>0</li>
+			<li>0</li>
+		</ul> <!-- .cd-cart__count -->
+	</a>
+
+	<div class="cd-cart__content">
+		<div class="cd-cart__layout">
+			<header class="cd-cart__header">
+				<h2>Warenkorb</h2>
+				<span class="cd-cart__undo">Auswahl entfernt.<a href="#0">Rückgängig</a></span>
+			</header>
+			
+			<div class="cd-cart__body">
+				<ul>
+					<!-- products added to the cart will be inserted here using JavaScript -->
+				</ul>
+			</div>
+
+			<footer class="cd-cart__footer">
+				<a href="#0" class="cd-cart__checkout">
+          <em>Zur Bestellung - €<span>0</span>
+            <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+            </svg>
+          </em>
+        </a>
+			</footer>
+		</div>
+	</div> <!-- .cd-cart__content -->
+</div> <!-- cd-cart -->
+
+</main>
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/snap.svg-min.js"></script> 
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
 
 </body>
 </html>
@@ -529,7 +632,8 @@ $(document).ready(function(){
 </script>
 
 <script>
-		var x = document.getElementById("premium-shisha");
+/*
+var x = document.getElementById("premium-shisha");
 		function getLocation() {
 		  if (!navigator.geolocation) {
 			x.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort in WhatsApp manuell senden möchtest!"; 
@@ -541,4 +645,31 @@ $(document).ready(function(){
 		function showPosition(position) {
 		  x.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 		}
+		*/
+</script>
+
+<script>
+		function classicshishawahl() {
+		//Getting Value
+		var selObj = document.getElementById("classicshishaoutput");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		//Setting Value
+		document.getElementById("classicshishainput").value = selValue;
+	}
+	
+	function premiumshishawahl() {
+		//Getting Value
+		var selObj = document.getElementById("premiumshishaoutput");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		//Setting Value
+		document.getElementById("premiumshishainput").value = selValue;
+	}
+	
+	function standardshishawahl() {
+		//Getting Value
+		var selObj = document.getElementById("standardshishaoutput");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		//Setting Value
+		document.getElementById("standardshishainput").value = selValue;
+	}
 </script>

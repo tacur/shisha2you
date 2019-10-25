@@ -46,7 +46,8 @@
 				<div class="line"></div>
 			</div>
 			<ul class="nav-links">
-				<li><a class="btn_nav" href="#menu"><h3>Shishakarte</h3></a></li>
+				<li><a class="btn_nav" href="#auswahl_shisha"><h3>Shishas</h3></a></li>
+				<li><a class="btn_nav" href="#auswahl_getränke"><h3>Getränke/Snacks</h3></a></li>
 				<li><a class="btn_nav" href="#social-media"><h3>Social-Media</h3></a></li>
 				<li><a class="btn_nav" href="#lieferzeiten"><h3>Lieferzeiten</h3></a></li>
 				<li><a class="btn_nav" href="#kontakt"><h3>Kontakt</h3></a></li>
@@ -71,17 +72,17 @@
 </div>
 
 <section id="section10" class="demo">
-		<a href="#auswahl"><span></span></a>
+		<a href="#auswahl_shisha"><span></span></a>
 </section>
-<div id="auswahl" class="container-fluid " style="background: linear-gradient(
+<div id="auswahl_shisha" class="container-fluid " style="background: linear-gradient(
 	rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
-	<h4 class="">Unsere Auswahl</h4>
+	<h4 class="">Unsere Shisha-Auswahl</h4>
 	<div class="middle">
 		<div class="row">
 			<div class="col-sm-4">
-				<div class="card" style="width: 100%; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+				<div class="card" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
 					<img src="img/shisha.svg" class="card-img-top" alt="..."
-						style="margin-top: 10px; margin-bottom:10px;">
+						style="margin: auto; width: 70%;">
 					<div class="card-body">
 						<h5 class="card-title">Premium Shisha</h5>
 						<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
@@ -90,7 +91,7 @@
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto;"
 										onchange="premiumshishawahl()" id="premiumshishaoutput" data-width="auto">
-										<option selected>Geschmack</option>
+										<option selected>Geschmack wählen</option>
 										<option>Wildberry-Chill</option>
 										<option>Lemon-Chill</option>
 										<option>Shisha2you-Mix</option>
@@ -106,16 +107,16 @@
 						<div class="row">
 							<div class="col-sm-6" style="min-width: 100%;">
 							</div>
-							<div class="col-sm-6" style="min-width: 100%;"><a style="background: green; min-width: 100%;" class="cd-add-to-cart"
+							<div class="col-sm-6" style="min-width: 100%; margin-top: 10px;"><a style="background: green; min-width: 100%;" class="cd-add-to-cart"
 									id="premium-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-4 ">
-				<div class="card bg-dark" style="width: 100%; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+				<div class="card bg-dark" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
 					<img src="img/shisha.svg" class="card-img-top" alt="..."
-						style="margin-top: 10px; margin-bottom:10px;">
+						style="margin: auto; width: 70%;">
 					<div class="card-body">
 						<h5 class="card-title">Classic Shisha</h5>
 						<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
@@ -124,7 +125,7 @@
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto;"
 										onchange="classicshishawahl()" id="classicshishaoutput" data-width="auto">
-										<option selected>Geschmack?</option>
+										<option selected>Geschmack wählen</option>
 										<option>Lemon-Fresh</option>
 										<option>Molokko</option>
 										<option>Wildberry-Fresh</option>
@@ -140,16 +141,16 @@
 						<div class="row">
 							<div class="col-sm-6" style="min-width: 100%;">
 							</div>
-							<div class="col-sm-6" style="min-width: 100%;"><a style="background: green;min-width: 100%;" class="cd-add-to-cart"
+							<div class="col-sm-6" style="min-width: 100%; margin-top: 10px;"><a style="background: green;min-width: 100%;" class="cd-add-to-cart"
 									id="classic-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-4 ">
-				<div class="card bg-dark mb-3" style="width: 100%; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+				<div class="card bg-dark mb-3" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
 					<img src="img/shisha.svg" class="card-img-top" alt="..."
-						style="margin-top: 10px; margin-bottom:10px;">
+						style="margin: auto; width: 70%;">
 					<div class="card-body">
 						<h5 class="card-title">Standard Shisha</h5>
 						<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
@@ -158,7 +159,7 @@
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto;"
 										onchange="standardshishawahl()" id="standardshishaoutput" data-width="auto">
-										<option selected>Geschmack?</option>
+										<option selected>Geschmack wählen</option>
 										<option>Traube-Minze</option>
 										<option>Zitrone-Minze</option>
 										<option>Doppelapfel</option>
@@ -174,7 +175,7 @@
 						<div class="row">
 							<div class="col-sm-6" style="min-width: 100%;">
 							</div>
-							<div class="col-sm-6" style="min-width: 100%;"><a style="background: green; min-width: 100%;" class="cd-add-to-cart"
+							<div class="col-sm-6" style="min-width: 100%; margin-top: 10px;"><a style="background: green; min-width: 100%;" class="cd-add-to-cart"
 									id="standard-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
 						</div>
 					</div>
@@ -183,10 +184,135 @@
 		</div>
 	</div>
 </div>
-<section id="section06" class="demo">
-		<a href="#menu"><span></span></a>
+<section id="section10" class="demo">
+	<a href="#auswahl_getränke"><span></span></a>
 </section>
 <hr class="style-two">
+
+<!-- //// GETRÄNKE ///////-->
+<div id="auswahl_getränke" class="container-fluid " style="background: linear-gradient(
+rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
+<h4 class="">Unsere Getränke- und Snack-Auswahl</h4>
+<div class="middle">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="card" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+				<img src="img/flasche.svg" class="card-img-top" alt="..."
+					style="margin: auto; width: 70%;">
+				<div class="card-body">
+					<h5 class="card-title">Softgetränke</h5>
+					<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
+					<div class="row">
+						<div class="col-sm-6" style="min-width: 100%;">
+							<div class="form-group">
+								<select class="selectpicker form-control" style="height: auto;"
+									onchange="softdrinkswahl()" id="softdrinksoutput" data-width="auto">
+									<option selected>Getränk wählen</option>
+									<option value="2.00">Cola 0.33l</option>
+									<option value="2.00">Cola Zero 0.33l</option>
+									<option value="2.00">Fanta 0.33l</option>
+									<option value="2.00">Sprite 0.33l</option>
+									<option value="2.00">Uludag 0.33l</option>
+									<option value="2.50">Red Bull 0.25l</option>
+									<option value="2.50">Schwarze Dose 0.25l</option>
+									<option value="2.50">Molokko 0.25l</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6" style="min-width: 100%;">
+							<a href="#0" id="softdrinksinput" style="min-width: 100%;" value="" class="cd-add-to-cart js-cd-add-to-cart"
+								data-price="" data-name="Softdrink">In den Warenkorb</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6" style="min-width: 100%;">
+						</div>
+						<div class="col-sm-6" style="min-width: 100%; margin-top: 10px;"><a style="background: green; min-width: 100%;" class="cd-add-to-cart"
+								id="softdrinks"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 ">
+			<div class="card bg-dark" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+				<img src="img/alkohol.svg" class="card-img-top" alt="..."
+					style="margin: auto; width: 70%;">
+				<div class="card-body">
+					<h5 class="card-title">Alkoholische Getränke</h5>
+					<p style="color: var(--grundfarbe);" class="card-text">Flaschen werden mit 6 Dosen geliefert.</p>
+					<div class="row">
+						<div class="col-sm-6" style="min-width: 100%;">
+							<div class="form-group">
+								<select class="selectpicker form-control" style="height: auto;"
+									onchange="alkoholwahl()" id="alkoholoutput" data-width="auto">
+									<option value="" selected>Flasche wählen</option>
+									<option value="15.00">Vodka 0,7 l</option>
+									<option value="15.00">Captain Morgan 0,7 l</option>
+									<option value="30.00">Jim Beam 0,7 l</option>
+									<option value="35.00">Jack Daniels 0,7 l</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6" style="min-width: 100%;">
+							<a href="#0" id="alkoholinput" value="" style="min-width: 100%;" class="cd-add-to-cart js-cd-add-to-cart"
+								data-price="" data-name="Flasche">In den Warenkorb</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6" style="min-width: 100%;">
+						</div>
+						<div class="col-sm-6" style="min-width: 100%; margin-top: 10px;"><a style="background: green;min-width: 100%;" class="cd-add-to-cart"
+								id="classic-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 ">
+			<div class="card bg-dark mb-3" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+				<img src="img/snacks.svg" class="card-img-top" alt="..."
+					style="margin: auto; width: 70%;">
+				<div class="card-body">
+					<h5 class="card-title">Snacks</h5>
+					<p style="color: var(--grundfarbe);" class="card-text">Das Beste vom Besten.</p>
+					<div class="row">
+						<div class="col-sm-6" style="min-width: 100%;">
+							<div class="form-group">
+								<select class="selectpicker form-control" style="height: auto;"
+									onchange="snackswahl()" id="snacksoutput" data-width="auto">
+									<option selected>Snack wählen </option>
+									<option value="2.00">Nic-Nacs 300g</option>
+									<option value="1.00">Snickers 73g</option>
+									<option value="3.00">Körner 200g</option>
+									<option value="3.00">Muffins 4st</option>
+									<option value="4.00">Donuts 4st</option>
+									<option value="2.00">Crunchips 150g</option>
+									<option value="2.50">Tortillas 100g</option>
+									<option value="2.50">Käse-Dip 150g</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6" style="min-width: 100%;">
+							<a href="#0" id="snacksinput" value="" style="min-width: 100%;" class="cd-add-to-cart js-cd-add-to-cart"
+								data-price="" data-name="Snack">In den Warenkorb</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6" style="min-width: 100%;">
+						</div>
+						<div class="col-sm-6" style="min-width: 100%; margin-top: 10px;"><a style="background: green; min-width: 100%;" class="cd-add-to-cart"
+								id="snacks"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<section id="section06" class="demo">
+	<a href="#menu"><span></span></a>
+</section>
+<hr class="style-two">
+
 <!-- /////// MENU  /////////// -->
 
 <div id="menu" class="container-fluid " style="background: linear-gradient(
@@ -194,15 +320,17 @@
 	<br>
 	<br>
 	<br>
-	<h4 class="">Unsere Auswahl</h4>
+	<h4 class="">Unsere Gesamtauswahl zum Download oder zum Weitersagen!</h4>
 	<div class="middle">
 	<div class="row">
 	<div class="col-sm-12 ">
 		<br>
 		<h5>Schau dir unser komplettes Angebot an:</h3>
-		<a class="btn_menu" style="text-decoration-line: none;" href="#"><h3>Shishakarte</h3>
+		<a class="btn_menu" style="text-decoration-line: none; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);" 
+				href="img/shisha2you.pdf" download><h3>Shishakarte</h3>
 	      </a>
-	      <a class="btn_menu" style="text-decoration-line: none;" href="#"><h3>Getränkekarte</h3>
+		  <a class="btn_menu" style="text-decoration-line: none; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);" 
+		  		href="img/shisha2you.pdf" download><h3>Getränkekarte</h3>
 	      </a>
 	  </div>
 	</div>
@@ -222,14 +350,23 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 <br>
 	<h4 >SOCIAL-MEDIA</h4>
 	<div class="middle">
-	<div class="col-sm-12 ">
-		<a class="btn_s" href="#">
-	        <i class="fab fa-facebook-f"></i>
-	      </a>
-	      <a class="btn_s" href="#">
-	        <i class="fab fa-instagram"></i>
-	      </a>
-  	</div>
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<p><a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"
+						href="#">
+						<i class="fab fa-facebook-f"></i>
+					</a></p>
+			</div>
+			<div class="col-sm-3">
+				<p>
+					<a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"
+						href="#">
+						<i class="fab fa-instagram"></i>
+					</a></p>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
   </div>
   <br>
 <br>
@@ -242,25 +379,28 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 <!-- ///////// Lieferzeiten  /////// -->
 <hr class="style-two">
 <div id="lieferzeiten" class="container-fluid" style="background: linear-gradient(
-	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(img/moto.svg) no-repeat center center;">
+	rgb(255, 255, 255, 0.7),rgba(255, 255, 255, 0.9)),url(img/moto.svg) no-repeat center center;">
 		<br>
 		<br>
   <h4>LIEFERZEITEN</h4>
+  <div class="card" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+	<div class="card-body">
 		<div style="text-align: center;">
-				<h5 style="text-transform: uppercase;"><b>Unsere Lieferzeiten</b></h5>
-				<hr class="style-two">
-				<p><h3><b>Montags-Freitags</b></h3></p>
-				<p><h3><b>17:00 - 01:00</b></h3></p>
-				<br>
-				<hr class="style-two">
-				<p><h3><b>Samstags</b></h3></p>
-				<p><h3><b>17:00 - 02:00</b></h3></p>
-				<br> 
-				<hr class="style-two">
-				<p><h3><b>Sonntags</b></h3></p>
-				<p><h3><b>17:00 - 23:00</b></h3></p>
-				<br>
+			<p><h5><b>Montags-Freitags</b></h5></p>
+			<p><h5><b>17:00 - 01:00</b></h5></p>
+			<br>
+			<hr class="style-two">
+			<p><h5><b>Samstags</b></h5></p>
+			<p><h5><b>17:00 - 02:00</b></h5></p>
+			<br> 
+			<hr class="style-two">
+			<p><h5><b>Sonntags</b></h5></p>
+			<p><h5><b>17:00 - 23:00</b></h5></p>
+			<br>
+</div>
 	</div>
+</div>
+
 	<br>
 <br>
 </div>
@@ -276,9 +416,9 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
   <h5>Kontaktieren Sie uns per Telefon oder E-Mail.</h5>
   <div class="row">
 	<div class="col-sm-3"></div>
-	<div class="col-sm-3"><p><a class="btn_s" href="tel:+49 511 12345678"><i class="material-icons">phone</i></a><h3> +49 511 12345678</h3></p></div>
+	<div class="col-sm-3"><p><a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);" href="tel:+49 511 12345678"><i class="material-icons">phone</i></a><h3> +49 511 12345678</h3></p></div>
 	<div class="col-sm-3">
-		<p><a class="btn_s" href="mailto:kontakt@shisha2u.de?subject=Kontaktanfrage"><i class="material-icons">email</i> </a><h3>kontakt@shisha2you.de</h3></p>
+		<p><a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);" href="mailto:kontakt@shisha2u.de?subject=Kontaktanfrage"><i class="material-icons">email</i> </a><h3>kontakt@shisha2you.de</h3></p>
 	</div>
 		<div class="col-sm-3"></div>
 	</div>
@@ -297,7 +437,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 	<div class="row">
 		<div class="col-sm-3"></div>
 		<div class="col-sm-3">
-					<a class="btn_s" href="https://www.google.de/maps/dir//Schierholzstra%C3%9Fe+63,+30655+Hannover/@52.4000515,9.8212961,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47b00c6094dd9dc9:0x7c17462981528df8!2m2!1d9.8234848!2d52.4000482!3e0"><i class="material-icons" size="large" >directions</i></a>
+					<a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);" href="https://www.google.de/maps/dir//Schierholzstra%C3%9Fe+63,+30655+Hannover/@52.4000515,9.8212961,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47b00c6094dd9dc9:0x7c17462981528df8!2m2!1d9.8234848!2d52.4000482!3e0"><i class="material-icons" size="large" >directions</i></a>
 		</div>
 		<div class="col-sm-3">	
 			<a class="navi" href="https://www.google.de/maps/dir//Schierholzstra%C3%9Fe+63,+30655+Hannover/@52.4000515,9.8212961,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47b00c6094dd9dc9:0x7c17462981528df8!2m2!1d9.8234848!2d52.4000482!3e0">Schaufelderstraße 63 <br> 30655 Hannover</a>
@@ -601,9 +741,8 @@ $(document).ready(function(){
 		function getWarenkorb() {
 			var items = document.getElementsByClassName("cd-cart__product");
 			var warenausgang = document.getElementById("warenkorb-whatsapp");
-			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u,'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
-			console.log("Funktion drin.");
-			console.log(items.id);
+			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,ich%20möchte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
+			var gesamtpreis = 0;
 			for (i = 0; i < items.length; i++) {
 				/*var dw = items[i].data-name;
 				console.log(items[i].id);
@@ -613,8 +752,9 @@ $(document).ready(function(){
 				*/
 				x = x + "%201x" + items[i].getAttribute('data-name') + "%20" + items[i].getAttribute('data-price') + "€%20";
 				console.log("Link: " + x);
-				
+				gesamtpreis = gesamtpreis + parseInt(items[i].getAttribute('data-price'));
 				}
+				x = x + "%20für%20den%20Gesamtpreis:%20" + gesamtpreis + "€.";
 				warenausgang.href = x;
 		/*  if (!navigator.geolocation) {
 			x.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort in WhatsApp manuell senden möchtest!"; 
@@ -636,10 +776,10 @@ $(document).ready(function(){
 		//Getting Value
 		var selObj = document.getElementById("classicshishaoutput");
 		var selValue = selObj.options[selObj.selectedIndex].text;
+		console.log(selValue);
 		//Setting Value
 		document.getElementById("classicshishainput").value = selValue;
 	}
-	
 	function premiumshishawahl() {
 		//Getting Value
 		var selObj = document.getElementById("premiumshishaoutput");
@@ -647,12 +787,44 @@ $(document).ready(function(){
 		//Setting Value
 		document.getElementById("premiumshishainput").value = selValue;
 	}
-	
 	function standardshishawahl() {
 		//Getting Value
 		var selObj = document.getElementById("standardshishaoutput");
 		var selValue = selObj.options[selObj.selectedIndex].text;
 		//Setting Value
 		document.getElementById("standardshishainput").value = selValue;
+	}
+	function softdrinkswahl() {
+		//Getting Value
+		var selObj = document.getElementById("softdrinksoutput");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		var selValue2 = selObj.options[selObj.selectedIndex].value;
+		console.log(selValue);
+		console.log(selValue2);
+		//Setting Value
+		document.getElementById("softdrinksinput").value = selValue;
+		document.getElementById("softdrinksinput").setAttribute('data-price', selValue2);
+	}
+	function alkoholwahl() {
+		//Getting Value
+		var selObj = document.getElementById("alkoholoutput");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		var selValue2 = selObj.options[selObj.selectedIndex].value;
+		console.log(selValue);
+		console.log(selValue2);
+		//Setting Value
+		document.getElementById("alkoholinput").value = selValue;
+		document.getElementById("alkoholinput").setAttribute('data-price', selValue2);
+	}
+	function snackswahl() {
+		//Getting Value
+		var selObj = document.getElementById("snacksoutput");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		var selValue2 = selObj.options[selObj.selectedIndex].value;
+		console.log(selValue);
+		console.log(selValue2);
+		//Setting Value
+		document.getElementById("snacksinput").value = selValue;
+		document.getElementById("snacksinput").setAttribute('data-price', selValue2);
 	}
 </script>

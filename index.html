@@ -57,7 +57,8 @@
 		<!-- <a class="btn_telefon slideanim2" href="tel:+51112345667" ><i class="material-icons">phone</i></a> -->
 		<!-- <a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=491762295702" ><i class="fab fa-whatsapp"></i></a> -->
 
-		<img class="slideanim3" src="img/logo.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 800px;max-height: 80%;z-index: 2;top: 20%;right: 0px;left: 0px;padding-left: 1px;padding-right: 1px;"/>
+		<img class="slideanim3" src="img/logo.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 800px;max-height: 80%;z-index: 3;top: 20%;right: 0px;left: 0px;padding-left: 1px;padding-right: 1px;"/>
+
 		<!--
 		<img class="slideanim3" src="img/shisha2.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 70px;max-height: 100px;z-index: 2;top: 20%;right: 0px;left: 0px;"/>
 		<img class="slideanim2" src="img/2u.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 500px;height: auto;z-index: 2;top: 20%;right: 0px;left: 0px;"/>
@@ -80,9 +81,46 @@
 	<h4 class="">Unsere Shisha-Auswahl</h4>
 	<div class="middle">
 		<div class="row">
+				<div class="col-sm-4 ">
+						<div class="card bg-light" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+							<img src="img/amy.svg" class="card-img-top" alt="..."
+								style="margin: auto; margin-top: 20px; width: 70%;">
+							<div class="card-body">
+								<h5 class="card-title">Classic Shisha</h5>
+								<p style="color: var(--grundfarbe);"><h3>Das Beste vom Besten.</h3></p>
+								<div class="row">
+									<div class="col-sm-6" style="min-width: 100%;">
+										<div class="form-group">
+											<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 12px;"
+												onchange="classicshishawahl()" id="classicshishaoutput" data-width="auto">
+												<option selected>Geschmack wählen</option>
+												<option>Doppel-Apfel</option>
+												<option>Traube-Minze</option>
+												<option>Zitrone-Minze</option>
+												<option>Pitaya</option>
+												<option>Cold-Peach</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-6" style="min-width: 100%;">
+										<a href="#0" id="classicshishainput" value="" style="min-width: 100%; background: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
+											data-price="8.00" data-name="Classic-Shisha">In den Warenkorb</a>
+									</div>
+								</div>
+								<!--
+								<div class="row">
+									<div class="col-sm-6" style="min-width: 100%;">
+									</div>
+									<div class="col-sm-6" style="min-width: 100%; margin-top: 10px;"><a style="background: green;min-width: 100%;" class="cd-add-to-cart"
+											id="classic-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
+								</div>
+								-->
+							</div>
+						</div>
+					</div>
 			<div class="col-sm-4">
-				<div class="card" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
-					<img src="img/shisha.svg" class="card-img-top" alt="..."
+				<div class="card bg-dark" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+					<img src="img/amy.svg" class="card-img-top" alt="..."
 						style="margin: auto; margin-top: 20px; width: 70%;">
 					<div class="card-body">
 						<h5 class="card-title">Premium Shisha</h5>
@@ -90,19 +128,22 @@
 						<div class="row">
 							<div class="col-sm-6" style="min-width: 100%;">
 								<div class="form-group">
-									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 12px;"
+									<select class="selectpicker form-control" style="height: auto;background-color: var(--hellgrau);color:white;border: 2px solid var(--grundfarbe);font-size: 12px;"
 										onchange="premiumshishawahl()" id="premiumshishaoutput" data-width="auto">
 										<option selected>Geschmack wählen</option>
-										<option>Wildberry-Chill</option>
-										<option>Lemon-Chill</option>
-										<option>Shisha2you-Mix</option>
-										<option >Purple-Haze</option>
+										<option>Ringel-Rangel</option>
+										<option>Okolom</option>
+										<option>Hamburg</option>
+										<option>Aqua-Black-Box</option>
+										<option>Love66</option>
+										<option>Lemon-Fresh</option>
+										<option>Da-Bomb</option>
 									</select>
 								</div>
 							</div>
 							<div class="col-sm-6" style="min-width: 100%;">
 								<a href="#0" id="premiumshishainput" style="min-width: 100%;  background: var(--grundfarbe);" value="" class="cd-add-to-cart js-cd-add-to-cart"
-									data-price="15.00" data-name="Premium-Shisha">In den Warenkorb</a>
+									data-price="10.00" data-name="Premium-Shisha">In den Warenkorb</a>
 							</div>
 						</div>
 						<!--
@@ -117,64 +158,28 @@
 				</div>
 			</div>
 			<div class="col-sm-4 ">
-				<div class="card bg-dark" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
-					<img src="img/shisha.svg" class="card-img-top" alt="..."
-						style="margin: auto; margin-top: 20px; width: 70%;">
+				<div class="card" style="width: 100%; border-radius: 2rem; background: var(--grundfarbe); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+					<img src="img/amy.svg" class="card-img-top" alt="..."
+						style="margin: auto; margin-top: 20px; width: 70%; color: var(--hellgrau);">
 					<div class="card-body">
-						<h5 class="card-title">Classic Shisha</h5>
-						<p style="color: var(--grundfarbe);"><h3>Das Beste vom Besten.</h3></p>
+						<h5 class="card-title" style="color: var(--secondary);">Exclusiv-Shisha</h5>
+						<p ><h3 style="color: var(--secondary);">Das Beste vom Besten.</h3></p>
 						<div class="row">
 							<div class="col-sm-6" style="min-width: 100%;">
 								<div class="form-group">
-									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 12px;"
-										onchange="classicshishawahl()" id="classicshishaoutput" data-width="auto">
+									<select class="selectpicker form-control" style="height: auto;background-color: var(--grundfarbe);color:white;border: 2px solid var(--secondary);font-size: 12px;"
+										onchange="exclusivshishawahl()" id="exclusivshishaoutput" data-width="auto">
 										<option selected>Geschmack wählen</option>
-										<option>Lemon-Fresh</option>
-										<option>Molokko</option>
-										<option>Wildberry-Fresh</option>
-										<option>Love 66</option>
+										<option>Ceylon-Chi</option>
+										<option>Lemon-Chill</option>
+										<option>Watermelon-Chill</option>
+										<option>Wildberry-Chill</option>
 									</select>
 								</div>
 							</div>
 							<div class="col-sm-6" style="min-width: 100%;">
-								<a href="#0" id="classicshishainput" value="" style="min-width: 100%; background: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
-									data-price="13.00" data-name="Classic-Shisha">In den Warenkorb</a>
-							</div>
-						</div>
-						<!--
-						<div class="row">
-							<div class="col-sm-6" style="min-width: 100%;">
-							</div>
-							<div class="col-sm-6" style="min-width: 100%; margin-top: 10px;"><a style="background: green;min-width: 100%;" class="cd-add-to-cart"
-									id="classic-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
-						</div>
-						-->
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 ">
-				<div class="card bg-dark mb-3" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
-					<img src="img/shisha.svg" class="card-img-top" alt="..."
-						style="margin: auto; margin-top: 20px; width: 70%;">
-					<div class="card-body">
-						<h5 class="card-title">Standard Shisha</h5>
-						<p style="color: var(--grundfarbe);"><h3>Das Beste vom Besten.</h3></p>
-						<div class="row">
-							<div class="col-sm-6" style="min-width: 100%;">
-								<div class="form-group">
-									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 12px;"
-										onchange="standardshishawahl()" id="standardshishaoutput" data-width="auto">
-										<option selected>Geschmack wählen</option>
-										<option>Traube-Minze</option>
-										<option>Zitrone-Minze</option>
-										<option>Doppelapfel</option>
-										<option>Cola</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-sm-6" style="min-width: 100%;">
-								<a href="#0" id="standardshishainput" value="" style="min-width: 100%; background: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
-									data-price="10.00" data-name="Standard-Shisha">In den Warenkorb</a>
+								<a href="#0" id="exclusivshishainput" value="" style="min-width: 100%; background: var(--secondary); color: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
+									data-price="12.00" data-name="Exclusiv-Shisha">In den Warenkorb</a>
 							</div>
 						</div>
 						<!--
@@ -205,7 +210,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 			<div class="col-sm-4">
 				<div class="card bg-light"
 					style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
-					<img src="img/flasche.svg" class="card-img-top" alt="..." style="margin: auto; margin-top: 20px; width: 70%;">
+					<img src="img/flasche.svg" id="softdrinksimg" class="card-img-top" alt="..." style="margin: auto; margin-top: 20px; width: 70%;">
 					<div class="card-body">
 						<h5 class="card-title">Softgetränke</h5>
 						<p style="color: var(--grundfarbe);" ><h3>Das Beste vom Besten.</h3></p>
@@ -215,14 +220,16 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 									<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe);font-size: 12px;"
 										onchange="softdrinkswahl()" id="softdrinksoutput" data-width="auto">
 										<option selected>Getränk wählen</option>
-										<option value="2.00">Cola 0.33l</option>
-										<option value="2.00">Cola Zero 0.33l</option>
-										<option value="2.00">Fanta 0.33l</option>
-										<option value="2.00">Sprite 0.33l</option>
-										<option value="2.00">Uludag 0.33l</option>
-										<option value="2.50">Red Bull 0.25l</option>
-										<option value="2.50">Schwarze Dose 0.25l</option>
-										<option value="2.50">Molokko 0.25l</option>
+										<option value="1.50" data-img="img/cola.svg" data-name="Cola(0,33l)">Cola 0.33l</option>
+										<option value="1.50" data-img="img/colazero.svg" data-name="Cola-Zero(0,33l)">Cola Zero 0.33l</option>
+										<option value="1.50" data-img="img/fanta.svg" data-name="Fanta(0,33l)">Fanta 0.33l</option>
+										<option value="1.50" data-img="img/sprite.svg" data-name="Sprite(0,33l)">Sprite 0.33l</option>
+										<option value="1.50" data-img="img/gerolsteiner.svg" data-name="Gerolsteiner-Naturell(0,33l)">Gerolsteiner Naturell 0.33l</option>
+										<option value="1.50" data-img="img/durstlöscher.svg" data-name="Durstloescher(0,33l)">Durstlöscher 0.5l</option>
+										<option value="2.00" data-img="img/redbull.svg" data-name="RedBull(0,25l)">RedBull 0.25l</option>
+										<option value="2.00" data-img="img/redbullzero.svg" data-name="RedBull-sugarfree(0,25l)">RedBull sugarfree 0.25l</option>
+										<option value="2.00" data-img="img/schwarzedose.svg" data-name="SchwarzeDose(0,25l)">Schwarze Dose 0.25l</option>
+										<option value="2.00" data-img="img/moloko.svg" data-name="Moloko(0,25l)">Moloko 0.25l</option>
 									</select>
 								</div>
 							</div>
@@ -261,10 +268,11 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 									<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe); font-size: 12px;"
 										onchange="alkoholwahl()" id="alkoholoutput" data-width="auto">
 										<option value="" selected>Flasche wählen</option>
-										<option value="15.00">Vodka 0,7 l</option>
-										<option value="15.00">Captain Morgan 0,7 l</option>
-										<option value="30.00">Jim Beam 0,7 l</option>
-										<option value="35.00">Jack Daniels 0,7 l</option>
+										<option value="15.00" data-name="ThreeSixty(0,7l)">Three Sixty Vodka 0,7 l</option>
+										<option value="15.00" data-name="Absolout-Vodka(0,7l)">Absolut Vodka 0,7l</option>
+										<option value="15.00" data-name="Bacardi(0,7l)">Bacardi 0,7l</option>
+										<option value="30.00" data-name="JimBeam(0,7l)">Jim Beam 0,7 l</option>
+										<option value="35.00" data-name="JackDaniels(0,7l)">Jack Daniels 0,7 l</option>
 									</select>
 								</div>
 							</div>
@@ -304,14 +312,10 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 12px;"
 										onchange="snackswahl()" id="snacksoutput" data-width="auto">
 										<option selected>Snack wählen </option>
-										<option value="2.00">Nic-Nacs 300g</option>
-										<option value="1.00">Snickers 73g</option>
-										<option value="3.00">Körner 200g</option>
-										<option value="3.00">Muffins 4st</option>
-										<option value="4.00">Donuts 4st</option>
-										<option value="2.00">Crunchips 150g</option>
-										<option value="2.50">Tortillas 100g</option>
-										<option value="2.50">Käse-Dip 150g</option>
+										<option value="2.00" data-name="Erdnuesse(300g)">Erdnüsse 300g</option>
+										<option value="1.00" data-name="NicNac's(200g)">Nic Nac's 200g</option>
+										<option value="3.00" data-name="Salzbrezel(200g)">Salzbrezel 200g</option>
+										<option value="3.00" data-name="Salzstangen(200g)">Salzstangen 200g</option>
 									</select>
 								</div>
 							</div>
@@ -508,7 +512,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 			</div>
 
 			<footer class="cd-cart__footer" >
-				<a href="" style="font-size: 12px; background: var(--grundfarbe);" class="cd-cart__checkout" id="warenkorb-whatsapp" onclick="return getWarenkorb()">
+				<a style="font-size: 12px; background: var(--grundfarbe);" class="cd-cart__checkout" id="warenkorb-whatsapp" onclick="return getWarenkorb()">
           <em>WhatsApp-Bestellung - €<span>0</span>
             <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
             </svg>
@@ -737,6 +741,15 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 
 <!-- LOCATION SEND-->
 <script type="text/javascript">
+$(document).ready(function(){
+	navigator.geolocation.getCurrentPosition(showPosition);
+	function showPosition(position) {
+		  positionx = position.coords.latitude; 
+		  positiony = position.coords.longitude;
+		}
+});
+</script>
+<script type="text/javascript">
 /*
 $(document).ready(function(){
 	var x = document.getElementById("classic-shisha");
@@ -770,7 +783,7 @@ $(document).ready(function(){
 			console.log("Funktion drin");
 			var items = document.getElementsByClassName("cd-cart__product");
 			var warenausgang = document.getElementById("warenkorb-whatsapp");
-			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,ich%20möchte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
+			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 			var gesamtpreis = 0;
 			var location = false;
 			for (i = 0; i < items.length; i++) {
@@ -787,20 +800,20 @@ $(document).ready(function(){
 
 				x = x + "%20für%20den%20Gesamtpreis:%20" + gesamtpreis + "€.";
 				
-				if (location) {
-					navigator.geolocation.getCurrentPosition(showPosition);
+				if (window.hasOwnProperty("positionx")) {
+					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;
 					warenausgang.href = x;
 					return true
 				} else {
 					navigator.geolocation.getCurrentPosition(showPosition);
-					return false
-					//x = x + "Bitte an folgende Adresse liefern:";
-					//warenausgang.href = x;
+					return true
 				};
 				function showPosition(position) {
-					x = x + "Bitte an folgenden Standort liefern: https://maps.google.com/?q=" + position.coords.latitude + "," + position.coords.longitude;
+					positionx= position.coords.latitude;
+					positiony= position.coords.longitude;
+					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;
 				}
-				location = !location;
+				
 				
 		}
 		
@@ -823,31 +836,34 @@ $(document).ready(function(){
 		//Setting Value
 		document.getElementById("premiumshishainput").value = selValue;
 	}
-	function standardshishawahl() {
+	function exclusivshishawahl() {
 		//Getting Value
-		var selObj = document.getElementById("standardshishaoutput");
+		var selObj = document.getElementById("exclusivshishaoutput");
 		var selValue = selObj.options[selObj.selectedIndex].text;
 		//Setting Value
-		document.getElementById("standardshishainput").value = selValue;
+		document.getElementById("exclusivshishainput").value = selValue;
 	}
 	function softdrinkswahl() {
 		//Getting Value
+		
 		var selObj = document.getElementById("softdrinksoutput");
 		var selObj2 = document.getElementById("softdrinksoutput").value;
-		var selValue = selObj.options[selObj.selectedIndex].text;
+		var selValue = selObj.options[selObj.selectedIndex].getAttribute("data-name");
 		var selValue2 = selObj.options[selObj.selectedIndex].value;
+		var selValue3 = selObj.options[selObj.selectedIndex].getAttribute("data-img");
 		console.log(selValue);
 		console.log(selValue2);
 		//Setting Value
 		document.getElementById("softdrinksinput").value = selValue;
 		document.getElementById("softdrinksvalueinput").innerHTML = selObj2 + " €";
 		document.getElementById("softdrinksinput").setAttribute('data-price', selValue2);
+		document.getElementById("softdrinksimg").src = selValue3;
 	}
 	function alkoholwahl() {
 		//Getting Value
 		var selObj = document.getElementById("alkoholoutput");
 		var selObj2 = document.getElementById("alkoholoutput").value;
-		var selValue = selObj.options[selObj.selectedIndex].text;
+		var selValue = selObj.options[selObj.selectedIndex].getAttribute("data-name");
 		var selValue2 = selObj.options[selObj.selectedIndex].value;
 		console.log(selValue);
 		console.log("Value von alkoholoutput:" + selObj2);
@@ -861,7 +877,7 @@ $(document).ready(function(){
 		//Getting Value
 		var selObj = document.getElementById("snacksoutput");
 		var selObj2 = document.getElementById("snacksoutput").value;
-		var selValue = selObj.options[selObj.selectedIndex].text;
+		var selValue = selObj.options[selObj.selectedIndex].getAttribute("data-name");
 		var selValue2 = selObj.options[selObj.selectedIndex].value;
 		console.log(selValue);
 		console.log("Value von snacksoutput:" + selObj2);

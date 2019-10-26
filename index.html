@@ -90,7 +90,7 @@
 						<div class="row">
 							<div class="col-sm-6" style="min-width: 100%;">
 								<div class="form-group">
-									<select class="selectpicker form-control" style="height: auto;"
+									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 12px;"
 										onchange="premiumshishawahl()" id="premiumshishaoutput" data-width="auto">
 										<option selected>Geschmack wählen</option>
 										<option>Wildberry-Chill</option>
@@ -126,7 +126,7 @@
 						<div class="row">
 							<div class="col-sm-6" style="min-width: 100%;">
 								<div class="form-group">
-									<select class="selectpicker form-control" style="height: auto;"
+									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 12px;"
 										onchange="classicshishawahl()" id="classicshishaoutput" data-width="auto">
 										<option selected>Geschmack wählen</option>
 										<option>Lemon-Fresh</option>
@@ -162,7 +162,7 @@
 						<div class="row">
 							<div class="col-sm-6" style="min-width: 100%;">
 								<div class="form-group">
-									<select class="selectpicker form-control" style="height: auto;"
+									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 12px;"
 										onchange="standardshishawahl()" id="standardshishaoutput" data-width="auto">
 										<option selected>Geschmack wählen</option>
 										<option>Traube-Minze</option>
@@ -212,7 +212,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<div class="row" style="max-width: 100%;">
 							<div class="col-sm-6" style="width: 70%;">
 								<div class="form-group">
-									<select class="selectpicker form-control" style="height: auto;"
+									<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe);font-size: 12px;"
 										onchange="softdrinkswahl()" id="softdrinksoutput" data-width="auto">
 										<option selected>Getränk wählen</option>
 										<option value="2.00">Cola 0.33l</option>
@@ -258,7 +258,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<div class="row" style="max-width: 100%;">
 							<div class="col-sm-6" style="width: 70%;">
 								<div class="form-group">
-									<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe);"
+									<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe); font-size: 12px;"
 										onchange="alkoholwahl()" id="alkoholoutput" data-width="auto">
 										<option value="" selected>Flasche wählen</option>
 										<option value="15.00">Vodka 0,7 l</option>
@@ -301,7 +301,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<div class="row" style="max-width: 100%;">
 							<div class="col-sm-6" style="width: 70%;">
 								<div class="form-group">
-									<select class="selectpicker form-control" style="height: auto;"
+									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 12px;"
 										onchange="snackswahl()" id="snacksoutput" data-width="auto">
 										<option selected>Snack wählen </option>
 										<option value="2.00">Nic-Nacs 300g</option>
@@ -508,8 +508,8 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 			</div>
 
 			<footer class="cd-cart__footer" >
-				<a href="" style="font-size: 12px; background: var(--grundfarbe);" class="cd-cart__checkout" id="warenkorb-whatsapp" onclick="getWarenkorb()">
-          <em>Zur WhatsApp-Bestellung - €<span>0</span>
+				<a href="" style="font-size: 12px; background: var(--grundfarbe);" class="cd-cart__checkout" id="warenkorb-whatsapp" onclick="return getWarenkorb()">
+          <em>WhatsApp-Bestellung - €<span>0</span>
             <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
             </svg>
           </em>
@@ -767,10 +767,12 @@ $(document).ready(function(){
 
 <script>
 		function getWarenkorb() {
+			console.log("Funktion drin");
 			var items = document.getElementsByClassName("cd-cart__product");
 			var warenausgang = document.getElementById("warenkorb-whatsapp");
 			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,ich%20möchte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 			var gesamtpreis = 0;
+			var location = false;
 			for (i = 0; i < items.length; i++) {
 				/*var dw = items[i].data-name;
 				console.log(items[i].id);
@@ -780,20 +782,26 @@ $(document).ready(function(){
 				*/
 				x = x + "%201x" + items[i].getAttribute('data-name') + "%20" + items[i].getAttribute('data-price') + "€%20";
 				console.log("Link: " + x);
-				gesamtpreis = gesamtpreis + parsefloat(items[i].getAttribute('data-price'));
+				gesamtpreis = gesamtpreis + parseFloat(items[i].getAttribute('data-price'));
 				}
+
 				x = x + "%20für%20den%20Gesamtpreis:%20" + gesamtpreis + "€.";
-				warenausgang.href = x;
-		/*  if (!navigator.geolocation) {
-			x.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort in WhatsApp manuell senden möchtest!"; 
-		  } else {
-			navigator.geolocation.getCurrentPosition(showPosition);
-			x.innerHTML = "Standort wurde aktiviert. Klick hier für WhatsApp-Bestellung!"; 
-		  }
-		}
-		function showPosition(position) {
-		  x.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
-		*/
+				
+				if (location) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+					warenausgang.href = x;
+					return true
+				} else {
+					navigator.geolocation.getCurrentPosition(showPosition);
+					return false
+					//x = x + "Bitte an folgende Adresse liefern:";
+					//warenausgang.href = x;
+				};
+				function showPosition(position) {
+					x = x + "Bitte an folgenden Standort liefern: https://maps.google.com/?q=" + position.coords.latitude + "," + position.coords.longitude;
+				}
+				location = !location;
+				
 		}
 		
 	

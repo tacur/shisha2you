@@ -61,7 +61,7 @@ h4 {
   --grundfarbe: rgba(142, 121, 62); 
   --secondary: white;  
   /* --secondary: rgb(35, 31, 32); */
-  --third: white;
+  --third: linear-gradient( rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;;
   --grau: #231F20;
   --schrift: "Unica One", Arial, Helvetica, sans-serif;
   --schatten: black;
@@ -137,7 +137,6 @@ section::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  content: '';
   width: 100%;
   height: 80%;
   /*
@@ -145,10 +144,7 @@ section::after {
   background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   */
 }
-#section10 { background: url(https://picsum.photos/1200/800?image=516) center center / cover no-repeat;}
-
 .demo a {
-  position: absolute;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -173,7 +169,7 @@ section::after {
 }
 
 #section10 a {
-  padding-top: 60px;
+  padding-top: 0%;
 }
 #section10 a span {
   position: absolute;
@@ -2717,7 +2713,7 @@ hr.style-two {
     flex-direction: column;
     clip-path: circle(100px at 90% -20%);
     -webkit-clip-path: circle(100px at 90% -20%);
-    transition: all 1s ease-out ;
+    transition: all 0.4s ease-out ; 
     z-index: 6;
   }
   .li{

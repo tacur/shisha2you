@@ -297,7 +297,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 			<div class="col-sm-4 ">
 				<div class="card bg-dark"
 					style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
-					<img src="img/alkohol.svg" class="card-img-top" alt="..." style="margin: auto; margin-top: 20px; width: 70%;">
+					<img src="img/alkohol.svg" id="alkoholimg" class="card-img-top" alt="..." style="margin: auto; margin-top: 20px; width: 70%;">
 					<div class="card-body">
 						<h5 class="card-title">Alkoholische Getränke</h5>
 						<p style="color: var(--grundfarbe);"><h3>Flaschen werden mit 6 Dosen geliefert.</h3></p>
@@ -341,7 +341,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 			<div class="col-sm-4 ">
 				<div class="card bg-light"
 					style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
-					<img src="img/snacks.svg" class="card-img-top" alt="..." style="margin: auto; margin-top: 20px; width: 70%;">
+					<img src="img/snacks.svg" id="snacksimg" class="card-img-top" alt="..." style="margin: auto; margin-top: 20px; width: 70%;">
 					<div class="card-body">
 						<h5 class="card-title">Snacks</h5>
 						<p style="color: var(--grundfarbe);"><h3>Das Beste vom Besten.</h3></p>
@@ -955,6 +955,7 @@ $(document).ready(function(){
 		document.getElementById("alkoholvalueinput").innerHTML = selObj2 + " €";
 		document.getElementById("alkoholinput").setAttribute('data-price', selValue2);
 		document.getElementById("alkoholinput").setAttribute('data-img', selValue3);
+		document.getElementById("alkoholimg").src = selValue3;
 	}
 	function snackswahl() {
 		//Getting Value
@@ -971,5 +972,6 @@ $(document).ready(function(){
 		document.getElementById("snacksvalueinput").innerHTML = selObj2 + " €";
 		document.getElementById("snacksinput").setAttribute('data-price', selValue2);
 		document.getElementById("snacksinput").setAttribute('data-img', selValue3);
+		document.getElementById("snacksimg").src = selValue3;
 	}
 </script>

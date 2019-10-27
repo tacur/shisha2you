@@ -58,7 +58,7 @@ h4 {
 */
 
 :root {
-  --grundfarbe: rgba(142, 121, 62); 
+  --grundfarbe: #8e793e; 
   --secondary: white;  
   /* --secondary: rgb(35, 31, 32); */
   --third: linear-gradient( rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;;

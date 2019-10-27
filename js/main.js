@@ -1,6 +1,6 @@
 (function ($) {
   $(document).ready(function(){
-
+	/*
     // hide .navbar first
     $(".navbar2").hide();
 
@@ -33,7 +33,7 @@
 		  $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
 		});
 	  });
-
+*/
 });
   /*
   $(document).ready(function(){

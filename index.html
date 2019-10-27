@@ -846,13 +846,11 @@ $(document).ready(function(){
 			var gesamtpreis = 0;
 			var shisha = "";
 			for (i = 0; i < items.length; i++) {
-				/*var dw = items[i].data-name;
-				console.log(items[i].id);
-				console.log(items[i].value);
-				console.log("Name: " + items[i].getAttribute('data-name'));
-				console.log("Preis: " + items[i].getAttribute('data-price'));
-				*/
-				if (items[i].getAttribute('data-art') == "shisha"){ var shisha = "shisha"; }
+
+				if (items[i].getAttribute('data-art') == "shisha"){ 
+					var shisha = "shisha"; 
+					console.log("if: Variable shisha wird shisha genannt:" + shisha);
+				}else{}
 
 				x = x + "%201x" + items[i].getAttribute('data-name') + "%20" + items[i].getAttribute('data-price') + "€%20";
 				console.log("Link: " + x);

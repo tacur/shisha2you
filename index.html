@@ -37,7 +37,7 @@
 </section>
 
 	<main>
-		<!--
+		
 	<nav class="navbar2">
 				<a href="index.html" ><img src="img/logo.png" style="position: fixed; width: 100px; height: 35px; top: 15px; left: 0%; z-index: 4;"></a>
 			<div class="hamburger">
@@ -54,7 +54,7 @@
 				<li><a class="btn_nav" href="#anfahrt"><h3>Anfahrt</h3></a></li>
 			</ul>
 		</nav>
-	-->
+	
 		<!-- <a class="btn_telefon slideanim2" href="tel:+51112345667" ><i class="material-icons">phone</i></a> -->
 		<!-- <a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=491762295702" ><i class="fab fa-whatsapp"></i></a> -->
 
@@ -110,22 +110,22 @@
 											<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 14px;"
 												onchange="classicshishawahl()" id="classicshishaoutput" data-width="auto">
 												<option data-img="img/product-preview.png" selected>Geschmack wählen</option>
-												<option data-img="img/product-preview.png" data-tabak="Al-Fakir">Doppel-Apfel</option>
-												<option data-img="img/product-preview.png" data-tabak="Al-Fakir">Traube-Minze</option>
-												<option data-img="img/product-preview.png" data-tabak="Kilim">Zitrone-Minze</option>
-												<option data-img="img/product-preview.png" data-tabak="Royal">Pitaya</option>
-												<option data-img="img/product-preview.png" data-tabak="Gama">Cold-Peach</option>
+												<option data-img="img/product-preview.png" data-tabak="Al-Fakir">Doppel-Apfel(Al-Fakir)</option>
+												<option data-img="img/product-preview.png" data-tabak="Al-Fakir">Traube-Minze(Al-Fakir)</option>
+												<option data-img="img/product-preview.png" data-tabak="Kilim">Zitrone-Minze(Kilim)</option>
+												<option data-img="img/product-preview.png" data-tabak="Royal">Pitaya(Royal)</option>
+												<option data-img="img/product-preview.png" data-tabak="Gama">Cold-Peach(Gama)</option>
 											</select>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 										<div class="col-sm-6" style="max-width: 60%;">
-												<h5><span id="classictabak" id="classicanzahlpreis" class="badge badge-info" style="color: (--third);
+												<h5><span id="classictabak" class="badge badge-info" style="color: (--third);
 													background: var(--grundfarbe);"></span></h5>
 										</div>
 									<div class="col-sm-6" style="max-width: 30%;">
-											<h5><span class="badge badge-info" style="color: (--third);
+											<h5><span class="badge badge-info" id="classicanzahlpreis" style="color: (--third);
 												background: var(--grundfarbe);">8.00 €</span></h5>
 									</div>
 								</div>
@@ -240,10 +240,10 @@
 									<select class="selectpicker form-control" style="height: auto;background-color: var(--grundfarbe);color:white;border: 2px solid var(--secondary);font-size: 14px;"
 										onchange="exclusivshishawahl()" id="exclusivshishaoutput" data-width="auto">
 										<option data-img="img/product-preview.png" selected>Geschmack wählen</option>
-										<option data-img="img/product-preview.png" data-tabak="Fumari">Ceylon-Chi/Spy-Chi</option>
-										<option data-img="img/product-preview.png" data-tabak="Social Smoke">Lemon-Chill</option>
-										<option data-img="img/product-preview.png" data-tabak="Social Smoke">Watermelon-Chill</option>
-										<option data-img="img/product-preview.png" data-tabak="Social Smoke">Wildberry-Chill</option>
+										<option data-img="img/product-preview.png" data-tabak="Fumari">Ceylon-Chi/Spy-Chi(Fumari)</option>
+										<option data-img="img/product-preview.png" data-tabak="Social Smoke">Lemon-Chill(Social Smoke)</option>
+										<option data-img="img/product-preview.png" data-tabak="Social Smoke">Watermelon-Chill(Social Smoke)</option>
+										<option data-img="img/product-preview.png" data-tabak="Social Smoke">Wildberry-Chill(Social Smoke)</option>
 									</select>
 								</div>
 							</div>
@@ -299,7 +299,22 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<h5 class="card-title">Softgetränke</h5>
 						<p style="color: var(--grundfarbe);" ><h3>Das Beste vom Besten.</h3></p>
 						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-12">
+								<div class="col-sm-3" >
+										<div class="form-group">
+												<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe);font-size: 14px;"
+												onchange="softdrinksanzahl()" id="softdrinksanzahl" data-width="auto">
+													<option selected>1</option>
+													<option >2</option>
+													<option >3</option>
+													<option >4</option>
+													<option >5</option>
+													<option >6</option>
+													<option >7</option>
+													<option >8</option>
+												</select>
+										</div>
+								</div>
+							<div class="col-sm-9">
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe);font-size: 14px;"
 										onchange="softdrinkswahl()" id="softdrinksoutput" data-width="auto">
@@ -350,7 +365,22 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<h5 class="card-title">Alkoholische Getränke</h5>
 						<p style="color: var(--grundfarbe);"><h3>Flaschen werden mit 6 Dosen geliefert.</h3></p>
 						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-12">
+								<div class="col-sm-3" >
+										<div class="form-group">
+												<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe); font-size: 14px;"
+												onchange="alkoholanzahl()" id="alkoholanzahl" data-width="auto">
+													<option selected>1</option>
+													<option >2</option>
+													<option >3</option>
+													<option >4</option>
+													<option >5</option>
+													<option >6</option>
+													<option >7</option>
+													<option >8</option>
+												</select>
+										</div>
+								</div>
+							<div class="col-sm-9">
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe); font-size: 14px;"
 										onchange="alkoholwahl()" id="alkoholoutput" data-width="auto">
@@ -396,7 +426,22 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<h5 class="card-title">Snacks</h5>
 						<p style="color: var(--grundfarbe);"><h3>Das Beste vom Besten.</h3></p>
 						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-12">
+								<div class="col-sm-3" >
+										<div class="form-group">
+												<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 14px;"
+												onchange="snacksanzahl()" id="snacksanzahl" data-width="auto">
+													<option selected>1</option>
+													<option >2</option>
+													<option >3</option>
+													<option >4</option>
+													<option >5</option>
+													<option >6</option>
+													<option >7</option>
+													<option >8</option>
+												</select>
+										</div>
+								</div>
+							<div class="col-sm-9">
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 14px;"
 										onchange="snackswahl()" id="snacksoutput" data-width="auto">
@@ -946,14 +991,17 @@ $(document).ready(function(){
 		function classicshishawahl() {
 		//Getting Value
 		var selObj = document.getElementById("classicshishaoutput");
+		var selObj2 = document.getElementById("classicshishaanzahl");
 		var selValue = selObj.options[selObj.selectedIndex].text;
 		var selValue3 = selObj.options[selObj.selectedIndex].getAttribute("data-img");
 		var selValue4 = selObj.options[selObj.selectedIndex].getAttribute("data-tabak");
+		var selValue5 = selObj2.options[selObj2.selectedIndex].text;
 		console.log(selValue);
 		//Setting Value
 		document.getElementById("classicshishainput").value = selValue;
 		document.getElementById("classicshishainput").setAttribute('data-img', selValue3);
 		document.getElementById("classictabak").innerHTML = selValue4;
+		document.getElementById("classicanzahlpreis").value = selValue*selValue5;
 	}
 	function classicshishaanzahl() { 
 		var selObj = document.getElementById("classicshishaanzahl");
@@ -964,13 +1012,16 @@ $(document).ready(function(){
 	function premiumshishawahl() {
 		//Getting Value
 		var selObj = document.getElementById("premiumshishaoutput");
+		var selObj2 = document.getElementById("premiumshishaanzahl");
 		var selValue = selObj.options[selObj.selectedIndex].text;
 		var selValue3 = selObj.options[selObj.selectedIndex].getAttribute("data-img");
 		var selValue4 = selObj.options[selObj.selectedIndex].getAttribute("data-tabak");
+		var selValue5 = selObj2.options[selObj2.selectedIndex].text;
 		//Setting Value
 		document.getElementById("premiumshishainput").value = selValue;
 		document.getElementById("premiumshishainput").setAttribute('data-img', selValue3);
 		document.getElementById("premiumtabak").innerHTML = selValue4;
+		document.getElementById("premiumanzahlpreis").value = selValue*selValue5;
 	}
 	function premiumshishaanzahl() { 
 		var selObj = document.getElementById("premiumshishaanzahl");
@@ -981,13 +1032,17 @@ $(document).ready(function(){
 	function exclusivshishawahl() {
 		//Getting Value
 		var selObj = document.getElementById("exclusivshishaoutput");
+		var selObj2 = document.getElementById("exclusivshishaanzahl");
 		var selValue = selObj.options[selObj.selectedIndex].text;
 		var selValue3 = selObj.options[selObj.selectedIndex].getAttribute("data-img");
 		var selValue4 = selObj.options[selObj.selectedIndex].getAttribute("data-tabak");
+		var selValue5 = selObj2.options[selObj2.selectedIndex].text;
 		//Setting Value
 		document.getElementById("exclusivshishainput").value = selValue;
 		document.getElementById("exclusivshishainput").setAttribute('data-img', selValue3);
 		document.getElementById("exclusivtabak").innerHTML = selValue4;
+		document.getElementById("exclusivanzahlpreis").value = selValue*selValue5;
+		
 	}
 	function exclusivshishaanzahl() { 
 		var selObj = document.getElementById("exclusivshishaanzahl");
@@ -999,50 +1054,75 @@ $(document).ready(function(){
 		//Getting Value
 		var selObj = document.getElementById("softdrinksoutput");
 		var selObj2 = document.getElementById("softdrinksoutput").value;
+		var selObj3 = document.getElementById("softdrinksanzahl");
 		var selValue = selObj.options[selObj.selectedIndex].getAttribute("data-name");
 		var selValue2 = selObj.options[selObj.selectedIndex].value;
 		var selValue3 = selObj.options[selObj.selectedIndex].getAttribute("data-img");
-		console.log(selValue);
-		console.log(selValue2);
+		var selValue4 = selObj3.options[selObj3.selectedIndex].text;
+
 		//Setting Value
 		document.getElementById("softdrinksinput").value = selValue;
-		document.getElementById("softdrinksvalueinput").innerHTML = selObj2 + " €";
+		document.getElementById("softdrinksvalueinput").innerHTML = selObj2*selValue4 + " €";
 		document.getElementById("softdrinksinput").setAttribute('data-price', selValue2);
 		document.getElementById("softdrinksinput").setAttribute('data-img', selValue3);
 		document.getElementById("softdrinksimg").src = selValue3;
+	}
+	function softdrinksanzahl() { 
+		var selObj = document.getElementById("softdrinksanzahl");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		var selValue2 = document.getElementById("softdrinksoutput").value;
+
+		document.getElementById("softdrinksinput").setAttribute('data-anzahl', selValue);
+		document.getElementById("softdrinksvalueinput").innerHTML = selValue*selValue2 + " €";
 	}
 	function alkoholwahl() {
 		//Getting Value
 		var selObj = document.getElementById("alkoholoutput");
 		var selObj2 = document.getElementById("alkoholoutput").value;
+		var selObj3 = document.getElementById("alkoholanzahl");
 		var selValue = selObj.options[selObj.selectedIndex].getAttribute("data-name");
 		var selValue2 = selObj.options[selObj.selectedIndex].value;
 		var selValue3 = selObj.options[selObj.selectedIndex].getAttribute("data-img");
-		console.log(selValue);
-		console.log("Value von alkoholoutput:" + selObj2);
-		console.log(selValue2);
+		var selValue4 = selObj3.options[selObj3.selectedIndex].text;
+
 		//Setting Value
 		document.getElementById("alkoholinput").value = selValue;
-		document.getElementById("alkoholvalueinput").innerHTML = selObj2 + " €";
+		document.getElementById("alkoholvalueinput").innerHTML = selObj2*selValue4 + " €";
 		document.getElementById("alkoholinput").setAttribute('data-price', selValue2);
 		document.getElementById("alkoholinput").setAttribute('data-img', selValue3);
 		document.getElementById("alkoholimg").src = selValue3;
+	}
+	function alkoholanzahl() { 
+		var selObj = document.getElementById("alkoholanzahl");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		var selValue2 = document.getElementById("alkoholoutput").value;
+
+		document.getElementById("alkoholinput").setAttribute('data-anzahl', selValue);
+		document.getElementById("alkoholvalueinput").innerHTML = selValue*selValue2 + " €";
 	}
 	function snackswahl() {
 		//Getting Value
 		var selObj = document.getElementById("snacksoutput");
 		var selObj2 = document.getElementById("snacksoutput").value;
+		var selObj3 = document.getElementById("snacksanzahl");
 		var selValue = selObj.options[selObj.selectedIndex].getAttribute("data-name");
 		var selValue2 = selObj.options[selObj.selectedIndex].value;
 		var selValue3 = selObj.options[selObj.selectedIndex].getAttribute("data-img");
-		console.log(selValue);
-		console.log("Value von snacksoutput:" + selObj2);
-		console.log(selValue2);
+		var selValue4 = selObj3.options[selObj3.selectedIndex].text;
+
 		//Setting Value
 		document.getElementById("snacksinput").value = selValue;
-		document.getElementById("snacksvalueinput").innerHTML = selObj2 + " €";
+		document.getElementById("snacksvalueinput").innerHTML = selObj2*selValue4 + " €";
 		document.getElementById("snacksinput").setAttribute('data-price', selValue2);
 		document.getElementById("snacksinput").setAttribute('data-img', selValue3);
 		document.getElementById("snacksimg").src = selValue3;
+	}
+	function snacksanzahl() { 
+		var selObj = document.getElementById("snacksanzahl");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		var selValue2 = document.getElementById("snacksoutput").value;
+
+		document.getElementById("snacksinput").setAttribute('data-anzahl', selValue);
+		document.getElementById("snacksvalueinput").innerHTML = selValue*selValue2 + " €";
 	}
 </script>

@@ -89,7 +89,22 @@
 								<h5 class="card-title">Classic Shisha</h5>
 								<p style="color: var(--grundfarbe);"><h3>Das Beste vom Besten.</h3></p>
 								<div class="row" style="min-width: 100%;">
-									<div class="col-sm-12" >
+										<div class="col-sm-3" >
+												<div class="form-group">
+														<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 14px;"
+														onchange="classicshishaanzahl()" id="classicshishaanzahl" data-width="auto">
+															<option selected>1</option>
+															<option >2</option>
+															<option >3</option>
+															<option >4</option>
+															<option >5</option>
+															<option >6</option>
+															<option >7</option>
+															<option >8</option>
+														</select>
+												</div>
+											</div>
+									<div class="col-sm-9" >
 										<div class="form-group">
 											<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 14px;"
 												onchange="classicshishawahl()" id="classicshishaoutput" data-width="auto">
@@ -105,7 +120,7 @@
 								</div>
 								<div class="row">
 										<div class="col-sm-6" style="max-width: 60%;">
-												<h5><span id="classictabak" class="badge badge-info" style="color: (--third);
+												<h5><span id="classictabak" id="classicanzahlpreis" class="badge badge-info" style="color: (--third);
 													background: var(--grundfarbe);"></span></h5>
 										</div>
 									<div class="col-sm-6" style="max-width: 30%;">
@@ -116,7 +131,7 @@
 									<div class="row">
 									<div class="col-sm-12" style="min-width: 100%;">
 										<a href="#0" id="classicshishainput" value="" style="min-width: 100%; background: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
-											data-price="8.00" data-art="shisha" data-name="Classic-Shisha">In den Warenkorb</a>
+											data-price="8.00" data-art="shisha" data-anzahl="1" data-name="Classic-Shisha">In den Warenkorb</a>
 									</div>
 								</div>
 								<!--
@@ -137,9 +152,24 @@
 					<div class="card-body">
 						<h5 class="card-title">Premium Shisha</h5>
 						<p style="color: var(--grundfarbe);"><h3> Beste vom Besten.</h3></p>
-						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-12" >
-								<div class="form-group">
+						<div class="row">
+							<div class="col-sm-3" >
+									<div class="form-group">
+											<select class="selectpicker form-control" style="height: auto;background-color: var(--hellgrau);color: var(--grundfarbe);border: 2px solid var(--grundfarbe);font-size: 14px;"
+											onchange="premiumshishaanzahl()" id="premiumshishaanzahl" data-width="auto">
+												<option selected>1</option>
+												<option >2</option>
+												<option >3</option>
+												<option >4</option>
+												<option >5</option>
+												<option >6</option>
+												<option >7</option>
+												<option >8</option>
+											</select>
+									</div>
+								</div>
+								<div class="col-sm-9" >
+								<div class="form-group" >
 									<select class="selectpicker form-control" style="height: auto;background-color: var(--hellgrau);color: var(--grundfarbe);border: 2px solid var(--grundfarbe);font-size: 14px;"
 										onchange="premiumshishawahl()" id="premiumshishaoutput" data-width="auto">
 										<option data-img="img/product-preview.png" selected>Geschmack wählen</option>
@@ -160,14 +190,14 @@
 										background: var(--grundfarbe);"></span></h5>
 							</div>
 							<div class="col-sm-3" style="max-width: 30%;">
-									<h5><span class="badge badge-info" style="color: var(--hellgrau);
+									<h5><span class="badge badge-info" id="premiumanzahlpreis" style="color: var(--hellgrau);
 										background: var(--grundfarbe);">10.00 €</span></h5>
 								</div>
 						</div>
 						<div class="row" style="min-width: 100%;">
 							<div class="col-sm-12" style="min-width: 100%;">
 								<a href="#0" id="premiumshishainput" style="min-width: 100%;  background: var(--grundfarbe);" value="" class="cd-add-to-cart js-cd-add-to-cart"
-									data-price="10.00" data-art="shisha" data-name="Premium-Shisha">In den Warenkorb</a>
+									data-price="10.00" data-art="shisha" data-anzahl="1" data-name="Premium-Shisha">In den Warenkorb</a>
 							</div>
 						</div>
 						<!--
@@ -189,7 +219,22 @@
 						<h5 class="card-title" style="color: var(--secondary);">Exclusiv-Shisha</h5>
 						<p ><h3 style="color: var(--secondary);">Das Beste vom Besten.</h3></p>
 						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-12">
+								<div class="col-sm-3" >
+										<div class="form-group">
+												<select class="selectpicker form-control" style="height: auto;background-color: var(--grundfarbe);color:white;border: 2px solid var(--secondary);font-size: 14px;"
+												onchange="exclusivshishaanzahl()" id="exclusivshishaanzahl" data-width="auto">
+													<option selected>1</option>
+													<option >2</option>
+													<option >3</option>
+													<option >4</option>
+													<option >5</option>
+													<option >6</option>
+													<option >7</option>
+													<option >8</option>
+												</select>
+										</div>
+									</div>
+							<div class="col-sm-9">
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto;background-color: var(--grundfarbe);color:white;border: 2px solid var(--secondary);font-size: 14px;"
 										onchange="exclusivshishawahl()" id="exclusivshishaoutput" data-width="auto">
@@ -209,7 +254,7 @@
 									</div>
 									<div class="col-sm-3" style="max-width: 30%;">
 											<h5><span class="badge badge-info" style="color: var(--grundfarbe);;
-												background: #fff;">12.00 €</span></h5>
+												background: #fff;" id="exclusivanzahlpreis">12.00 €</span></h5>
 									</div>
 							</div>
 							
@@ -217,7 +262,7 @@
 						<div class="row">
 							<div class="col-sm-12" style="min-width: 100%;">
 								<a href="#0" id="exclusivshishainput" value="" style="min-width: 100%; background: var(--secondary); color: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
-									data-price="12.00" data-art="shisha" data-name="Exclusiv-Shisha">In den Warenkorb</a>
+									data-price="12.00" data-art="shisha" data-anzahl="1" data-name="Exclusiv-Shisha">In den Warenkorb</a>
 							</div>
 						</div>
 						<!--
@@ -253,7 +298,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<h5 class="card-title">Softgetränke</h5>
 						<p style="color: var(--grundfarbe);" ><h3>Das Beste vom Besten.</h3></p>
 						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-9">
+							<div class="col-sm-12">
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe);font-size: 14px;"
 										onchange="softdrinkswahl()" id="softdrinksoutput" data-width="auto">
@@ -272,14 +317,16 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 									</select>
 								</div>
 							</div>
-							<div class="col-sm-3" style="height:100%;">
+						</div>
+						<div class="row" style="min-width: 100%;">
+							<div class="col-sm-12">
 								<h5><span id="softdrinksvalueinput" class="badge badge-info" style="background: var(--grundfarbe);"></span></h5>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12" style="min-width: 100%;">
 								<a href="#0" id="softdrinksinput" style="min-width: 100%;  background: var(--grundfarbe);" value=""
-									class="cd-add-to-cart js-cd-add-to-cart" data-art="softdrink" data-img="" data-price="" data-name="Softdrink">In den
+									class="cd-add-to-cart js-cd-add-to-cart" data-anzahl="" data-art="softdrink" data-img="" data-price="" data-name="Softdrink">In den
 									Warenkorb</a>
 							</div>
 						</div>
@@ -302,7 +349,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<h5 class="card-title">Alkoholische Getränke</h5>
 						<p style="color: var(--grundfarbe);"><h3>Flaschen werden mit 6 Dosen geliefert.</h3></p>
 						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-9">
+							<div class="col-sm-12">
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto; border: 2px solid var(--grundfarbe); font-size: 14px;"
 										onchange="alkoholwahl()" id="alkoholoutput" data-width="auto">
@@ -315,7 +362,9 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 									</select>
 								</div>
 							</div>
-							<div class="col-sm-3">
+						</div>
+							<div class="row" style="min-width: 100%;">
+							<div class="col-sm-12">
 								<h5><span id="alkoholvalueinput" class="badge badge-info" style="color: #fff;
 									background: var(--grundfarbe);"></span></h5>
 							</div>
@@ -346,7 +395,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<h5 class="card-title">Snacks</h5>
 						<p style="color: var(--grundfarbe);"><h3>Das Beste vom Besten.</h3></p>
 						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-9">
+							<div class="col-sm-12">
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto;border: 2px solid var(--grundfarbe);font-size: 14px;"
 										onchange="snackswahl()" id="snacksoutput" data-width="auto">
@@ -359,9 +408,10 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 									</select>
 								</div>
 							</div>
-							<div class="col-sm-3">
+						</div>
+						<div class="row" style="min-width: 100%;">
+							<div class="col-sm-12">
 								<h5><span id="snacksvalueinput" class="badge badge-info" style="background: var(--grundfarbe);"></span></h5>
-
 							</div>
 						</div>
 						<div class="row">
@@ -904,6 +954,12 @@ $(document).ready(function(){
 		document.getElementById("classicshishainput").setAttribute('data-img', selValue3);
 		document.getElementById("classictabak").innerHTML = selValue4;
 	}
+	function classicshishaanzahl() { 
+		var selObj = document.getElementById("classicshishaanzahl");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		document.getElementById("classicshishainput").setAttribute('data-anzahl', selValue);
+		document.getElementById("classicanzahlpreis").innerHTML = selValue*8.00 + " €";
+	}
 	function premiumshishawahl() {
 		//Getting Value
 		var selObj = document.getElementById("premiumshishaoutput");
@@ -915,6 +971,12 @@ $(document).ready(function(){
 		document.getElementById("premiumshishainput").setAttribute('data-img', selValue3);
 		document.getElementById("premiumtabak").innerHTML = selValue4;
 	}
+	function premiumshishaanzahl() { 
+		var selObj = document.getElementById("premiumshishaanzahl");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		document.getElementById("premiumshishainput").setAttribute('data-anzahl', selValue);
+		document.getElementById("premiumanzahlpreis").innerHTML = selValue*10.00 + " €";
+	}
 	function exclusivshishawahl() {
 		//Getting Value
 		var selObj = document.getElementById("exclusivshishaoutput");
@@ -925,6 +987,12 @@ $(document).ready(function(){
 		document.getElementById("exclusivshishainput").value = selValue;
 		document.getElementById("exclusivshishainput").setAttribute('data-img', selValue3);
 		document.getElementById("exclusivtabak").innerHTML = selValue4;
+	}
+	function exclusivshishaanzahl() { 
+		var selObj = document.getElementById("exclusivshishaanzahl");
+		var selValue = selObj.options[selObj.selectedIndex].text;
+		document.getElementById("exclusivshishainput").setAttribute('data-anzahl', selValue);
+		document.getElementById("exclusivanzahlpreis").innerHTML = selValue*12.00 + " €";
 	}
 	function softdrinkswahl() {
 		//Getting Value

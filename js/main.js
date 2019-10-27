@@ -2,7 +2,7 @@
   $(document).ready(function(){
 
     // hide .navbar first
-    $(".navbar1").hide();
+    $(".navbar2").hide();
 
     // fade in .navbar
     $(function () {
@@ -10,9 +10,9 @@
 
                  // set distance user needs to scroll before we start fadeIn
             if ($(this).scrollTop() > 40) {
-                $('.navbar1').fadeIn();
+                $('.navbar2').fadeIn();
             } else {
-                $('.navbar1').fadeOut();
+                $('.navbar2').fadeOut();
             }
         });
 	});
@@ -445,7 +445,8 @@ navLinks.addEventListener("click",  () => {
 			  var productImg = target.getAttribute('data-img');
 			  var productWahl = target.value;
 			  var productId = target.getAttribute('data-art');
-			  var productAdded = '<li class="cd-cart__product" id="warenkorb-element" data-art="' + productId + '" data-price="' + productPrice + '" data-name="'+ productWahl +'"><div class="cd-cart__image"><a href="#0"><img src="../shisha2you/' + productImg + '" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">' + productName +'</a></h3><span class="cd-cart__price" style="font-size: 12px;">' + productPrice +' €</span><div  style="width: 70%;"><h3>' + productWahl +  '</h3></div><br><div class="cd-cart__actions" style="font-size: 12px;"><a href="#0" class="cd-cart__delete-item">Entfernen</a><div class="cd-cart__quantity" style="font-size: 12px;"><label for="cd-product-'+ productId +'">Menge</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			  var productAnzahl = target.getAttribute('data-anzahl');
+			  var productAdded = '<li class="cd-cart__product" id="warenkorb-element" data-art="' + productId + '" data-price="' + productPrice + '" data-name="'+ productWahl +'"><div class="cd-cart__image"><a href="#0"><img src="../shisha2you/' + productImg + '" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">' + productName +'</a></h3><span class="cd-cart__price" style="font-size: 12px;">' + productPrice +' €</span><div  style="width: 70%;"><h3>' + productWahl +  '</h3></div><br><div class="cd-cart__actions" style="font-size: 12px;"><a href="#0" class="cd-cart__delete-item">Entfernen</a><div class="cd-cart__quantity" style="font-size: 12px;"><label for="cd-product-'+ productId +'">Menge</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option selected value="' + productAnzahl +'">' + productAnzahl +'</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
 			  cartList.insertAdjacentHTML('beforeend', productAdded);
 		  };
   

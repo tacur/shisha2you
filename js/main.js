@@ -103,22 +103,6 @@ $(document).ready(function(){
 			return false;
 		});
 	});
-	$("#menu_nav").click(function() {
-    	$('html, body').animate({
-        	scrollTop: $("#team").offset().top
-    	}, 2000);
-	});
-	$("#anfahrt_nav").click(function() {
-    	$('html, body').animate({
-        	scrollTop: $("#anfahrt").offset().top
-    	}, 2000);
-	});
-	$("#kontakt_nav").click(function() {
-    	$('html, body').animate({
-        	scrollTop: $("#kontakt").offset().top
-    	}, 2000);
-	});
-
 });
 
 }(jQuery));

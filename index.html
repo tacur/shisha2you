@@ -116,7 +116,7 @@
 									<div class="row">
 									<div class="col-sm-12" style="min-width: 100%;">
 										<a href="#0" id="classicshishainput" value="" style="min-width: 100%; background: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
-											data-price="8.00" data-name="Classic-Shisha">In den Warenkorb</a>
+											data-price="8.00" data-art="shisha" data-name="Classic-Shisha">In den Warenkorb</a>
 									</div>
 								</div>
 								<!--
@@ -138,7 +138,7 @@
 						<h5 class="card-title">Premium Shisha</h5>
 						<p style="color: var(--grundfarbe);"><h3> Beste vom Besten.</h3></p>
 						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-9" >
+							<div class="col-sm-12" >
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto;background-color: var(--hellgrau);color: var(--grundfarbe);border: 2px solid var(--grundfarbe);font-size: 14px;"
 										onchange="premiumshishawahl()" id="premiumshishaoutput" data-width="auto">
@@ -167,7 +167,7 @@
 						<div class="row" style="min-width: 100%;">
 							<div class="col-sm-12" style="min-width: 100%;">
 								<a href="#0" id="premiumshishainput" style="min-width: 100%;  background: var(--grundfarbe);" value="" class="cd-add-to-cart js-cd-add-to-cart"
-									data-price="10.00" data-name="Premium-Shisha">In den Warenkorb</a>
+									data-price="10.00" data-art="shisha" data-name="Premium-Shisha">In den Warenkorb</a>
 							</div>
 						</div>
 						<!--
@@ -189,7 +189,7 @@
 						<h5 class="card-title" style="color: var(--secondary);">Exclusiv-Shisha</h5>
 						<p ><h3 style="color: var(--secondary);">Das Beste vom Besten.</h3></p>
 						<div class="row" style="min-width: 100%;">
-							<div class="col-sm-9">
+							<div class="col-sm-12">
 								<div class="form-group">
 									<select class="selectpicker form-control" style="height: auto;background-color: var(--grundfarbe);color:white;border: 2px solid var(--secondary);font-size: 14px;"
 										onchange="exclusivshishawahl()" id="exclusivshishaoutput" data-width="auto">
@@ -204,7 +204,7 @@
 						</div>
 							<div class="row" >
 									<div class="col-sm-6" style="max-width: 60%;">
-											<h5><span id="exclusivtabak" class="badge badge-info" style="color: var(--grundfarbe);;
+											<h5><span id="exclusivtabak" class="badge badge-info" style="color: var(--grundfarbe);
 												background: #fff;"></span></h5>
 									</div>
 									<div class="col-sm-3" style="max-width: 30%;">
@@ -217,7 +217,7 @@
 						<div class="row">
 							<div class="col-sm-12" style="min-width: 100%;">
 								<a href="#0" id="exclusivshishainput" value="" style="min-width: 100%; background: var(--secondary); color: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
-									data-price="12.00" data-name="Exclusiv-Shisha">In den Warenkorb</a>
+									data-price="12.00" data-art="shisha" data-name="Exclusiv-Shisha">In den Warenkorb</a>
 							</div>
 						</div>
 						<!--
@@ -272,14 +272,14 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 									</select>
 								</div>
 							</div>
-							<div class="col-sm-3">
+							<div class="col-sm-3" style="height:100%;">
 								<h5><span id="softdrinksvalueinput" class="badge badge-info" style="background: var(--grundfarbe);"></span></h5>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12" style="min-width: 100%;">
 								<a href="#0" id="softdrinksinput" style="min-width: 100%;  background: var(--grundfarbe);" value=""
-									class="cd-add-to-cart js-cd-add-to-cart" data-price="" data-name="Softdrink">In den
+									class="cd-add-to-cart js-cd-add-to-cart" data-art="softdrink" data-img="" data-price="" data-name="Softdrink">In den
 									Warenkorb</a>
 							</div>
 						</div>
@@ -323,7 +323,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<div class="row">
 							<div class="col-sm-12" style="min-width: 100%;">
 								<a href="#0" id="alkoholinput" value="" style="min-width: 100%; background: var(--grundfarbe);"
-									class="cd-add-to-cart js-cd-add-to-cart" data-price="" data-name="Flasche">In den
+									class="cd-add-to-cart js-cd-add-to-cart" data-art="alkohol" data-img="" data-price="" data-name="Flasche">In den
 									Warenkorb</a>
 							</div>
 						</div>
@@ -367,7 +367,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 						<div class="row">
 							<div class="col-sm-12" style="min-width: 100%;">
 								<a href="#0" id="snacksinput" value="" style="min-width: 100%;background: var(--grundfarbe);"
-									class="cd-add-to-cart js-cd-add-to-cart" data-price="" data-name="Snack">In den
+									class="cd-add-to-cart js-cd-add-to-cart" data-art="snack" data-img="" data-price="" data-name="Snack">In den
 									Warenkorb</a>
 							</div>
 						</div>
@@ -844,7 +844,7 @@ $(document).ready(function(){
 			var warenausgang = document.getElementById("warenkorb-whatsapp");
 			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 			var gesamtpreis = 0;
-			var location = false;
+			var shisha = false;
 			for (i = 0; i < items.length; i++) {
 				/*var dw = items[i].data-name;
 				console.log(items[i].id);
@@ -852,11 +852,13 @@ $(document).ready(function(){
 				console.log("Name: " + items[i].getAttribute('data-name'));
 				console.log("Preis: " + items[i].getAttribute('data-price'));
 				*/
+				if (items[i].getAttribute('data-art') == "shisha"){ var shisha = true; }
+
 				x = x + "%201x" + items[i].getAttribute('data-name') + "%20" + items[i].getAttribute('data-price') + "€%20";
 				console.log("Link: " + x);
 				gesamtpreis = gesamtpreis + parseFloat(items[i].getAttribute('data-price'));
 				}
-
+			if (shisha== true){
 				x = x + "%20für%20den%20Gesamtpreis:%20" + gesamtpreis + "€.";
 				
 				if (window.hasOwnProperty("positionx")) {
@@ -873,7 +875,9 @@ $(document).ready(function(){
 					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;
 				}
 				
-				
+			} else {
+				alert("Bestellung erst bei mind. einer Shisha möglich.");
+			}
 		}
 		
 	

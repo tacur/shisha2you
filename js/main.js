@@ -17,15 +17,7 @@
         });
 	});
 	$(function () {
-        $(window).scroll(function () {
-
-                 // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 100) {
-                $('.back-to-top').fadeIn();
-            } else {
-                $('.back-to-top').fadeOut();
-            }
-        });
+        
 	});
 	$(function() {
 		$('a[href*=#]').on('click', function(e) {
@@ -85,6 +77,15 @@
 // #######
 (function ($) {
 $(document).ready(function(){
+	$(window).scroll(function () {
+
+				// set distance user needs to scroll before we start fadeIn
+		if ($(this).scrollTop() > 100) {
+			$('.back-to-top').fadeIn();
+		} else {
+			$('.back-to-top').fadeOut();
+		}
+		});
 	// Funktionen für das Scroll-Verhalten
 	$(function () {
 		$('.cd-nav-trigger').click(function () { // Klick auf den Button

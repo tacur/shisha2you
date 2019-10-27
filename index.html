@@ -844,7 +844,7 @@ $(document).ready(function(){
 			var warenausgang = document.getElementById("warenkorb-whatsapp");
 			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 			var gesamtpreis = 0;
-			var shisha = false;
+			var shisha = "";
 			for (i = 0; i < items.length; i++) {
 				/*var dw = items[i].data-name;
 				console.log(items[i].id);
@@ -852,13 +852,13 @@ $(document).ready(function(){
 				console.log("Name: " + items[i].getAttribute('data-name'));
 				console.log("Preis: " + items[i].getAttribute('data-price'));
 				*/
-				if (items[i].getAttribute('data-art') == "shisha"){ var shisha = true; }
+				if (items[i].getAttribute('data-art') == "shisha"){ var shisha = "shisha"; }
 
 				x = x + "%201x" + items[i].getAttribute('data-name') + "%20" + items[i].getAttribute('data-price') + "€%20";
 				console.log("Link: " + x);
 				gesamtpreis = gesamtpreis + parseFloat(items[i].getAttribute('data-price'));
 				}
-			if (shisha== true){
+			if (shisha != ""){
 				x = x + "%20für%20den%20Gesamtpreis:%20" + gesamtpreis + "€.";
 				
 				if (window.hasOwnProperty("positionx")) {

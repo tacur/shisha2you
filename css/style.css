@@ -1094,7 +1094,7 @@ color: var(--grundfarbe);
   }
   .slideanim3 {
     opacity: 1;
-    animation: slide3 6s}
+    animation: slide3 3s}
 
   @keyframes slide3{
     0% {
@@ -1150,7 +1150,7 @@ General Style
   background: var(--secondary);
   background-repeat: no-repeat;
   overflow: hidden;
-  animation: hideme 5s linear forwards;
+  animation: hideme 2s linear forwards;
 }
 
 .cd-intro-content {

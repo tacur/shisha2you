@@ -557,17 +557,12 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
   <div class="card" style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
 	<div class="card-body">
 		<div style="text-align: center;">
-			<p><h5><b>Montags-Freitags</b></h5></p>
-			<p><h5><b>17:00 - 01:00</b></h5></p>
+			<p><h5><b>Montags - Donnerstag</b></h5></p>
+			<p><h5><b>Vermietung ab 15:00 Uhr -  Abholung bis spätestens 23:00 Uhr</b></h5></p>
 			<br>
 			<hr class="style-two">
-			<p><h5><b>Samstags</b></h5></p>
-			<p><h5><b>17:00 - 02:00</b></h5></p>
-			<br> 
-			<hr class="style-two">
-			<p><h5><b>Sonntags</b></h5></p>
-			<p><h5><b>17:00 - 23:00</b></h5></p>
-			<br>
+			<p><h5><b>Freitags - Samstags</b></h5></p>
+			<p><h5><b>Vermietung ab 15:00 Uhr -  Abholung bis spätestens Sonntag 02:00 Uhr</b></h5></p>
 </div>
 	</div>
 </div>
@@ -648,11 +643,21 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 			</div>
 
 			<footer class="cd-cart__footer" >
-				<a style="font-size: 16px; background: var(--grundfarbe);color: white;" class="cd-cart__checkout" id="warenkorb-whatsapp" onclick="return getWarenkorb()">
+					<form class="was-validated" >
+							<div class="form-group form-check">
+								  <label class="form-check-label" style="font-size:large; ">
+									<input class="form-check-input" style="margin: 0;position: relative;" id="agb" type="checkbox" name="remember" required> Ich akzeptiere die AGBs.
+									<div class="valid-feedback">AGBs akzeptiert.</div>
+									<div class="invalid-feedback">AGBs müssen vor Bestellung akzeptiert werden.</div>
+								  </label>
+								</div>
+							  </form>
+				<a style="font-size: 16px; background: var(--grundfarbe);color: white;" type="submit" class="cd-cart__checkout" id="warenkorb-whatsapp" onclick="return getWarenkorb()">
           <em> <i class="fab fa-whatsapp"></i> WhatsApp-Bestellung - €<span>0</span>
             <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
             </svg>
-          </em>
+		  </em>
+		  
         </a>
 			</footer>
 		</div>
@@ -938,6 +943,8 @@ $(document).ready(function(){
 			console.log("Funktion drin");
 			var items = document.getElementsByClassName("cd-cart__product");
 			var warenausgang = document.getElementById("warenkorb-whatsapp");
+			var agbs = document.getElementById("agb");
+			console.log(agbs);
 			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 			var gesamtpreis = 0;
 			var shisha = "";
@@ -952,7 +959,8 @@ $(document).ready(function(){
 				console.log("Link: " + x);
 				gesamtpreis = gesamtpreis + parseFloat(items[i].getAttribute('data-price'));
 				}
-			if (shisha != ""){
+			if (agbs.checked){
+				if (shisha != ""){
 				x = x + "%20für%20den%20Gesamtpreis:%20" + gesamtpreis + "€.";
 				
 				if (window.hasOwnProperty("positionx")) {
@@ -969,9 +977,13 @@ $(document).ready(function(){
 					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;
 				}
 				
-			} else {
-				alert("Bestellung erst bei mind. einer Shisha möglich.");
+				} else {
+					alert("Bestellung erst bei mind. einer Shisha möglich.");
+				}
+			}else {
+				alert("Sie müssen die AGBs zustimmen, um die Bestellung aufzugeben.");
 			}
+			
 		}
 		
 	

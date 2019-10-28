@@ -2682,9 +2682,7 @@ hr.style-two {
       font-size: 16px;
     }
 
-@media screen and (max-width: 900px){
-
-  .line {
+    .line {
     width: 30px;
     height: 2px;
     background: var(--grundfarbe);
@@ -2703,28 +2701,7 @@ hr.style-two {
     transform: translate(-5%, -50%);
     z-index: 7;
   }
-  .nav-links{
-    position: fixed;
-    background: var(--secondary);
-    border: 1px solid var(--grundfarbe);
-    text-transform: uppercase;
-    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(100px at 90% -20%);
-    transition: all 0.4s ease-out ; 
-    z-index: 6;
-  }
-  .li{
-    top: 10%;
-  }
-  .nav-links.open{
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-  }
-}
+
 
 a.links {
 

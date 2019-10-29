@@ -309,6 +309,15 @@ navLinks.addEventListener("click",  () => {
 			cartTotal = cart[0].getElementsByClassName('cd-cart__checkout')[0].getElementsByTagName('span')[0],
 			cartCount = cart[0].getElementsByClassName('cd-cart__count')[0],
 			cartCountItems = cartCount.getElementsByTagName('li'),
+			/*menge = 1;
+			item = 0;
+			for (var i = 0; i < cartCountItems.length; i++) {
+				
+				var item = item + document.getElementById("menge" + menge).value;
+				menge = menge + 1;
+			}
+			cartCountItems = cartCountItems*item;
+			*/
 			cartUndo = cart[0].getElementsByClassName('cd-cart__undo')[0],
 			productIdId = 0, //this is a placeholder -> use your real product ids instead
 			//productPrice =  document.getElementsByClassName('js-cd-add-to-cart');
@@ -416,11 +425,14 @@ navLinks.addEventListener("click",  () => {
 		  function removeProduct(product) {
 			  if(cartTimeoutId) clearInterval(cartTimeoutId);
 			  removePreviousProduct(); // prduct previously deleted -> definitively remove it from the cart
-			  
+			  console.log(Number(product.getElementsByTagName('select')[0].value));
 			  var topPosition = product.offsetTop,
-				  productQuantity = Number(product.getElementsByTagName('select')[0].value),
+				  productQuantity = 1 , //Number(product.getElementsByTagName('select')[0].value),
+				  productQuantity2 = Number(product.getElementsByTagName('select')[0].value),
+				  //productQuantity = document.getElementById("menge" + productIdId).value ;
+				  //productQuantity = Number(cartCountItems[0].innerText);
 				  //productTotPrice = Number((document.getElementById('warenkorb-element').getAttribute("data-price"))) * productQuantity;
-				  productTotPrice = Number((product.getElementsByClassName('cd-cart__price')[0].innerText).replace('$', '')) * productQuantity;
+				  productTotPrice = Number((product.getElementsByClassName('cd-cart__price')[0].innerText).replace('$', '')) * productQuantity2;
 								
 				  product.style.top = topPosition+'px';
 			  Util.addClass(product, 'cd-cart__product--deleted');
@@ -484,10 +496,13 @@ navLinks.addEventListener("click",  () => {
 		  function quickUpdateCart() {
 			  var quantity = 0;
 			  var price = 0;
-  
+				var menge = 1;
 			  for(var i = 0; i < cartListItems.length; i++) {
+				  menge = menge + i;
 				  if( !Util.hasClass(cartListItems[i], 'cd-cart__product--deleted') ) {
-					  var singleQuantity = Number(cartListItems[i].getElementsByTagName('select')[0].value);
+					  //var singleQuantity = Number(cartListItems[i].getElementsByTagName('select')[0].value);
+					  var singleQuantity = document.getElementById("menge" + menge).value ;
+					  console.log(singleQuantity);
 					  quantity = quantity + singleQuantity;
 					  price = price + singleQuantity*Number((cartListItems[i].getElementsByClassName('cd-cart__price')[0].innerText).replace('$', ''));
 					  //price = price + singleQuantity*Number((cartListItems[i].getElementsByClassName('cd-cart__product')[0].innerText).getAttribute("data-price"));

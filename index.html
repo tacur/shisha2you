@@ -1049,9 +1049,10 @@ $(document).ready(function(){
 					var shisha = "shisha"; 
 				}else{}
 				menge = menge + i
-				x = x + "%20"+ document.getElementById("menge" + menge).selectedIndex + "x%20" + items[i].getAttribute('data-name') + "%20" + items[i].getAttribute('data-price') + "€%20";
+				var anzahl = document.getElementById("menge" + menge).value 
+				x = x + "%20"+ anzahl + "x%20" + items[i].getAttribute('data-name') + "%20" + parseFloat(items[i].getAttribute('data-price')*anzahl) + "€%20";
 				console.log("Link: " + x);
-				gesamtpreis = gesamtpreis + parseFloat(items[i].getAttribute('data-price'));
+				gesamtpreis = gesamtpreis + parseFloat(items[i].getAttribute('data-price')*anzahl);
 				}
 			if (agbs.checked){
 				if (shisha != ""){

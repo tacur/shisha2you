@@ -705,7 +705,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 				
 			</div>
 			<div style="border:1px solid var(--grundfarbe);">
-				<form class="was-validated" >
+				<form class="was-validated" action=" ">
 					<div class="form-group form-check">
 						  <label class="form-check-label" style="font-size:large; ">
 							<input class="form-check-input" style="margin: 0;position: relative;" id="agb" type="checkbox" name="remember" required> Ich akzeptiere die 
@@ -718,13 +718,13 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 			</div>
 			<footer class="cd-cart__footer" >
 				
-				<button style="font-size: 16px; background: var(--grundfarbe);color: white;" type="submit" class="cd-cart__checkout" id="warenkorb-whatsapp" onclick="return getWarenkorb()">
+				<a style="font-size: 16px; background: var(--grundfarbe);color: white;" class="cd-cart__checkout" id="warenkorb-whatsapp" onclick="return getWarenkorb()">
           <em><i class="fab fa-whatsapp"></i> WhatsApp-Bestellung - €<span>0</span>
             <!--<svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
             </svg>-->
 		  </em>
 		  
-		</button>
+		</a>
 
 			</footer>
 		</div>
@@ -1044,23 +1044,25 @@ $(document).ready(function(){
 			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 			var gesamtpreis = 0;
 			var shisha = "";
-
+			if (agbs.checked){
 			for (i = 0; i < items.length; i++) {
 
 				if (items[i].getAttribute('data-art') == "shisha"){ 
 					var shisha = "shisha"; 
 				}else{}
-				x = x + "%20" + menge[i].selectedIndex + "x%20" + items[i].getAttribute('data-name') + "%20" + parseFloat(items[i].getAttribute('data-price')  * menge[i].selectedIndex   )    + "€%20";
+				x = x + "%20" + menge[i].value + "x%20" + items[i].getAttribute('data-name') + "%20" + parseFloat(items[i].getAttribute('data-price')*menge[i].value) + "€%20";
 				console.log("Link: " + x);
-				gesamtpreis = gesamtpreis + parseFloat(items[i].getAttribute('data-price')*menge[i].selectedIndex);
+				gesamtpreis = gesamtpreis + parseFloat(items[i].getAttribute('data-price')*menge[i].value);
+				console.log("Gesamtpreis " + gesamtpreis);
 				}
-			if (agbs.checked){
+			
 				if (shisha != ""){
 				x = x + "%20für%20den%20Gesamtpreis:%20" + gesamtpreis + "€.";
 				
 				if (window.hasOwnProperty("positionx")) {
 					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;
 					warenausgang.href = x;
+					console.log("Gesamtlink " + x);
 					return true
 				} else {
 					navigator.geolocation.getCurrentPosition(showPosition);

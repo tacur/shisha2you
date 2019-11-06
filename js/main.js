@@ -381,7 +381,8 @@ navLinks.addEventListener("click",  () => {
 			  //update cart product list
 			  addProduct(this);
 			  //update number of items 
-			  updateCartCount(cartIsEmpty);
+			  var productAnzahl = parseInt(this.getAttribute("data-anzahl"));
+			  updateCartCount(cartIsEmpty, productAnzahl);
 			  //update total price
 			  updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl"), true);
 			  //show cart
@@ -457,8 +458,11 @@ navLinks.addEventListener("click",  () => {
 		  };
   
 		  function updateCartCount(emptyCart, quantity) {
+			
 			  if( typeof quantity === 'undefined' ) {
-				  var actual = Number(cartCountItems[0].innerText) + 1;
+				  
+				  var productAnzahl = document.getElementById("").getAttribute('data-anzahl');
+				  var actual = Number(cartCountItems[0].innerText) + productAnzahl;
 				  console.log("actual:" + actual);
 				  var next = actual + 1;
 				  console.log("next:" + next);

@@ -1136,12 +1136,12 @@ color: var(--grundfarbe);
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0} 
+  from {opacity: 0.1} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: 0} 
+  from {opacity: 0.1} 
   to {opacity: 1}
 }
 img.social-media{

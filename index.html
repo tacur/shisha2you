@@ -56,7 +56,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/stylewarenkorb.css">
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<script src="js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
@@ -127,17 +126,25 @@
 		<img class="slideanim2" src="img/2u.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 500px;height: auto;z-index: 2;top: 20%;right: 0px;left: 0px;"/>
 			-->
 		<div class="header-wrapper" style="min-height: 100%;">
-			<div class="zoominheader" style="max-height: 85%;">
-				<div class="mySlides" style="min-width: 100%; min-height: 100%; background: var(--secondary);"></div>
-				<!--<div  class="mySlides" style="min-width: 100%; min-height: 100%; background: var(--secondary) center center  no-repeat;"></div>
-					<div  class="mySlides" style="min-width: 100%; min-height: 100%; background: var(--secondary) center center  no-repeat;"></div>
-			-->
+			<div class="zoominheader" style="max-height: 85%;background: var(--secondary); overflow: hidden;">
+				<div class="wiegehtdas" style="display:none; top: 60%;position: relative;"><h4><br>1.Shisha wählen</h4>
+					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas1.svg" />
+				</div>
+				<div class="wiegehtdas" style="display:none;top: 60%;position: relative;"><h4><br>2.WhatsApp-Bestellung</h4>
+					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas2.svg" />
+				</div>
+				<div class="wiegehtdas" style="display:none;top: 60%;position: relative;"><h4><br>3.Lieferung...</h4>
+					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas3.svg" />
+				</div>
+				<div class="wiegehtdas" style="display:none;top: 60%;position: relative;"><h4><br>4.Shisha genießen!</h4>
+					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas4.svg" />
+				</div>
 			</div>
 			<section id="section10" class="demo" style="max-height: 15%; background: var(--third); z-index: 1;">
-				<a href="#wiegehtdas" style="z-index: 3;"><span></span></a>
+				<a href="#auswahl_shisha" style="z-index: 3;"><span></span></a>
 			</section>
 		</div>
-
+<!--
 		<div id="wiegehtdas" class="container-fluid " style="background: linear-gradient(
 	rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 	<h4 style="text-align: center; font-size: 40px;">Wie funktioniert Shisha2you?</h4>
@@ -182,11 +189,12 @@
 		</div>
 	</div>
 </div>
+
 	<section id="section06" class="demo" style="max-height: 15%; background: var(--third); z-index: 1;">
 			<a href="#auswahl_shisha" ><span></span></a>
 	</section>
 	<hr class="style-two">
-
+-->
 <div id="auswahl_shisha" class="container-fluid " style="background: linear-gradient(
 	rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 	<h4 class="">Unsere Shisha-Auswahl</h4>
@@ -988,6 +996,24 @@ data-close-text="Got it!">
 
 
 <!--///////// SCRIPTE ///////////-->
+<script>
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("wiegehtdas");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  
+	  slides[slideIndex-1].style.display = "block";  
+	  setTimeout(showSlides, 3000); // Change image every 2 seconds
+	}
+	</script>
+
 <script>
 	// ##### NAVIGATE TOP BUTTON ######
 	$(document).ready(function(){

@@ -1127,12 +1127,82 @@ color: var(--grundfarbe);
     }
   }
 
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--grundfarbe);
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .bannerlogo{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 800px;
+    max-height: 80%;
+    z-index: 1;
+    top: 20%;
+    right: 0px;
+    left: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .wiegehtdas {
+    display:none; 
+    top: 60%;
+    position: relative;
+  }
+  @media screen and (max-width: 550px) {
+     .wiegehtdas {
+      top: 50%;
+     }
+  }
+  @media screen and (max-width: 550px) {
+     .bannerlogo {
+      top: 20%;
+     }
+  }
   /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 4.5s;
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 4.5s;
 }
 
 @-webkit-keyframes fade {

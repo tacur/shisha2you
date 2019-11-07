@@ -2,48 +2,37 @@
 <html lang="en" class="no-js">
 <style>html {scroll-behavior: smooth; }</style>
 <style>
+.meter { 
+    height: 5px;
+    position: relative;
+    background: #f3efe6;
+	overflow: hidden;
+	margin-right: 30%;
+    margin-left: 30%;
+	
+}
+.meter span {
+    display: block;
+    height: 100%;
+}
+.progress1 {
+    background-color: var(--grundfarbe);
+    -webkit-animation: progressBar 4.5s ease-in-out;
+    -webkit-animation-fill-mode:both; 
+    -moz-animation: progressBar 4.5s ease-in-out;
+    -moz-animation-fill-mode:both; 
+}
 
-		.sidenav {
-		  height: 100%;
-		  width: 0;
-		  position: fixed;
-		  z-index: 7;
-		  top: 0;
-		  left: 0;
-		  background-color: #111;
-		  overflow-x: hidden;
-		  transition: 0.5s;
-		  padding-top: 60px;
-		  text-align:center;
-		}
-		
-		.sidenav a {
-		  padding: 8px 8px 8px 32px;
-		  text-decoration: none;
-		  font-size: 25px;
-		  color: var(--grundfarbe);
-		  display: block;
-		  transition: 0.3s;
-		
-		}
-		
-		.sidenav a:hover{
-		  color: #f1f1f1;
-		}
-		
-		.sidenav .closebtn {
-		  position: absolute;
-		  top: 0;
-		  right: 25px;
-		  font-size: 36px;
-		  margin-left: 50px;
-		}
-		
-		@media screen and (max-height: 450px) {
-		  .sidenav {padding-top: 15px;}
-		  .sidenav a {font-size: 18px;}
-		}
-		</style>
+@-webkit-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@-moz-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+</style>
 <head>
 	<meta charset="UTF-8">
 	<meta name="theme-color" content="#8e793e">
@@ -119,7 +108,7 @@
 		<!-- <a class="btn_telefon slideanim2" href="tel:+51112345667" ><i class="material-icons">phone</i></a> -->
 		<!-- <a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=491762295702" ><i class="fab fa-whatsapp"></i></a> -->
 
-		<img class="slideanim3" src="img/logo.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 800px;max-height: 80%;z-index: 1;top: 10%;right: 0px;left: 0px;padding-left: 1px;padding-right: 1px;"/>
+		<img class="bannerlogo slideanim3" src="img/logo.png" style=""/>
 
 		<!--
 		<img class="slideanim3" src="img/shisha2.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 70px;max-height: 100px;z-index: 2;top: 20%;right: 0px;left: 0px;"/>
@@ -127,18 +116,31 @@
 			-->
 		<div class="header-wrapper" style="min-height: 100%;">
 			<div class="zoominheader" style="max-height: 85%;background: var(--secondary); overflow: hidden;">
-				<div class="wiegehtdas fade" style="display:none; top: 45%;position: relative;"><h4><br>1.Shisha wählen</h4>
+				<div class="wiegehtdas fade"><h4><br>1.Shisha wählen</h4>
 					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas1.svg" />
+					<div class="meter">
+						<span style="width:100%;"><span class="progress1"></span></span>
+					</div>
 				</div>
-				<div class="wiegehtdas fade" style="display:none;top: 45%;position: relative;"><h4><br>2.WhatsApp-Bestellung</h4>
+				<div class="wiegehtdas fade" ><h4><br>2.WhatsApp-Bestellung</h4>
 					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas2.svg" />
+					<div class="meter">
+						<span style="width:100%;"><span class="progress1"></span></span>
+					</div>
 				</div>
-				<div class="wiegehtdas fade" style="display:none;top: 45%;position: relative;"><h4><br>3.Lieferung...</h4>
+				<div class="wiegehtdas fade" ><h4><br>3.Lieferung...</h4>
 					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas3.svg" />
+					<div class="meter">
+						<span style="width:100%;"><span class="progress1"></span></span>
+					</div>
 				</div>
-				<div class="wiegehtdas fade" style="display:none;top: 45%;position: relative;"><h4><br>4.Shisha genießen!</h4>
+				<div class="wiegehtdas fade" ><h4><br>4.Shisha genießen!</h4>
 					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas4.svg" />
+					<div class="meter">
+						<span style="width:100%;"><span class="progress1"></span></span>
+					</div>
 				</div>
+				
 			</div>
 			<section id="section10" class="demo" style="max-height: 15%; background: var(--third); z-index: 1;">
 				<a href="#auswahl_shisha" style="z-index: 3;"><span></span></a>
@@ -1080,34 +1082,6 @@ $(document).ready(function(){
 		}
 });
 </script>
-<script type="text/javascript">
-/*
-$(document).ready(function(){
-	var x = document.getElementById("classic-shisha");
-	var y = document.getElementById("standard-shisha");
-	var z = document.getElementById("premium-shisha");
-	console.log("Funktion gestartet");
-	x.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort per WhatsApp manuell senden möchtest!";
-			x.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20geliefert%20bekommen:";
-			y.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort per WhatsApp manuell senden möchtest!";
-			y.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Standard-Shisha%20AlFakhir%20ZitroneMinz%20an%20folgende%20Adresse%20geliefert%20bekommen:";
-			z.innerHTML = "Standort-Freigabe ist blockiert. Klicke, wenn du den Standort per WhatsApp manuell senden möchtest!";
-			z.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Premium-Shisha%20Social-Smoke%20WildberryChill%20an%20folgende%20Adresse%20geliefert%20bekommen:";
-	if (navigator.geolocation) {
-			navigator.geolocation.getCurrentPosition(showPosition);
-		  } else {
-			};
-		  function showPosition(position) {
-		  x.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20geliefert%20bekommen:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
-		  x.innerHTML = "<i class='fab fa-whatsapp'></i> WhatsApp Bestellung";
-		  y.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Standard-Shisha%20AlFakhir%20ZitroneMinz%20an%20folgende%20Adresse%20geliefert%20bekommen:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
-		  y.innerHTML = "<i class='fab fa-whatsapp'></i> WhatsApp Bestellung";
-		  z.href = "https://wa.me/491734937652?text=Hallo%20Team%20Shisha2u.%20Ich%20möchte%20gerne%201x%20Premium-Shisha%20Social-Smoke%20WildberryChill%20an%20folgende%20Adresse%20geliefert%20bekommen:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
-		  z.innerHTML =	"<i class='fab fa-whatsapp'></i> WhatsApp Bestellung";
-		}
-}); 
-*/
-</script>
 
 <script>
 		function getWarenkorb() {
@@ -1162,17 +1136,6 @@ $(document).ready(function(){
 		}
 		
 	
-</script>
-<script>
-
-	 /*
-	user = "Shisha-Lover";
-     if (user != "" && user != null) {
-       setCookie("username", user, 30);
-	 }
-	 */
-  
-
 </script>
 <script>
 		function classicshishawahl() {

@@ -1168,35 +1168,22 @@ color: var(--grundfarbe);
     .sidenav a {font-size: 18px;}
   }
   .bannerlogo{
-    position: absolute;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 800px;
     max-height: 80%;
     z-index: 1;
-    top: 20%;
     right: 0px;
     left: 0px;
     padding-left: 1px;
     padding-right: 1px;
   }
   .wiegehtdas {
-    display:none; 
-    top: 60%;
+    display:none;
     position: relative;
   }
-  @media screen and (max-width: 550px) {
-     .wiegehtdas {
-      top: 50%;
-     }
-  }
-  @media screen and (max-width: 550px) {
-     .bannerlogo {
-      top: 20%;
-     }
-  }
+
   /* Fading animation */
 .fade {
   -webkit-animation-name: fade;

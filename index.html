@@ -86,14 +86,21 @@
 			</div>
 		</nav>
 			<div id="mySidenav" class="sidenav" style="z-index: 7; background: var(--white);">
-					<a href="javascript:void(0)" class="closebtn" style="color: var(--grundfarbe);" onclick="closeNav()">&times;</a>
-					<a href="#auswahl_shisha" class="btn_nav" onclick="closeNav()">Shishas</a>
-					<a href="#auswahl_getränke" class="btn_nav" onclick="closeNav()">Getränke/Snacks</a>
-					<a href="#social-media" class="btn_nav" onclick="closeNav()">Social-Media</a>
-					<a href="#lieferzeiten" class="btn_nav" onclick="closeNav()">Lieferzeiten</a>
-					<a href="#kontakt" class="btn_nav" onclick="closeNav()">Kontakt</a>
-					<a href="#anfahrt" class="btn_nav" onclick="closeNav()">Anfahrt</a>
-				  </div>
+				<a href="javascript:void(0)" class="closebtn" style="color: var(--grundfarbe);" onclick="closeNav()">&times;</a>
+				<div class="row" style="min-height: 100%;">				
+					<div class="col-sm-6">	
+						<a href="#auswahl_shisha" class="btn_nav" onclick="closeNav()">Shishas</a>
+						<a href="#auswahl_getränke" class="btn_nav" onclick="closeNav()">Getränke/Snacks</a>
+						<a href="#social-media" class="btn_nav" onclick="closeNav()">Social-Media</a>
+						<a href="#lieferzeiten" class="btn_nav" onclick="closeNav()">Lieferzeiten</a>
+						<a href="#kontakt" class="btn_nav" onclick="closeNav()">Kontakt</a>
+						<a href="#anfahrt" class="btn_nav" onclick="closeNav()">Anfahrt</a>
+					</div>
+					<div class="col-sm-6">
+						<img class="bannerlogo" src="img/logo.png" />
+					</div>
+				</div>
+			</div>
 			<!--<ul class="nav-links">
 				<li><a class="btn_nav" href="#auswahl_shisha" onclick="closeNav()"><h3>Shishas</h3></a></li>
 				<li><a class="btn_nav" href="#auswahl_getränke"><h3>Getränke/Snacks</h3></a></li>
@@ -108,41 +115,49 @@
 		<!-- <a class="btn_telefon slideanim2" href="tel:+51112345667" ><i class="material-icons">phone</i></a> -->
 		<!-- <a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=491762295702" ><i class="fab fa-whatsapp"></i></a> -->
 
-		<img class="bannerlogo slideanim3" src="img/logo.png" style=""/>
+		
 
 		<!--
 		<img class="slideanim3" src="img/shisha2.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 70px;max-height: 100px;z-index: 2;top: 20%;right: 0px;left: 0px;"/>
 		<img class="slideanim2" src="img/2u.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 500px;height: auto;z-index: 2;top: 20%;right: 0px;left: 0px;"/>
 			-->
 		<div class="header-wrapper" style="min-height: 100%;">
-			<div class="zoominheader" style="max-height: 85%;background: var(--secondary); overflow: hidden;">
-				<div class="wiegehtdas fade"><h4><br>1.Shisha wählen</h4>
-					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas1.svg" />
-					<div class="meter">
-						<span style="width:100%;"><span class="progress1"></span></span>
-					</div>
+			<div class="zoominheader" style="top: 65px; max-height: 85%;background: var(--secondary);">
+				<div class="row" style="align-content: center; height: 50%;">
+					<div class="col-sm-12" ><img class="bannerlogo slideanim3" src="img/logo.png" /></div>
 				</div>
-				<div class="wiegehtdas fade" ><h4><br>2.WhatsApp-Bestellung</h4>
-					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas2.svg" />
-					<div class="meter">
-						<span style="width:100%;"><span class="progress1"></span></span>
-					</div>
-				</div>
-				<div class="wiegehtdas fade" ><h4><br>3.Lieferung...</h4>
-					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas3.svg" />
-					<div class="meter">
-						<span style="width:100%;"><span class="progress1"></span></span>
-					</div>
-				</div>
-				<div class="wiegehtdas fade" ><h4><br>4.Shisha genießen!</h4>
-					<img style="max-height:40%; text-align:center; padding:10px 10px;object-fit: cover;" src="img/wiegehtdas4.svg" />
-					<div class="meter">
-						<span style="width:100%;"><span class="progress1"></span></span>
+				<div class="row" style="align-content: center; height: 25%;">				
+					<div class="col-sm-12" >
+						<div class="wiegehtdas fade"><h4><br>1.Shisha wählen</h4>
+							<img style="text-align:center;" src="img/wiegehtdas1.svg" />
+							<div class="meter">
+								<span style="width:100%;"><span class="progress1"></span></span>
+							</div>
+						</div>
+						<div class="wiegehtdas fade" ><h4><br>2.WhatsApp-Bestellung</h4>
+							<img style="text-align:center;" src="img/wiegehtdas2.svg" />
+							<div class="meter">
+								<span style="width:100%;"><span class="progress1"></span></span>
+							</div>
+						</div>
+						<div class="wiegehtdas fade" ><h4><br>3.Lieferung...</h4>
+							<img style="text-align:center;" src="img/wiegehtdas3.svg" />
+							<div class="meter">
+								<span style="width:100%;"><span class="progress1"></span></span>
+							</div>
+						</div>
+						<div class="wiegehtdas fade" ><h4><br>4.Shisha genießen!</h4>
+							<img style="text-align:center;" src="img/wiegehtdas4.svg" />
+							<div class="meter">
+								<span style="width:100%;"><span class="progress1"></span></span>
+							</div>
+						</div>
 					</div>
 				</div>
 				
+				
 			</div>
-			<section id="section10" class="demo" style="max-height: 15%; background: var(--third); z-index: 1;">
+			<section id="section10" class="demo" style="height: 15%; background: var(--third); z-index: 1;">
 				<a href="#auswahl_shisha" style="z-index: 3;"><span></span></a>
 			</section>
 		</div>

@@ -1139,13 +1139,19 @@ $(document).ready(function(){
 					console.log("Gesamtlink " + x);
 					return true
 				} else {
-					navigator.geolocation.getCurrentPosition(showPosition);
+
+					//navigator.geolocation.getCurrentPosition(showPosition);
+					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:";
+					warenausgang.href = x;
 					return true
+					
 				};
 				function showPosition(position) {
 					positionx= position.coords.latitude;
 					positiony= position.coords.longitude;
 					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;
+					warenausgang.href = x;
+					return true
 				}
 				
 				} else {

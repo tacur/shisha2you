@@ -1176,12 +1176,22 @@ color: var(--grundfarbe);
     z-index: 1;
     right: 0px;
     left: 0px;
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
+  @media screen and (min-width: 700px) {
+    .bannerlogo{
+      max-width: 65%;
+    }
+  }
+
   .wiegehtdas {
-    display:none;
+    display: none;
     position: relative;
+  }
+  .wiegehtdasimg {
+    height: fit-content;
+    width: fit-content;
   }
 
   /* Fading animation */

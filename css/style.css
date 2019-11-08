@@ -1176,8 +1176,7 @@ color: var(--grundfarbe);
     z-index: 1;
     right: 0px;
     left: 0px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 10%;
   }
   @media screen and (min-width: 700px) {
     .bannerlogo{

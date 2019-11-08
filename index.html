@@ -49,6 +49,24 @@
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<script src="js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
 	<script src="js/jquery-2.1.1.js"></script>
+	<script
+    src="https://www.paypal.com/sdk/js?client-id=AWcDGS43FUOITL8aAbnPevapI38ZozP5qSLW3UaUzV4DaU7DaG57DDXC_LX5hRqOQ5MTBJ1evO98tWNg"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+  </script>
+  <script>
+    paypal.Buttons({
+    createOrder: function(data, actions) {
+      // This function sets up the details of the transaction, including the amount and line item details.
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '13'
+          }
+        }]
+      });
+    }
+  }).render('#paypal-button-container');
+    // This function displays Smart Payment Buttons on your web page.
+  </script>
 
   	
 	<title>Shisha2you</title>
@@ -265,19 +283,18 @@
 									</div>
 								</div>
 									<div class="row">
-									<div class="col-sm-12" style="min-width: 100%;">
-										<button href="#0" id="classicshishainput" disabled value="" style="min-width: 100%; background: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
-											data-price="8.00" data-art="Classic-Shisha" data-anzahl="1" data-name="Classic-Shisha">In den Warenkorb</button>
+										<div class="col-sm-12" style="min-width: 100%;">
+											<button href="#0" id="classicshishainput" disabled value="" style="min-width: 100%; background: var(--grundfarbe);" class="cd-add-to-cart js-cd-add-to-cart"
+												data-price="8.00" data-art="Classic-Shisha" data-anzahl="1" data-name="Classic-Shisha">In den Warenkorb</button>
+										</div>
 									</div>
-								</div>
-								<!--
-								<div class="row">
-									<div class="col-sm-6" style="min-width: 100%;">
+									<!--
+									<div class="row">
+										<div class="col-sm-12" style="min-width: 100%;">
+											<div style="z-index: 2;" id="paypal-button-container"></div>
+										</div>
 									</div>
-									<div class="col-sm-6" style="min-width: 100%; margin-top: 10px;"><a style="background: green;min-width: 100%;" class="cd-add-to-cart"
-											id="classic-shisha"><i class="fab fa-whatsapp"></i>Sofort-Bestellung</a></div>
-								</div>
-								-->
+									-->
 							</div>
 						</div>
 					</div>

@@ -470,7 +470,7 @@ direction: ltr;
   color: white;
 }
 .btn_lieferung:hover i{
-  transform: scale(1.5);
+  transform: scale(2);
   color: #f1f1f1;
 }
 .btn_lieferung::before{
@@ -478,9 +478,9 @@ direction: ltr;
   position: absolute;
   width: 120%;
   height: 120%;
-  background: var(--secondary);
-  transform: rotate(45deg);
-  left: -110%;
+  background: var(--hellgrau);
+  transform: rotate(0deg);
+  left: -130%;
   top: 90%;
 }
 .btn_lieferung:hover::before{

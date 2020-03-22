@@ -1294,7 +1294,7 @@ General Style
   background: var(--secondary);
   background-repeat: no-repeat;
   overflow: hidden;
-  animation: hideme 1s linear forwards;
+  animation: hideme 0.5s linear forwards;
 }
 
 .cd-intro-content {

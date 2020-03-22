@@ -1,38 +1,6 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <style>html {scroll-behavior: smooth; }</style>
-<style>
-.meter { 
-    height: 5px;
-    position: relative;
-    background: #f3efe6;
-	overflow: hidden;
-	margin-right: 30%;
-    margin-left: 30%;
-	
-}
-.meter span {
-    display: block;
-    height: 100%;
-}
-.progress1 {
-    background-color: var(--grundfarbe);
-    -webkit-animation: progressBar 4.5s ease-in-out;
-    -webkit-animation-fill-mode:both; 
-    -moz-animation: progressBar 4.5s ease-in-out;
-    -moz-animation-fill-mode:both; 
-}
-
-@-webkit-keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-
-@-moz-keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-</style>
 <head>
 	<meta charset="UTF-8">
 	<meta name="theme-color" content="#8e793e">
@@ -53,6 +21,7 @@
     src="https://www.paypal.com/sdk/js?client-id=AWcDGS43FUOITL8aAbnPevapI38ZozP5qSLW3UaUzV4DaU7DaG57DDXC_LX5hRqOQ5MTBJ1evO98tWNg"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
   </script>
   <script>
+	/*
     paypal.Buttons({
     createOrder: function(data, actions) {
       // This function sets up the details of the transaction, including the amount and line item details.
@@ -65,6 +34,7 @@
       });
     }
   }).render('#paypal-button-container');
+  */
     // This function displays Smart Payment Buttons on your web page.
   </script>
 
@@ -132,7 +102,7 @@
 
 		<!-- <a class="btn_telefon slideanim2" href="tel:+51112345667" ><i class="material-icons">phone</i></a> -->
 		<!-- <a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=491762295702" ><i class="fab fa-whatsapp"></i></a> -->
-
+		<a class="btn_lieferung slideanim2" href="#lieferzeiten" style="min-width: 30%; border-radius: 2rem; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"><i class="material-icons">announcement</i></br>WEGEN des Corona-Viruses </br>liefern wir kontaktlos!</a>
 		
 
 		<!--
@@ -788,7 +758,8 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 				
 			</div>
 			<div style="border:1px solid var(--grundfarbe);">
-				<form class="was-validated" action=" ">
+				<!-- AGBs auskommentiert
+					<form class="was-validated" action=" ">
 					<div class="form-group form-check">
 						  <label class="form-check-label" style="font-size:large; ">
 							<input class="form-check-input" style="margin: 0;position: relative;" id="agb" type="checkbox" name="remember" required> Ich akzeptiere die 
@@ -797,6 +768,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 						  </label>
 						</div>
 					  </form>
+					-->
 					  <form class="was-validated" action=" ">
 						<div class="form-group form-check">
 							  <label class="form-check-label" style="font-size:large; ">
@@ -1128,7 +1100,8 @@ $(document).ready(function(){
 			var gesamtpreis = 0;
 			var shisha = "";
 			if (alter.checked){
-			if (agbs.checked){
+		/*	AGB IF- Schleife auskommentiert
+			if (agbs.checked){ */
 			for (i = 0; i < items.length; i++) {
 
 				if (items[i].getAttribute('data-art') != ""  ){ 
@@ -1168,11 +1141,11 @@ $(document).ready(function(){
 					alert("Bestellung erst bei mind. einer Shisha möglich.");
 					return false
 				}
-			}else {
+		/*	}else {
 					
 				alert("Sie müssen die AGBs zustimmen, um die Bestellung aufzugeben.");
 				return false
-			}
+			} AGB IF- Schleife auskommentiert*/ 
 			}else {
 					
 					alert("Sie müssen erst Bestätigen, dass Sie 18 Jahre oder älter sind.");

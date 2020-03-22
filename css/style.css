@@ -431,6 +431,63 @@ direction: ltr;
   top: -10%;
   left: -10%;
 }
+.btn_lieferung{
+  display: inline-block;
+  background: var(--grundfarbe);
+  border-radius: 0%;
+  box-shadow: 2px 2px 4px 2px var(--secondary);
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+    position: fixed;  
+    top: 62px; 
+    left: 1%; 
+    z-index: 4;   
+    padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px; 
+}
+
+.btn_lieferung i{
+  line-height: auto;
+  font-size: 25px;
+  transition: 0.2s linear;
+  color: var(--secondary);
+}
+.btn_lieferung.link {
+  color: white;
+}
+.btn_lieferung:hover i{
+  transform: scale(1.5);
+  color: #f1f1f1;
+}
+.btn_lieferung::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: var(--secondary);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn_lieferung:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
 .p {
   text-align: center;
 }
@@ -3278,4 +3335,35 @@ Main Components
     -webkit-transform: translateX(50%) translateY(-50%) scale(1);
             transform: translateX(50%) translateY(-50%) scale(1);
   }
+}
+
+.meter { 
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+overflow: hidden;
+margin-right: 30%;
+  margin-left: 30%;
+
+}
+.meter span {
+  display: block;
+  height: 100%;
+}
+.progress1 {
+  background-color: var(--grundfarbe);
+  -webkit-animation: progressBar 4.5s ease-in-out;
+  -webkit-animation-fill-mode:both; 
+  -moz-animation: progressBar 4.5s ease-in-out;
+  -moz-animation-fill-mode:both; 
+}
+
+@-webkit-keyframes progressBar {
+0% { width: 0; }
+100% { width: 100%; }
+}
+
+@-moz-keyframes progressBar {
+0% { width: 0; }
+100% { width: 100%; }
 }

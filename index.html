@@ -21,7 +21,7 @@
     src="https://www.paypal.com/sdk/js?client-id=AWcDGS43FUOITL8aAbnPevapI38ZozP5qSLW3UaUzV4DaU7DaG57DDXC_LX5hRqOQ5MTBJ1evO98tWNg"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
   </script>
   <script>
-	  /*
+	  
     paypal.Buttons({
 		createOrder: function(data, actions) {
 		// This function sets up the details of the transaction, including the amount and line item details.
@@ -41,7 +41,7 @@
 		});
     }
   	}).render('#paypal-button-container');
-	  */
+	  
     // This function displays Smart Payment Buttons on your web page.
   </script>
 
@@ -1265,7 +1265,7 @@ $(document).ready(function(){
 			var shisha = "";
 			if (alter.checked){
 				if (agbs.checked){ 
-					*/
+					
 					paypal.Buttons({
 						style: {
 							layout:  'vertical',
@@ -1291,7 +1291,7 @@ $(document).ready(function(){
 						});
 					}
 					}).render('#paypal-button-container');
-				/*
+				
 				}else {
 						
 					alert("Sie müssen die AGBs zustimmen, um die Bestellung aufzugeben.");

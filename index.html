@@ -21,20 +21,25 @@
     src="https://www.paypal.com/sdk/js?client-id=AWcDGS43FUOITL8aAbnPevapI38ZozP5qSLW3UaUzV4DaU7DaG57DDXC_LX5hRqOQ5MTBJ1evO98tWNg"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
   </script>
   <script>
-	/*
     paypal.Buttons({
-    createOrder: function(data, actions) {
-      // This function sets up the details of the transaction, including the amount and line item details.
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: '13'
-          }
-        }]
-      });
+		createOrder: function(data, actions) {
+		// This function sets up the details of the transaction, including the amount and line item details.
+		return actions.order.create({
+			purchase_units: [{
+			amount: {
+				value: '13.00'
+				}
+			}]
+		});
+		},
+		onApprove: function(data, actions) {
+		// This function captures the funds from the transaction.
+		return actions.order.capture().then(function(details) {
+			// This function shows a transaction success message to your buyer.
+			alert('Shisha-Bestellung erfolgreich von ' + details.payer.name.given_name + ' bezahlt.');
+		});
     }
-  }).render('#paypal-button-container');
-  */
+  	}).render('#paypal-button-container');
     // This function displays Smart Payment Buttons on your web page.
   </script>
 
@@ -251,13 +256,13 @@
 												data-price="9.00" data-art="Classic-Shisha" data-anzahl="1" data-name="Classic-Shisha">In den Warenkorb</button>
 										</div>
 									</div>
-									<!--
+									
 									<div class="row">
 										<div class="col-sm-12" style="min-width: 100%;">
 											<div style="z-index: 2;" id="paypal-button-container"></div>
 										</div>
 									</div>
-									-->
+									
 							</div>
 						</div>
 					</div>
@@ -396,7 +401,7 @@
 	</div>
 	<div class="col-sm-12" style="min-width: 100%;padding-left: 0px; padding-right: 0px;">
 		<button href="#0"  disabled style="min-width: 100%; margin-top: 50px; margin-bottom: 0px; background: var(--hellgrau); color: var(--secondary);" class="cd-add-to-cart js-cd-add-to-cart">
-			Was alles zur Shisha geliefert wird: Shisha-Set + 1x Anzünder + 9x Kohle Stücke + 20g Shishatabak (1x Kopf)
+			Was alles zur Shisha geliefert wird: Shisha-Set + 1x Anzünder + 9x Kohle Stücke + 20 Gramm Shishatabak (1x Kopf)
 		</button>
 	</div>
 </div>

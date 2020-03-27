@@ -22,7 +22,14 @@
   </script>
   <script>
 	  
-    paypal.Buttons({
+    paypal.Buttons(
+		{
+		style: {
+							layout:  'vertical',
+							color:   'black',
+							shape:   'rect',
+							label:   'paypal'
+						},
 		createOrder: function(data, actions) {
 		// This function sets up the details of the transaction, including the amount and line item details.
 		return actions.order.create({

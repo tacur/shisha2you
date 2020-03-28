@@ -507,10 +507,10 @@ direction: ltr;
   direction: ltr;
   -webkit-font-smoothing: antialiased;
     position: fixed;  
-    top: 170px; 
-    left: 1%; 
+    top: 9px; 
+    left: 30%; 
     z-index: 4;   
-    padding: 15px;
+    padding: 6px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -519,7 +519,7 @@ direction: ltr;
 
 .btn_lieferung2 i{
   line-height: auto;
-  font-size: 25px;
+  font-size: 15px;
   transition: 0.2s linear;
   color: var(--secondary);
 }
@@ -1190,7 +1190,7 @@ color: var(--grundfarbe);
   }
   .slideanim2 {
     opacity: 1;
-    animation: slide2 6s}
+    animation: slide2 4s}
 
   @keyframes slide2{
     0% {

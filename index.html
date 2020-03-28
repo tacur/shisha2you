@@ -21,6 +21,7 @@
     	src="https://www.paypal.com/sdk/js?client-id=AWcDGS43FUOITL8aAbnPevapI38ZozP5qSLW3UaUzV4DaU7DaG57DDXC_LX5hRqOQ5MTBJ1evO98tWNg"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
   	</script>
   	<script>
+		  /*
 		paypal.Buttons(
 			{
 			style: {
@@ -47,7 +48,7 @@
 			});
 		}
 		}).render('#paypal-button-container');
-		
+		*/
 		// This function displays Smart Payment Buttons on your web page.
   	</script>
 
@@ -115,7 +116,8 @@
 
 		<!-- <a class="btn_telefon slideanim2" href="tel:+51112345667" ><i class="material-icons">phone</i></a> -->
 		<!-- <a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=491762295702" ><i class="fab fa-whatsapp"></i></a> -->
-		<a class="btn_lieferung slideanim2" href="#lieferzeiten" style="min-width: 30%; border-radius: 2rem; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"><i class="material-icons">announcement</i></br>WEGEN des Corona-Viruses </br>liefern wir kontaktlos! </br>Pro Shisha-Bestellung erhält ihr einen Einweg-Schlauch.</a>
+		<a class="btn_lieferung slideanim2" href="#lieferzeiten" style="min-width: 30%; border-radius: 2rem; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"><i class="material-icons">announcement</i></br>WEGEN des Corona-Virus</br>liefern wir kontaktlos!</br>Pro Shisha-Bestellung erhaltet</br>ihr einen Einweg-Schlauch.</a>
+		<a class="btn_lieferung2 slideanim2" href="#lieferzeiten" style="min-width: 30%; border-radius: 2rem; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"><i class="material-icons">info</i></br>Aktuell liefern wir nur</br>in und um Hannover!</a>
 		
 
 		<!--
@@ -264,13 +266,13 @@
 												data-price="9.00" data-art="Classic-Shisha" data-anzahl="1" data-name="Classic-Shisha">In den Warenkorb</button>
 										</div>
 									</div>
-									
+									<!--
 									<div class="row">
 										<div class="col-sm-12" style="min-width: 100%;margin-top: 50px;">
 											<div style="z-index: 2;" id="paypal-button-container"></div>
 										</div>
 									</div>
-									
+									-->
 							</div>
 						</div>
 					</div>
@@ -1223,6 +1225,7 @@ $(document).ready(function(){
 				
 				if (window.hasOwnProperty("positionx")) {
 					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;
+					x = x + "PayPal-Zahlung:%20https://www.paypal.me/shisha2you/" + gesamtpreis;
 					warenausgang.href = x;
 					console.log("Gesamtlink " + x);
 					return true
@@ -1230,6 +1233,7 @@ $(document).ready(function(){
 
 					//navigator.geolocation.getCurrentPosition(showPosition);
 					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:";
+					x = x + "PayPal-Zahlung:%20https://www.paypal.me/shisha2you/" + gesamtpreis;
 					warenausgang.href = x;
 					return true
 					

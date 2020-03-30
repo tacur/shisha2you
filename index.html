@@ -788,6 +788,8 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 				
 			</div>
 			<div style="border:1px solid var(--grundfarbe);">
+				<h5 style="margin-bottom: 0px; padding-left: 12.5px;"><b>zzgl. Lieferkosten von 3.00 €</b></h5>
+				<hr class="style-two">
 					<form class="was-validated" action=" ">
 					<div class="form-group form-check">
 						  <label class="form-check-label" style="font-size:large; ">
@@ -1185,6 +1187,7 @@ $(document).ready(function(){
 			var alter = document.getElementById("alter");
 			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,%20ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 			var gesamtpreis = 0;
+			lieferkosten = 3; 
 			var shisha = "";
 			if (alter.checked){
 			if (agbs.checked){ 
@@ -1196,11 +1199,13 @@ $(document).ready(function(){
 				x = x + "%20" + menge[i].value + "x%20*" + items[i].getAttribute('data-art') + "*%20" + items[i].getAttribute('data-name') + "%20" + parseFloat(items[i].getAttribute('data-price')) + "€%20";
 				console.log("Link: " + x);
 				gesamtpreis = gesamtpreis + parseFloat(items[i].getAttribute('data-price')*menge[i].value);
+				
 				console.log("Gesamtpreis " + gesamtpreis);
 				}
 			
 				if (shisha != ""){
-				x = x + "für%20den%20Gesamtpreis:%20" + gesamtpreis + "€.%20";
+				gesamtpreis = gesamtpreis + lieferkosten
+				x = x + "für%20den%20Gesamtpreis:%20" + gesamtpreis + "€ inkl. Lieferkosten.%20";
 				
 				if (window.hasOwnProperty("positionx")) {
 					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;

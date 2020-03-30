@@ -384,7 +384,8 @@ navLinks.addEventListener("click",  () => {
 			  var productAnzahl = parseInt(this.getAttribute("data-anzahl"));
 			  updateCartCount(cartIsEmpty, productAnzahl);
 			  //update total price
-			  updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl"), true);
+			  updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl") + 3, true); // mit lieferkosten
+			  // updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl"), true); // ohne lieferkosten 
 			  //show cart
 			  Util.removeClass(cart[0], 'cd-cart--empty');
 		  };
@@ -502,7 +503,7 @@ navLinks.addEventListener("click",  () => {
   
 		  function quickUpdateCart() {
 			  var quantity = 0;
-			  var price = 0;
+			  var price = 3; // Wenn Lieferkosten dann 3
 
 			  for(var i = 0; i < cartListItems.length; i++) {
 

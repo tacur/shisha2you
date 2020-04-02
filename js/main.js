@@ -384,8 +384,8 @@ navLinks.addEventListener("click",  () => {
 			  var productAnzahl = parseInt(this.getAttribute("data-anzahl"));
 			  updateCartCount(cartIsEmpty, productAnzahl);
 			  //update total price
-			  updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl") + 3, true); // mit lieferkosten
-			  // updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl"), true); // ohne lieferkosten 
+			  // updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl") + 3, true); // mit lieferkosten
+			  updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl"), true); // ohne lieferkosten 
 			  //show cart
 			  Util.removeClass(cart[0], 'cd-cart--empty');
 		  };
@@ -422,7 +422,7 @@ navLinks.addEventListener("click",  () => {
 			  var productWahl = target.value;
 			  var productId = target.getAttribute('data-art');
 			  var productAnzahl = target.getAttribute('data-anzahl');
-			  var productAdded = '<li class="cd-cart__product" id="warenkorb-element" data-art="' + productId + '" data-price="' + productPrice + '" data-name="'+ productWahl +'"><div class="cd-cart__image"><a href="#0"><img src="../shisha2you/' + productImg + '" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">' + productName +'</a></h3><span class="cd-cart__price" data-price="' + productPrice + '" style="font-size: 12px;">' +productPrice +'</span><div  style="width: 70%;"><h3>' + productWahl +  '</h3></div><br><div class="cd-cart__actions" style="font-size: 12px;"><a href="#0" class="cd-cart__delete-item">Entfernen</a><div class="cd-cart__quantity" style="font-size: 12px;"><label for="cd-product-'+ productIdId +'">Menge</label><span class="cd-cart__select"><select class="reset" id="menge" name="quantity"><option selected value="' + productAnzahl +'">' + productAnzahl +'</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			  var productAdded = '<li class="cd-cart__product" id="warenkorb-element" data-art="' + productId + '" data-price="' + productPrice + '" data-name="'+ productWahl +'"><div class="cd-cart__image"><a href="#0"><img src="' + productImg + '" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">' + productName +'</a></h3><span class="cd-cart__price" data-price="' + productPrice + '" style="font-size: 12px;">' +productPrice +'</span><div  style="width: 70%;"><h3>' + productWahl +  '</h3></div><br><div class="cd-cart__actions" style="font-size: 12px;"><a href="#0" class="cd-cart__delete-item">Entfernen</a><div class="cd-cart__quantity" style="font-size: 12px;"><label for="cd-product-'+ productIdId +'">Menge</label><span class="cd-cart__select"><select class="reset" id="menge" name="quantity"><option selected value="' + productAnzahl +'">' + productAnzahl +'</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
 			  cartList.insertAdjacentHTML('beforeend', productAdded);
 		  };
   
@@ -503,7 +503,7 @@ navLinks.addEventListener("click",  () => {
   
 		  function quickUpdateCart() {
 			  var quantity = 0;
-			  var price = 3; // Wenn Lieferkosten dann 3
+			  var price = 0; // Wenn Lieferkosten dann 3
 
 			  for(var i = 0; i < cartListItems.length; i++) {
 

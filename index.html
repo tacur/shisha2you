@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="theme-color" content="#8e793e">
-	<link rel="icon" sizes="192x192" href="img/favicon1.png">
+	<link rel="icon" sizes="192x192" href="img/favicon1.PNG">
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0'/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:400italic,400' rel='stylesheet' type='text/css'>
@@ -79,16 +79,25 @@
 							}
 					</script>
 	<main>
-			<nav class="navbar2">	  
-				<a href="index.html" ><img src="img/logo_neu.png" style="position: fixed; width: 100px; height: 35px; top: 15px; left: 0%; z-index: 4;"></a>
-			<div class="hamburger" onclick="openNav()">
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-			</div>
+			<nav class="navbar2">	
+				<div class="row" style="min-height: 100%;">
+						<div class="col-sm-2"><a href="index.html" ><img src="img/logo_neu.png" style="position: fixed; width: 100px; height: 35px; top: 15px; left: 0%; z-index: 4;"></a></div>  
+						<div class="col-sm-8"style="text-align: center;">
+							<a class="btn_lieferung2 slideanim3" href="#lieferzeiten" style="position: relative; margin-top: 10px; border-radius: 1rem; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"><i class="material-icons">info</i></br>Liefergebiet aktuell nur Hannover!</a>
+						</div>
+						<div class="col-sm-2">
+							<div class="hamburger" onclick="openNav()">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+						</div>
+				</div>
+			
 		</nav>
 			<div id="mySidenav" class="sidenav" style="z-index: 7; background: var(--white);">
 				<a href="javascript:void(0)" class="closebtn" style="color: var(--grundfarbe);" onclick="closeNav()">&times;</a>
+				
 				<div class="row" style="min-height: 100%;">				
 					<div class="col-sm-6">	
 						<a href="#auswahl_shisha" class="btn_nav" onclick="closeNav()">Shishas</a>
@@ -97,11 +106,26 @@
 						<a href="#lieferzeiten" class="btn_nav" onclick="closeNav()">Lieferzeiten</a>
 						<a href="#kontakt" class="btn_nav" onclick="closeNav()">Kontakt</a>
 						<a href="#anfahrt" class="btn_nav" onclick="closeNav()">Anfahrt</a>
+							<div class="row" style="padding:20px;">
+								<div class="col-sm-3" ></div>
+								<div class="col-sm-6" style="display:unset;">
+									<a class="btn_s" style="display:inline-block;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);padding: 0; height: 65px; width:65px;"
+											href="https://wa.me/491787293347" target="_blank">
+											<i class="fab fa-whatsapp" style="line-height: 65px;"></i>
+										</a>
+										<a class="btn_s" style="display:inline-block; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);padding: 0;height: 65px; width:65px;"
+											href="https://www.instagram.com/shisha2you_de/?hl=de" target="_blank">
+											<i class="fab fa-instagram" style="line-height: 65px;"></i>
+										</a>
+								</div>
+								<div class="col-sm-3"></div>
+							</div>
 					</div>
 					<div class="col-sm-6">
 						<img class="bannerlogo" src="img/logo.png" />
 					</div>
 				</div>
+			</div>
 			</div>
 			<!--<ul class="nav-links">
 				<li><a class="btn_nav" href="#auswahl_shisha" onclick="closeNav()"><h3>Shishas</h3></a></li>
@@ -125,7 +149,7 @@
 			Zudem erhaltet ihr</br>
 			Einweg-Schläuche.</br></a>
 		<!--<a class="btn_lieferung slideanim2" href="#lieferzeiten" style="min-width: 20%; top: 130px;border-radius: 1rem; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"></a>-->
-		<a class="btn_lieferung2 slideanim3" href="#lieferzeiten" style="min-width: 20%; border-radius: 1rem; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"><i class="material-icons">info</i></br>Liefergebiet aktuell nur Hannover!</a>
+		
 		
 		<!--
 		<img class="slideanim3" src="img/shisha2.png" style="position: absolute;display: block;margin-left: auto;margin-right: auto;width: 100%;max-width: 70px;max-height: 100px;z-index: 2;top: 20%;right: 0px;left: 0px;"/>
@@ -313,10 +337,10 @@
 										<option data-img="img/product-preview.png" id="platzhalter" disabled selected>Geschmack wählen</option>
 										<option data-img="img/amy.svg" data-tabak="TruePassion">Ringel-Rangel(TruePassion)</option>
 										<option data-img="img/amy.svg" data-tabak="TruePassion">Okolom(TruePassion)</option>
-										<option data-img="img/amy.svg" data-tabak="187">Hamburg(187)</option>
-										<option data-img="img/amy.svg" data-tabak="Aqua Menta">Aqua-Black-Box(AquaMenta)</option>
+										<!--<option data-img="img/amy.svg" data-tabak="187">Hamburg(187)</option>-->
+										<!--<option data-img="img/amy.svg" data-tabak="Aqua Menta">Aqua-Black-Box(AquaMenta)</option>-->
 										<option data-img="img/amy.svg" data-tabak="Dalia">Love66(Dalia)</option>
-										<option data-img="img/amy.svg" data-tabak="Dschinni">Lemon-Fresh(Dschinni)</option>
+										<!--<option data-img="img/amy.svg" data-tabak="Dschinni">Lemon-Fresh(Dschinni)</option>-->
 										<option data-img="img/amy.svg" data-tabak="Dschinni">Da-Bomb(Dschinni)</option>
 									</select>
 								</div>
@@ -377,7 +401,6 @@
 									<select class="selectpicker form-control" style="height: auto;background-color: var(--grundfarbe);color:white;border: 2px solid var(--secondary);font-size: 14px;"
 										onchange="exclusivshishawahl()" id="exclusivshishaoutput" data-width="auto">
 										<option data-img="img/product-preview.png" id="platzhalter" disabled selected>Geschmack wählen</option>
-										<option data-img="img/amy.svg" data-tabak="Fumari">Ceylon-Chi/Spy-Chi(Fumari)</option>
 										<option data-img="img/amy.svg" data-tabak="Social Smoke">Lemon-Chill(SocialSmoke)</option>
 										<option data-img="img/amy.svg" data-tabak="Social Smoke">Watermelon-Chill(SocialSmoke)</option>
 										<option data-img="img/amy.svg" data-tabak="Social Smoke">Wildberry-Chill(SocialSmoke)</option>
@@ -587,8 +610,8 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 										<option id="platzhalter" disabled selected>Snack wählen </option>
 										<option value="2.00" data-img="img/erdnüsse.svg" data-name="Erdnuesse(150g)">Erdnüsse 150g</option>
 										<option value="3.00" data-img="img/nicnacs.svg" data-name="NicNac's(125g)">Nic Nac's 125g</option>
-										<option value="3.00" data-img="img/salzbrezel.svg" data-name="Salzbrezel(200g)">Salzbrezel 200g</option>
-										<option value="1.50" data-img="img/saltletts.svg" data-name="Salzstangen(250g)">Salzstangen 250g</option>
+										<option value="3.00" data-img="img/salzbrezel.svg" data-name="Salzbrezel(250g)">Salzbrezel 250g</option>
+										<option value="1.50" data-img="img/salzstangen.svg" data-name="Salzstangen(250g)">Salzstangen 250g</option>
 										<option value="1.00" data-img="img/chipsfrisch.svg" data-name="Chipsfrisch(50g)">Chipsfrisch Ungarisch 50g</option>
 									</select>
 								</div>
@@ -666,15 +689,13 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 	<div class="middle">
 		<div class="row">
 			<div class="col-sm-3"></div>
-			<!--
 			<div class="col-sm-3">
 				<p><a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"
-						href="#">
-						<i class="fab fa-facebook-f"></i>
+						href="https://wa.me/491787293347">
+						<i class="fab fa-whatsapp"></i>
 					</a></p>
 			</div>
-			-->
-			<div class="col-sm-6">
+			<div class="col-sm-3">
 				<p>
 					<a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);"
 						href="https://www.instagram.com/shisha2you_de/?hl=de">
@@ -683,6 +704,19 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 			</div>
 			<div class="col-sm-3"></div>
 		</div>
+		<!-- SnapWidget 
+		<div class="middle">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-6">
+					<script src="https://snapwidget.com/js/snapwidget.js"></script>
+					<iframe src="https://snapwidget.com/embed/808847" class="snapwidget-widget" 
+					allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+		</div>
+		-->
   </div>
 </div>
 
@@ -721,7 +755,7 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
   <h5>Kontaktieren Sie uns per Telefon oder E-Mail.</h5>
   <div class="row">
 	<div class="col-sm-3"></div>
-	<div class="col-sm-3"><p><a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);" href="tel:+49 173 4937652"><i class="material-icons">phone</i></a><h3>+49 173 4937652</h3></p></div>
+	<div class="col-sm-3"><p><a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);" href="tel:+49 178 7293347"><i class="material-icons">phone</i></a><h3>+49 178 7293347</h3></p></div>
 	<div class="col-sm-3">
 		<p><a class="btn_s" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);" href="mailto:info@shisha2you.de?subject=Kontaktanfrage"><i class="material-icons">email</i> </a><h3>info@shisha2you.de</h3></p>
 	</div>
@@ -754,11 +788,12 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 <hr class="style-two">
 <footer class="container-fluid text-center" style="background: linear-gradient(
 	rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center; color: var(--grundfarbe); padding-bottom: 20px;">
-  <p><a style="font-size: 12px;" href="#myModal2" class="links" id="modal-trigger2" data-toggle="modal">Allgemeine Geschäftsbedingungen</a></p>
-  <p><a style="font-size: 12px;" href="#0" class="links" id="modal-trigger" data-type="cd-modal-trigger">Datenschutzerklärung</a></p>
-  <p><a style="font-size: 12px;" href="#myModal" class="links" id="modal-trigger2" data-toggle="modal">Impressum</a></p>
+  <!-- <p><a style="font-size: 12px;" href="#myModal2" class="links" id="modal-trigger2" data-toggle="modal">Allgemeine Geschäftsbedingungen</a></p> -->
+  <p><a style="font-size: 12px;" href="AGB.html" class="links" target="_blank">Allgemeine Geschäftsbedingungen</a></p>
+  <p><a style="font-size: 12px;" href="Datenschutz.html" class="links" target="_blank">Datenschutzerklärung</a></p>
+  <p><a style="font-size: 12px;" href="Impressum.html" class="links" target="_blank">Impressum</a></p>
   <hr class="style-two">
-  <p style="margin-top: 20px;;">Copyright © 2020 <a style="color: var(--grundfarbe)" href="#" title="shisha2you">shisha2you</a>. </br>Alle Rechte vorbehalten.</p>
+  <p style="margin-top: 20px;;">Copyright © 2020 <a style="color: var(--grundfarbe)" href="Impressum.html" target="_blank" title="shisha2you">shisha2you</a>. </br>Alle Rechte vorbehalten.</p>
 </footer>
 
 <!-- /////// NAVIGATE TOP BUTTON /////-->
@@ -788,26 +823,39 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 				
 			</div>
 			<div style="border:1px solid var(--grundfarbe);">
-				<h5 style="margin-bottom: 0px; padding-left: 12.5px;"><b>zzgl. Lieferkosten von 3.00 €</b></h5>
+				<h5 style="margin-bottom: 0px; padding-left: 12.5px;padding-bottom: 5px; font-size:small;"><b style="text-decoration: line-through;">zzgl. Lieferkosten von 3.00 €</b> Aktion!</h5>
 				<hr class="style-two">
-					<form class="was-validated" action=" ">
-					<div class="form-group form-check">
-						  <label class="form-check-label" style="font-size:large; ">
+					<form class="was-validated" action=" " style="padding-top: 5px;">
+					 	<div class="form-group form-check">
+						  <label class="form-check-label" style="font-size:small;" id="agb_label">
 							<input class="form-check-input" style="margin: 0;position: relative;" id="agb" type="checkbox" name="remember" required> Ich akzeptiere die 
-							<a href="#myModal2" class="links" id="modal-trigger2" data-toggle="modal">AGBs von Shisha2you</a>.<div class="valid-feedback">AGBs akzeptiert.</div>
-							<div class="invalid-feedback">AGBs müssen vor Bestellung akzeptiert werden.</div>
+							<!--<a href="#myModal2" class="links" id="modal-trigger2" data-toggle="modal">AGBs von Shisha2you</a><div class="valid-feedback">AGBs akzeptiert.</div>-->
+							<a href="AGB.html" class="links" target="_blank">AGBs.</a>
+							<!--<div class="valid-feedback">AGBs akzeptiert.</div>
+							<div class="invalid-feedback">AGBs müssen vor Bestellung akzeptiert werden.</div> -->
 						  </label>
 						</div>
-					  </form>
-					  <form class="was-validated" action=" ">
+					</form>
+					<form class="was-validated" action=" ">
 						<div class="form-group form-check">
-							  <label class="form-check-label" style="font-size:large; ">
+							  <label class="form-check-label" style="font-size:small;" id="alter_label">
 								<input class="form-check-input" style="margin: 0;position: relative;" id="alter" type="checkbox" name="remember" required> Ich bin 18 Jahre oder älter.
-								<div class="invalid-feedback">Alter muss bestätigt werden</div>
-								<div class="valid-feedback">Alter bestätigt.</div>
+							<!--	<div class="invalid-feedback">Alter muss bestätigt werden</div>
+								<div class="valid-feedback">Alter bestätigt.</div> -->
 							  </label>
-							</div>
-						  </form>
+						</div>
+					</form>
+					<form class="was-validated" action=" ">
+						<div class="form-group form-check">
+							<label class="form-check-label" style="font-size:small;" id="widerruf_label">
+									<input class="form-check-input" style="margin: 0;position: relative;" id="widerruf" type="checkbox" name="remember" required> Ich akzeptiere die 
+									<!--<a href="#myModal2" class="links" id="modal-trigger2" data-toggle="modal">AGBs von Shisha2you</a>.<div class="valid-feedback">AGBs akzeptiert.</div>-->
+									<a href="img/Widerrufsbelehrung_und_Formular_Shisha2you.pdf" class="links" target="_blank">Widerrufsbelehrung.</a>
+								<!--	<div class="invalid-feedback">Widerrufsbelehrung muss bestätigt werden</div>
+								<div class="valid-feedback">Widerrufsbelehrung bestätigt.</div> -->
+							</label>
+						</div>
+					</form>
 			</div>
 			<footer class="cd-cart__footer" >
 				
@@ -816,14 +864,43 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
             <!--<svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
             </svg>-->
 		  </em>
-		  
 		</a>
-
 			</footer>
 		</div>
 	</div> <!-- .cd-cart__content -->
 </div> <!-- cd-cart -->
 
+<!--####### POPUPs #######-->
+<div class="cd-popup" id="cd-widerruf" role="alert">
+	<div class="cd-popup-container">
+	   <p>Bitte akzeptiere die Widerrufsbelehrung von Shisha2you, um die Bestellung fortzufahren.</p>
+	   <ul class="cd-buttons">
+		  <li><a href="#0" onclick="hidePopup('widerruf','bestätigen')">Bestätigen</a></li>
+		  <li><a href="#0" onclick="hidePopup('widerruf','schließen')">Schließen</a></li>
+	   </ul>
+	   <a href="#0" class="cd-popup-close img-replace" onclick="hidePopup('widerruf','bestätigen')"></a>
+	</div> <!-- cd-popup-container -->
+ </div> <!-- cd-popup -->
+ <div class="cd-popup" id="cd-alter" role="alert">
+	<div class="cd-popup-container">
+	   <p>Bitte bestätige dein Alter, um die Bestellung fortzufahren.</p>
+	   <ul class="cd-buttons">
+		  <li><a href="#0" onclick="hidePopup('alter','bestätigen')">Ich bin älter als 18 Jahre</a></li>
+		  <li><a href="#0" onclick="hidePopup('alter','schließen')">Schließen</a></li>
+	   </ul>
+	   <a href="#0" class="cd-popup-close img-replace" onclick="hidePopup('alter','bestätigen')"></a>
+	</div> <!-- cd-popup-container -->
+ </div> <!-- cd-popup -->
+ <div class="cd-popup" id="cd-agb" role="alert">
+	<div class="cd-popup-container">
+	   <p>Bitte akzeptiere die AGBs von Shisha2you, um die Bestellung fortzufahren.</p>
+	   <ul class="cd-buttons">
+		  <li><a href="#0" onclick="hidePopup('agb','bestätigen')">Bestätigen</a></li>
+		  <li><a href="#0" onclick="hidePopup('agb','schließen')">Schließen</a></li>
+	   </ul>
+	   <a href="#0" class="cd-popup-close img-replace" onclick="hidePopup('agb','bestätigen')"></a>
+	</div> <!-- cd-popup-container -->
+ </div> <!-- cd-popup -->
 </main>
 <script>document.getElementsByTagName("html")[0].className += " js";</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -848,248 +925,6 @@ data-close-text="Got it!">
 
 </body>
 </html>
-
-
-
-
-
-
-<!-- //////// MODAL Datenschutz ///////////-->
-<div class="cd-modal" data-modal="modal-trigger">
-		<div class="cd-svg-bg" 
-		data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
-		data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
-		data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
-		data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
-		data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
-		data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-			<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
-				<title>SVG Modal background</title>
-				<path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-				<path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-				<path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-			</svg>
-		</div>
-
-		<div class="cd-modal-content">
-			<h1>Datenschutzerklärung</h1>
-			<p>Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
-			<p></p><h2>Ihre Betroffenenrechte</h2>
-			<p>Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:</p>
-			<ul>
-			<li>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),</li>
-			<li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</li>
-			<li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),</li>
-			<li>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),</li>
-			<li>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und</li>
-			<li>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).</li>
-			</ul>
-			<p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.</p>
-			<p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</p>
-			<p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank" rel="nofollow noopener">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
-			<p></p><h2>Kontaktformular</h2>
-			<h3>Art und Zweck der Verarbeitung:</h3>
-			<p>Die von Ihnen eingegebenen Daten werden zum Zweck der individuellen Kommunikation mit Ihnen gespeichert. Hierfür ist die Angabe einer validen E-Mail-Adresse sowie Ihres Namens erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional.</p>
-			<h3>Rechtsgrundlage:</h3>
-			<p>Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt auf der Grundlage eines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO).</p>
-			<p>Durch Bereitstellung des Kontaktformulars möchten wir Ihnen eine unkomplizierte Kontaktaufnahme ermöglichen. Ihre gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert.</p>
-			<p>Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Verarbeitung der in das Kontaktformular eingegebenen Daten zur Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO).</p>
-			<h3>Empfänger:</h3>
-			<p>Empfänger der Daten sind ggf. Auftragsverarbeiter.</p>
-			<h3>Speicherdauer:</h3>
-			<p>Daten werden spätestens 6 Monate nach Bearbeitung der Anfrage gelöscht.</p>
-			<p>Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen nach HGB und löschen Ihre Daten nach Ablauf dieser Fristen. </p>
-			<h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>
-			<p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns Ihren Namen, Ihre E-Mail-Adresse und den Grund der Anfrage mitteilen.</p>
-			<p></p><h2>Verwendung von Scriptbibliotheken (Google Webfonts)</h2>
-			<h3>Art und Zweck der Verarbeitung:</h3>
-			<p>Um unsere Inhalte browserübergreifend korrekt und grafisch ansprechend darzustellen, verwenden wir auf dieser Website „Google Web Fonts“ der Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA; nachfolgend „Google“) zur Darstellung von Schriften.</p>
-			<p>Die Datenschutzrichtlinie des Bibliothekbetreibers Google finden Sie hier: <a href="https://www.google.com/policies/privacy/">https://www.google.com/policies/privacy/</a></p>
-			<h3>Rechtsgrundlage:</h3>
-			<p>Rechtsgrundlage für die Einbindung von Google Webfonts und dem damit verbundenen Datentransfer zu Google ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). </p>
-			<h3>Empfänger:</h3>
-			<p>Der Aufruf von Scriptbibliotheken oder Schriftbibliotheken löst automatisch eine Verbindung zum Betreiber der Bibliothek aus. Dabei ist es theoretisch möglich – aktuell allerdings auch unklar ob und ggf. zu welchen Zwecken – dass der Betreiber in diesem Fall Google Daten erhebt.</p>
-			<h3>Speicherdauer:</h3>
-			<p>Wir erheben keine personenbezogenen Daten, durch die Einbindung von Google Webfonts.</p>
-			<p>Weitere Informationen zu Google Web Fonts finden Sie unter <a href="https://developers.google.com/fonts/faq">https://developers.google.com/fonts/faq</a> und in der Datenschutzerklärung von Google: <a href="https://www.google.com/policies/privacy/">https://www.google.com/policies/privacy/</a>.</p>
-			<h3>Drittlandtransfer:</h3>
-			<p>Google verarbeitet Ihre Daten in den USA und hat sich dem EU_US Privacy Shield unterworfen <a href="https://www.privacyshield.gov/EU-US-Framework">https://www.privacyshield.gov/EU-US-Framework</a>.</p>
-			<h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>
-			<p>Die Bereitstellung der personenbezogenen Daten ist weder gesetzlich, noch vertraglich vorgeschrieben. Allerdings kann ohne die korrekte Darstellung der Inhalte von Standardschriften nicht ermöglicht werden.</p>
-			<h3>Widerruf der Einwilligung:</h3>
-			<p>Zur Darstellung der Inhalte wird regelmäßig die Programmiersprache JavaScript verwendet. Sie können der Datenverarbeitung daher widersprechen, indem Sie die Ausführung von JavaScript in Ihrem Browser deaktivieren oder einen Einbindung JavaScript-Blocker installieren. Bitte beachten Sie, dass es hierdurch zu Funktionseinschränkungen auf der Website kommen kann.</p>
-			<p></p><h2>Verwendung von Google Maps</h2>
-			<h3>Art und Zweck der Verarbeitung:</h3>
-			<p>Auf dieser Webseite nutzen wir das Angebot von Google Maps. Google Maps wird von Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (nachfolgend „Google“) betrieben. Dadurch können wir Ihnen interaktive Karten direkt in der Webseite anzeigen und ermöglichen Ihnen die komfortable Nutzung der Karten-Funktion.</p>
-			<p>Nähere Informationen über die Datenverarbeitung durch Google können Sie <a href="http://www.google.com/privacypolicy.html">den Google-Datenschutzhinweisen</a> entnehmen. Dort können Sie im Datenschutzcenter auch Ihre persönlichen Datenschutz-Einstellungen verändern.</p>
-			<p>Ausführliche Anleitungen zur Verwaltung der eigenen Daten im Zusammenhang mit Google-Produkten<a href="http://www.dataliberation.org/"> finden Sie hier</a>.</p>
-			<h3>Rechtsgrundlage:</h3>
-			<p>Rechtsgrundlage für die Einbindung von Google Maps und dem damit verbundenen Datentransfer zu Google ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
-			<h3>Empfänger:</h3>
-			<p>Durch den Besuch der Webseite erhält Google Informationen, dass Sie die entsprechende Unterseite unserer Webseite aufgerufen haben. Dies erfolgt unabhängig davon, ob Google ein Nutzerkonto bereitstellt, über das Sie eingeloggt sind, oder ob keine Nutzerkonto besteht. Wenn Sie bei Google eingeloggt sind, werden Ihre Daten direkt Ihrem Konto zugeordnet.</p>
-			<p>Wenn Sie die Zuordnung in Ihrem Profil bei Google nicht wünschen, müssen Sie sich vor Aktivierung des Buttons bei Google ausloggen. Google speichert Ihre Daten als Nutzungsprofile und nutzt sie für Zwecke der Werbung, Marktforschung und/oder bedarfsgerechter Gestaltung seiner Webseite. Eine solche Auswertung erfolgt insbesondere (selbst für nicht eingeloggte Nutzer) zur Erbringung bedarfsgerechter Werbung und um andere Nutzer des sozialen Netzwerks über Ihre Aktivitäten auf unserer Webseite zu informieren. Ihnen steht ein Widerspruchsrecht zu gegen die Bildung dieser Nutzerprofile, wobei Sie sich zur Ausübung dessen an Google richten müssen.</p>
-			<h3>Speicherdauer:</h3>
-			<p>Wir erheben keine personenbezogenen Daten, durch die Einbindung von Google Maps.</p>
-			<h3>Drittlandtransfer:</h3>
-			<p>Google verarbeitet Ihre Daten in den USA und hat sich dem EU_US Privacy Shield unterworfen <a href="https://www.privacyshield.gov/EU-US-Framework">https://www.privacyshield.gov/EU-US-Framework</a>.</p>
-			<h3>Widerruf der Einwilligung:</h3>
-			<p>Wenn Sie nicht möchten, dass Google über unseren Internetauftritt Daten über Sie erhebt, verarbeitet oder nutzt, können Sie in Ihrem Browsereinstellungen JavaScript deaktivieren. In diesem Fall können Sie unsere Webseite jedoch nicht oder nur eingeschränkt nutzen.</p>
-			<h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>
-			<p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Sofern Sie den Zugriff unterbinden, kann es hierdurch zu Funktionseinschränkungen auf der Website kommen.</p>
-			<p></p><h2>Google AdWords</h2>
-			<h3>Art und Zweck der Verarbeitung:</h3>
-			<p>Unsere Webseite nutzt das Google Conversion-Tracking. Betreibergesellschaft der Dienste von Google AdWords ist die Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Sind Sie über eine von Google geschaltete Anzeige auf unsere Webseite gelangt, wird von Google Adwords ein Cookie auf Ihrem Rechner gesetzt. Das Cookie für Conversion-Tracking wird gesetzt, wenn ein Nutzer auf eine von Google geschaltete Anzeige klickt.</p>
-			<p>Besucht der Nutzer bestimmte Seiten unserer Website und das Cookie ist noch nicht abgelaufen, können wir und Google erkennen, dass der Nutzer auf die Anzeige geklickt hat und zu dieser Seite weitergeleitet wurde. Jeder Google AdWords-Kunde erhält ein anderes Cookie. Cookies können somit nicht über die Websites von AdWords-Kunden nachverfolgt werden. Die mithilfe des Conversion-Cookies eingeholten Informationen dienen dazu, Conversion-Statistiken für AdWords-Kunden zu erstellen, die sich für Conversion-Tracking entschieden haben. Die Kunden erfahren die Gesamtanzahl der Nutzer, die auf ihre Anzeige geklickt haben und zu einer mit einem Conversion-Tracking-Tag versehenen Seite weitergeleitet wurden. Sie erhalten jedoch keine Informationen, mit denen sich Nutzer persönlich identifizieren lassen.</p>
-			<h3>Rechtsgrundlage:</h3>
-			<p>Rechtsgrundlage für die Einbindung von Google AdWords und dem damit verbundenen Datentransfer zu Google ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
-			<h3>Empfänger:</h3>
-			<p>Bei jedem Besuch unsere Webseite werden personenbezogene Daten, einschließlich Ihrer IP-Adresse an Google in die USA übertragen. Diese personenbezogenen Daten werden durch Google gespeichert. Google gibt diese über das technische Verfahren erhobenen personenbezogenen Daten unter Umständen an Dritte weiter.</p>
-			<p>Unser Unternehmen enthält keine Informationen von Google, mittels derer die betroffene Person identifiziert werden könnte.</p>
-			<h3>Speicherdauer:</h3>
-			<p>Diese Cookies verlieren nach 30 Tagen ihre Gültigkeit und dienen nicht der persönlichen Identifizierung.</p>
-			<h3>Drittlandtransfer:</h3>
-			<p>Google verarbeitet Ihre Daten in den USA und hat sich dem EU_US Privacy Shield unterworfen <a href="https://www.privacyshield.gov/EU-US-Framework">https://www.privacyshield.gov/EU-US-Framework</a>.</p>
-			<h3>Widerruf der Einwilligung:</h3>
-			<p>Möchten Sie nicht am Tracking teilnehmen, können Sie das hierfür erforderliche Setzen eines Cookies ablehnen – etwa per Browser-Einstellung, die das automatische Setzen von Cookies generell deaktiviert oder Ihren Browser so einstellen, dass Cookies von der Domain „googleleadservices.com“ blockiert werden.</p>
-			<p>Bitte beachten Sie, dass Sie die Opt-out-Cookies nicht löschen dürfen, solange Sie keine Aufzeichnung von Messdaten wünschen. Haben Sie alle Ihre Cookies im Browser gelöscht, müssen Sie das jeweilige Opt-out Cookie erneut setzen.</p>
-			<h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>
-			<p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Sofern Sie den Zugriff unterbinden, kann es hierdurch zu Funktionseinschränkungen auf der Website kommen.</p>
-			<p></p><h2>Änderung unserer Datenschutzbestimmungen</h2>
-			<p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
-			<h2>Fragen an den Datenschutzbeauftragten</h2>
-			<p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:</p>
-			<p></p><p><em>Die Datenschutzerklärung wurde mit dem </em><em><a href="https://www.activemind.de/datenschutz/datenschutzhinweis-generator/" target="_blank" rel="noopener">Datenschutzerklärungs-Generator der activeMind AG erstellt</a> (Version 2018-09-24).</em></p>
-
-		</div> <!-- cd-modal-content -->
-
-
-
-		<a href="#0" class="modal-close">Close</a>
-	</div> <!-- cd-modal -->
-
-	<!-- ////////// Modal IMPRESSUM ///////// -->
-	<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" style="text-align: center; width: 100%; height: 100%; padding-right: 0px;">
-			<div class="modal-dialog modal-full" style="height: 100%;padding: 10px;" role="document">
-				<div class="modal-content" style="text-align: center; width: 100%;padding-right: 0px; height: 100%;">
-					<div class="modal-header">
-						<h1>Impressum</h1>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<i class="material-icons" style="font-size: 30px; color: var(--grundfarbe);">cancel</i>
-						</button>
-					</div>
-					<div class="modal-body p-4" id="result" style="text-align: center; width: 100%;padding-right: 0px; height: 100%;">
-							<p style="color: white;">Angaben gemäß § 5 TMG:</p>
-							<p>shisha2you</p>
-							<p>Marschnerstraße 3</p>
-								<p>30167 Hannover</p>
-								<hr class="style-two">
-								<p style="color: white;">Vertreten durch: </p>
-								<p>shisha2you</p>
-								<hr class="style-two">
-								<p style="color: white;">Kontakt:</p>
-								<p>Telefon: +49 173 4937652</p>
-								<p>E-Mail: info@shisha2u.de</p>
-								<hr class="style-two">
-								<p style="color: white;">Umsatzsteuer-ID:</p>
-								<p>gemäß §27 a Umsatzsteuergesetz:</p>
-								<p>DE XXXXXXXX</p>
-					</div>
-					<div class="modal-footer"></div>
-				</div>
-			</div>
-		</div>
-
-		<!-- ////////// Modal AGB ///////// -->
-	<div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true" style="text-align: center; width: 100%; height: 100%; padding-right: 0px;">
-			<div class="modal-dialog modal-full"  style="height: 100%;padding: 10px;" role="document">
-				<div class="modal-content" style="text-align: center; width: 100%;padding-right: 0px; height: 100%;">
-					<div class="modal-header" >
-						<h1 >AGB</h1>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<i class="material-icons" style="font-size: 30px; color: var(--grundfarbe);">cancel</i>
-						</button>
-					</div>
-					<div class="modal-body p-4" id="result" style="text-align: left; width: 100%;padding-right: 0px; height: auto;">
-								<p ><b>Gebrauchsanweisung für die Benutzung der Shisha</b></p>
-								<p style="margin-left: 10px;">1. Die Shisha ist stets sorgfältig zu behandeln und nach dieser Anweisung zu benutzen. In 
-									geschlossenen Räumlichkeiten sollte während der Benutzung ein Fenster geöffnet sein. </p>
-								<p style="margin-left: 10px;">2. Aufgrund der erhöhten Brandgefahr darf die Shisha während der Benutzung nicht unbeaufsichtigt bleiben. </p>
-								<p style="margin-left: 10px;">3. Eine Reinigung der Shisha ist nicht zu leisten. </p>
-								<hr class="style-two">
-								<p></p>
-								<p><b>Allgemeine Geschäftsbedingungen (AGB) </b></p>
-								<p><b>1. Geltungsbereich</b></p>
-								<p >Die folgenden Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge mit Shisha2you (nachfolgend „Vermieter“), 
-									insbesondere für die Vermietung und Lieferung von Shishas sowie aller hiermit im Zusammenhang erbrachten Leistungen.</p>
-								<p><b>2. Vertragsschluss</b></p>
-								<p >Die Darstellung der Mietgeräte auf der Webseite stellt kein rechtlich bindendes Angebot, sondern eine Aufforderung zur 
-									Buchungsanfrage dar. Der Mieter kann aus dem Sortiment des Vermieters Produkte auswählen und diesen in einem so genannten 
-									Warenkorb sammeln. Über den Bestell-Button gibt er ein verbindliches Angebot auf Abschluss eines Vertrages ab. Der Antrag 
-									kann jedoch nur abgegeben und übermittelt werden, wenn der Kunde durch Klicken auf den Button „AGB akzeptieren“, diese 
-									Vertragsbedingungen akzeptiert und dadurch in seinen Antrag aufgenommen hat. Der Vertrag kommt erst durch die Abgabe der 
-									Annahmeerklärung durch den Vermieter zustande, an die Mobilfunknummer des Mieters per WhatsApp versandt wird.</p>
-								<p><b>3. Mietpreis, Bezahlung</b></br>
-								<p style="margin-left: 10px;">3.1. Die vereinbarten Preise verstehen sich einschließlich der zum Zeitpunkt des Vertragsschlusses 
-									geltenden Umsatzsteuer.</p>
-								<p style="margin-left: 10px;">3.2. Die Zahlung kann über den Zahlungsdienstleister „PayPal“ (PayPal (Europe) S.a.r.l. et Cie s.c.a, 22-24 Boulevard 
-									Royal, L-2449 Luxembourg), unter Geltung der PayPal-Nutzungsbedingungen, einsehbar unter www.paypal.com, erfolgen. Im 
-									Rahmen des Bestellvorgangs durch den Mieter wird er auf die Website von PayPal weitergeleitet. Dort bestätigt der Mieter 
-									die Zahlungsanweisung an den Vermieter. Der Vermieter weist PayPal nach Annahme des Angebots zur Einleitung der 
-									Zahlungstransaktion an bzw. nimmt das Angebot des Mieters spätestens mit Anweisung zur Einleitung der Zahlungstransaktion an.</p>
-								<p style="margin-left: 10px;">3.3. Eine Barzahlung ist möglich.</p>
-								</p>
-								<p><b>4. Lieferung/Abholung</b></p>
-								<p >Die Bestellung wird grundsätzlich geliefert und wieder abgeholt, sofern nicht eine individuelle Abrede erfolgt ist. 
-									Eine Lieferung an eine Packstation ist ausgeschlossen. </br>
-									Lieferung (und Abholung) sowie Rückgabe des Mietgegenstandes erfolgt gemäß den geltenden Öffnungszeiten: </br>
-									<p style="margin-left: 10px;">- Montag bis Donnerstag und Sonntag: Vermietung ab 15:00 Uhr – Abholung bis spätestens 23:00 Uhr</p> 
-									<p style="margin-left: 10px;">- Freitag: Vermietung ab 15:00 Uhr – Abholung bis spätestens Samstag um 02:00 Uhr </p>
-									<p style="margin-left: 10px;">- Samstag: Vermietung ab 15:00 Uhr – Abholung bis spätestens Sonntag um 02:00 Uhr </p>
-									<p style="margin-left: 10px;">- Individuelle Absprachen sind möglich. </p>
-									Es ist darauf zu achten, dass die vereinbarte Lieferung (und Abholung) je nach Geschäftsaufkommen variieren kann.
-									</p>
-								<p><b>5. Mietzeit </b></p>
-								<p >Es gilt die vereinbarte Mietzeit. Der Vertrag und somit die gestattete Nutzungsdauer enden 
-									automatisch am im Bestellvorgang genannten Zeitpunkt, ohne dass es einer Kündigung bedarf. 
-									Erfolgt die Rückgabe verspätet, ist Shisha2you berechtigt, pro angefangene Stunde eine 
-									angemessene Entschädigung zu verlangen. </p>
-								<p><b>6. Pflicht der Mieters</b></p>
-								<p >Der Mieter ist verpflichtet, dem Vermieter bei Übergabe mitzuteilen, wenn sich der Vertragsgegenstand nicht 
-									in ordnungsgemäßen Zustand befindet oder der Vertragsgegenstand unvollständig ist. Der Mieter verpflichtet sich, 
-									den Vertragsgegenstand sorgfältig, sachgemäß und schonend zu benutzen und zu behandeln. Der Mieter darf den 
-									Vertragsgegenstand nur in verkehrsüblicher Weise nutzen. Es ist dem Mieter untersagt, Veränderungen am 
-									Vertragsgegenstand vorzunehmen oder vornehmen zu lassen. Sollten während der Vertragslaufzeit Mängel oder 
-									Beschädigungen an dem Vertragsgegenstand auftreten, ist der Mieter zur unverzüglichen Anzeige gegenüber dem 
-									Vermieter verpflichtet. Der Mieter ist verpflichtet, einen Diebstahl unverzüglich bei der Polizei zur Anzeige 
-									zu bringen und den Vermieter hiervon zu unterrichten. </p>
-								<p><b>7. Haftung</b>
-								<p style="margin-left: 10px;">7.1.Der Mieter nutzt den Vertragsgegenstand auf eigene Gefahr. Der Mieter hat den Vertragsgegenstand in dem 
-									Zustand zurückzugeben, in welchem er ihn übernommen hat. Der Mieter haftet für Schäden, die während der Vertragsdauer 
-									aus Diebstahl, Beschädigung und/oder (Teil-)Verlust entstehen. Der Mieter haftet weiter für alle Schäden, die dem 
-									Vermieter aufgrund der Verletzung von Vertragspflichten des Mieters entstehen. </p>
-								<p style="margin-left: 10px;">7.2.	Der Vermieter haftet nur für Vorsatz und grobe Fahrlässigkeit oder für eine Verletzung des Lebens, 
-									des Körpers oder der Gesundheit. Weitergehende Ansprüche gegenüber dem Vermieter sind ausgeschlossen. Die 
-									Haftungsbeschränkung bzw. der Haftungsausschluss gelten auch für die persönliche Haftung von Angestellten, 
-									Arbeitnehmern, Vertretern und/oder Erfüllungsgehilfen des Vermieters.</p>
-								</p>
-								<p><b>8. Jugendschutz</b></p>
-								<p >Der Vermieter hat durch persönliche Identitäts- und Altersüberprüfung des Mieters sicherzustellen, dass 
-									der Mieter das für den Vertragsgegenstand erforderliche Mindestalter i.S.d. Jugendschutzgesetzes erreicht 
-									hat. Der Mieter muss zum Zeitpunkt der Bestellung das 18. Lebensjahr vollendet haben. Die Altersprüfung 
-									erfolgt durch Vorlage eines gültigen, mit Lichtbild versehenen Ausweisdokuments. Der Vermieter ist berechtigt, 
-									eine Ablichtung bzw. ein Foto von dem Ausweisdokument zu erstellen, welches lediglich der Sicherstellung und 
-									dem Nachweis der Altersprüfung dient und nicht für andere Zwecke verwendet oder an Dritte weitergegeben wird. 
-									Der Vertragsgegenstand wird erst nach erfolgreicher Altersprüfung und nur an den Besteller persönlich übergeben.</p>
-								<p><b>9. Schlussbestimmungen</b></p>
-								<p >Sollten einzelne Bestimmungen der AGB unwirksam sein oder werden, so wird dadurch die Wirksamkeit der übrigen 
-									Bestimmungen nicht berührt.</p>
-					</div>
-					<div class="modal-footer"></div>
-				</div>
-			</div>
-		</div>
-
-
 
 <!--///////// SCRIPTE ///////////-->
 <script>
@@ -1185,12 +1020,21 @@ $(document).ready(function(){
 			var warenausgang = document.getElementById("warenkorb-whatsapp");
 			var agbs = document.getElementById("agb");
 			var alter = document.getElementById("alter");
-			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,%20ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
+			var widerruf = document.getElementById("widerruf");
+			var x = 'https://wa.me/491787293347?text=Hallo%20Team%20Shisha2you,%20ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 			var gesamtpreis = 0;
-			lieferkosten = 3; 
+			lieferkosten = 0; 
 			var shisha = "";
+			document.getElementById("alter_label").style.color = "#FFFFFF";
+			document.getElementById("agb_label").style.color = "#FFFFFF";
+			document.getElementById("widerruf_label").style.color = "#FFFFFF";
+
+			if (widerruf.checked){
+				document.getElementById("widerruf_label").style.background = "#49b675";
 			if (alter.checked){
-			if (agbs.checked){ 
+				document.getElementById("alter_label").style.background = "#49b675";
+			if (agbs.checked){
+				document.getElementById("agb_label").style.background = "#49b675";
 			for (i = 0; i < items.length; i++) {
 
 				if (items[i].getAttribute('data-art') != ""  ){ 
@@ -1229,6 +1073,7 @@ $(document).ready(function(){
 					positiony= position.coords.longitude;
 					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;
 					warenausgang.href = x;
+					console.log("Gesamtlink " + x);
 					return true
 				}
 				
@@ -1237,70 +1082,83 @@ $(document).ready(function(){
 					return false
 				}
 			}else {
-					
-				alert("Sie müssen die AGBs zustimmen, um die Bestellung aufzugeben.");
+				document.getElementById("agb_label").style.background = "#DE1738";
+				document.getElementById("cd-agb").style.visibility = "visible";
+				document.getElementById("cd-agb").style.opacity = 1;
+				// alert("Sie müssen die AGBs zustimmen, um die Bestellung aufzugeben.");
 				return false
 			}
 			}else {
-					
-					alert("Sie müssen erst Bestätigen, dass Sie 18 Jahre oder älter sind.");
-					return false
-				}
+				if (agbs.checked){
+					document.getElementById("agb_label").style.background = "#49b675";} 
+				else {
+					document.getElementById("agb_label").style.background = "#DE1738";}
+
+				document.getElementById("alter_label").style.background = "#DE1738";
+				document.getElementById("cd-alter").style.visibility = "visible";
+				document.getElementById("cd-alter").style.opacity = 1;
+				// alert("Sie müssen erst Bestätigen, dass Sie 18 Jahre oder älter sind.");
+				return false
+			}
+			}else {
+				if (alter.checked){
+					document.getElementById("alter_label").style.background = "#49b675";}
+				else {
+					document.getElementById("alter_label").style.background = "#DE1738";}
+				if (agbs.checked){
+					document.getElementById("agb_label").style.background = "#49b675";} 
+				else {
+					document.getElementById("agb_label").style.background = "#DE1738";}
+
+				document.getElementById("widerruf_label").style.background = "#DE1738";
+				document.getElementById("cd-widerruf").style.visibility = "visible";
+				document.getElementById("cd-widerruf").style.opacity = 1;
+				// alert("Sie müssen erst die Widerufsbelehrung akzeptieren, um mit der Bestellung fortzufahren.");
+				return false
+			}
 			
 		}
-/*
-		function getPaypal() {
-			console.log("Funktion drin");
-			var items = document.getElementsByClassName("cd-cart__product");
-			var menge = document.getElementsByClassName("reset");
-			var warenausgang = document.getElementById("warenkorb-whatsapp");
-			var agbs = document.getElementById("agb");
-			var alter = document.getElementById("alter");
-			var x = 'https://wa.me/491734937652?text=Hallo%20Team%20Shisha2you,%20ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
-			var gesamtpreis = 0;
-			var shisha = "";
-			if (alter.checked){
-				if (agbs.checked){ 
-					
-					paypal.Buttons({
-						style: {
-							layout:  'vertical',
-							color:   'black',
-							shape:   'rect',
-							label:   'paypal'
-						},
-						createOrder: function(data, actions) {
-						// This function sets up the details of the transaction, including the amount and line item details.
-						return actions.order.create({
-							purchase_units: [{
-							amount: {
-								value: '13.00'
-								}
-							}]
-						});
-						},
-						onApprove: function(data, actions) {
-						// This function captures the funds from the transaction.
-						return actions.order.capture().then(function(details) {
-							// This function shows a transaction success message to your buyer.
-							alert('Shisha-Bestellung erfolgreich von ' + details.payer.name.given_name + ' bezahlt.');
-						});
-					}
-					}).render('#paypal-button-container');
-				
-				}else {
-						
-					alert("Sie müssen die AGBs zustimmen, um die Bestellung aufzugeben.");
-					return false
+
+</script>
+<script>
+	function hidePopup(typ, event) { 
+			if(typ == 'widerruf') {
+				if (event == 'bestätigen') {
+					document.getElementById("widerruf").checked = true;
+					document.getElementById("widerruf_label").style.background = "#49b675";
+					document.getElementById("cd-widerruf").style.visibility = "hidden";
+					document.getElementById("cd-widerruf").style.opacity = 0;
 				}
-			}else {
-					
-					alert("Sie müssen erst Bestätigen, dass Sie 18 Jahre oder älter sind.");
-					return false
+				if (event == 'schließen') {
+					document.getElementById("cd-widerruf").style.visibility = "hidden";
+					document.getElementById("cd-widerruf").style.opacity = 0;
+				}
 			}
-		}
-		*/
-	
+			if(typ == 'agb') {
+				if (event == 'bestätigen') {
+					document.getElementById("agb").checked = true;
+					document.getElementById("agb_label").style.background = "#49b675";
+					document.getElementById("cd-agb").style.visibility = "hidden";
+					document.getElementById("cd-agb").style.opacity = 0;
+				}
+				if (event == 'schließen') {
+					document.getElementById("cd-agb").style.visibility = "hidden";
+					document.getElementById("cd-agb").style.opacity = 0;
+				}
+			}
+			if(typ == 'alter') {
+				if (event == 'bestätigen') {
+					document.getElementById("alter").checked = true;
+					document.getElementById("alter_label").style.background = "#49b675";
+					document.getElementById("cd-alter").style.visibility = "hidden";
+					document.getElementById("cd-alter").style.opacity = 0;
+				}
+				if (event == 'schließen') {
+					document.getElementById("cd-alter").style.visibility = "hidden";
+					document.getElementById("cd-alter").style.opacity = 0;
+				}
+			}
+	}
 </script>
 <script>
 		function classicshishawahl() {
@@ -1326,7 +1184,7 @@ $(document).ready(function(){
 		var selObj = document.getElementById("classicshishaanzahl");
 		var selValue = selObj.options[selObj.selectedIndex].text;
 		document.getElementById("classicshishainput").setAttribute('data-anzahl', selValue);
-		document.getElementById("classicanzahlpreis").innerHTML = selValue*8.00 + " €";
+		document.getElementById("classicanzahlpreis").innerHTML = selValue*10.00 + " €";
 	}
 	function premiumshishawahl() {
 		//Getting Value
@@ -1350,7 +1208,7 @@ $(document).ready(function(){
 		var selObj = document.getElementById("premiumshishaanzahl");
 		var selValue = selObj.options[selObj.selectedIndex].text;
 		document.getElementById("premiumshishainput").setAttribute('data-anzahl', selValue);
-		document.getElementById("premiumanzahlpreis").innerHTML = selValue*10.00 + " €";
+		document.getElementById("premiumanzahlpreis").innerHTML = selValue*13.00 + " €";
 	}
 	function exclusivshishawahl() {
 		//Getting Value
@@ -1375,7 +1233,7 @@ $(document).ready(function(){
 		var selObj = document.getElementById("exclusivshishaanzahl");
 		var selValue = selObj.options[selObj.selectedIndex].text;
 		document.getElementById("exclusivshishainput").setAttribute('data-anzahl', selValue);
-		document.getElementById("exclusivanzahlpreis").innerHTML = selValue*12.00 + " €";
+		document.getElementById("exclusivanzahlpreis").innerHTML = selValue*15.00 + " €";
 	}
 	function checkexclusiv(){
 		

@@ -5,6 +5,9 @@ if(!$db)
   exit("Verbindungsfehler: ".mysqli_connect_error());
 }
 ?>
+<?php 
+INSERT INTO `Bestellungen` (`Bestellung`, `Datum`, `Index`) VALUES ('Zweite Bestellung', '2020-04-03', '2');
+?>
 <!doctype html>
 <html lang="en" class="no-js">
 <style>html {scroll-behavior: smooth; }</style>

@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect("localhost", "salia", "bxPJgr6km4mx", "shisha2you_bestellungen");
+$db = mysqli_connect("localhost", "Salias", "bxPJgr6km4mx", "shisha2you_bestellungen");
 if(!$db)
 {
   exit("Verbindungsfehler: ".mysqli_connect_error());

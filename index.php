@@ -4,9 +4,15 @@ if(!$db)
 {
   exit("Verbindungsfehler: ".mysqli_connect_error());
 }
-?>
-<?php 
-INSERT INTO `Bestellungen` (`Bestellung`, `Datum`, `Index`) VALUES ('Zweite Bestellung', '2020-04-03', '2');
+
+$sql = "SELECT Bestellung, Datum FROM Bestellungen";
+ 
+$db_erg = mysqli_query( $db, $sql );
+if ( ! $db_erg )
+{
+  die('Ungültige Abfrage: ' . mysqli_error());
+}
+
 ?>
 <!doctype html>
 <html lang="en" class="no-js">
@@ -152,6 +158,10 @@ INSERT INTO `Bestellungen` (`Bestellung`, `Datum`, `Index`) VALUES ('Zweite Best
 		<!-- <a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=491762295702" ><i class="fab fa-whatsapp"></i></a> -->
 		<a class="btn_lieferung slideanim2" href="#lieferzeiten" style="min-width: 20%; border-radius: 1rem; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
 			<i class="material-icons">announcement</i></br>
+			<?php while($row = $db_erg->fetch_assoc()) {
+	echo "Bestellung" . $row["bestellung"]. "/ Datum: " . $row["Datum"] . "/ Index: "
+	. $row["Index"]. "";
+	}?>
 			Wegen Coronavirus</br>
 			liefern wir kontaktlos!</br></br>
 			Shishas werden vor</br>

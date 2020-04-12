@@ -308,7 +308,7 @@ navLinks.addEventListener("click",  () => {
 			cartBody = cart[0].getElementsByClassName('cd-cart__body')[0],
 			cartList = cartBody.getElementsByTagName('ul')[0],
 			cartListItems = cartList.getElementsByClassName('cd-cart__product'),
-			cartTotal = cart[0].getElementsByClassName('cd-cart__checkout')[0].getElementsByTagName('span')[0],
+			cartTotal = cart[0].getElementsByClassName('cd-cart__checkout')[0].getElementsByTagName('span')[0], // Lieferkosten immer +3
 			cartCount = cart[0].getElementsByClassName('cd-cart__count')[0],
 			cartCountItems = cartCount.getElementsByTagName('li'),
 			/*menge = 1;
@@ -367,7 +367,7 @@ navLinks.addEventListener("click",  () => {
 						  deletedProduct.removeEventListener('animationend', cb);
 						  Util.removeClass(deletedProduct, 'cd-cart__product--deleted cd-cart__product--undo');
 						  deletedProduct.removeAttribute('style');
-						  quickUpdateCart();
+						  quickUpdateCart(); //Lieferkosten
 					  });
 					  Util.removeClass(cartUndo, 'cd-cart__undo--visible');
 				  }
@@ -384,8 +384,8 @@ navLinks.addEventListener("click",  () => {
 			  var productAnzahl = parseInt(this.getAttribute("data-anzahl"));
 			  updateCartCount(cartIsEmpty, productAnzahl);
 			  //update total price
-			  // updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl") + 3, true); // mit lieferkosten
-			  updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl"), true); // ohne lieferkosten 
+			  updateCartTotal(this.getAttribute('data-price')*this.getAttribute("data-anzahl"), true);
+			  quickUpdateCart(); //lieferkosten
 			  //show cart
 			  Util.removeClass(cart[0], 'cd-cart--empty');
 		  };
@@ -442,10 +442,10 @@ navLinks.addEventListener("click",  () => {
 			  Util.addClass(product, 'cd-cart__product--deleted');
   
 			  //update items count + total price
-			  updateCartTotal(productTotPrice, false);
+			  updateCartTotal(productTotPrice, false); 
 			  updateCartCount(true, -productQuantity2);
+			  quickUpdateCart(); //lieferkosten
 			  Util.addClass(cartUndo, 'cd-cart__undo--visible');
-  
 			  //wait 8sec before completely remove the item
 			  cartTimeoutId = setTimeout(function(){
 				  Util.removeClass(cartUndo, 'cd-cart__undo--visible');
@@ -503,7 +503,7 @@ navLinks.addEventListener("click",  () => {
   
 		  function quickUpdateCart() {
 			  var quantity = 0;
-			  var price = 0; // Wenn Lieferkosten dann 3
+			  var price = 3; // Wenn Lieferkosten dann 3 eintragen
 
 			  for(var i = 0; i < cartListItems.length; i++) {
 

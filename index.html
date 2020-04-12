@@ -57,7 +57,7 @@
 </head>
 			<div id="cookieConsent">
 			    <div id="closeCookieConsent"><i class="material-icons">close</i></div>
-			    <b>Zustimmung zur Verwendung von Cookies.</b></br>Diese Website benutzt Cookies. <a href="#" target="_blank">Mehr Informationen</a>. <a class="cookieConsentOK">Zustimmen</a>
+			    <b>Zustimmung zur Verwendung von Cookies.</b></br>Diese Website benutzt Cookies. <a href="Datenschutz.html" target="_blank">Mehr Informationen</a>. <a class="cookieConsentOK">Zustimmen</a>
 			</div>
 <body id="top" class="cd-about" style="background-color: var(--third);">
 	<section class="cd-intro" style="position: fixed; z-index: 10;">
@@ -142,10 +142,6 @@
 		<!-- <a class="btn_whatsapp slideanim2" href="https://api.whatsapp.com/send?phone=491762295702" ><i class="fab fa-whatsapp"></i></a> -->
 		<a class="btn_lieferung slideanim2" href="#lieferzeiten" style="min-width: 20%; border-radius: 1rem; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
 			<i class="material-icons">announcement</i></br>
-			<?php while($row = $db_erg->fetch_assoc()) {
-	echo "Bestellung" . $row["bestellung"]. "/ Datum: " . $row["Datum"] . "/ Index: "
-	. $row["Index"]. "";
-	}?>
 			Wegen Coronavirus</br>
 			liefern wir kontaktlos!</br></br>
 			Shishas werden vor</br>
@@ -246,6 +242,11 @@
 <div id="auswahl_shisha" class="container-fluid " style="background: linear-gradient(
 	rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 	<h4 class="">Unsere Shisha-Auswahl</h4>
+	<div class="col-sm-12" style="min-width: 100%;padding-left: 0px; padding-right: 0px;">
+		<button href="#0"  disabled style="min-width: 100%; margin-top: 20px; margin-bottom: 20px; background: var(--hellgrau); color: var(--secondary);" class="cd-add-to-cart js-cd-add-to-cart">
+			Was alles zur Shisha geliefert wird: Shisha-Set + 1x Anzünder + 6x Kohle Stücke + 20 Gramm Shishatabak (1x Kopf)
+		</button>
+	</div>
 	<div class="middle">
 		<div class="row">
 				<div class="col-sm-4">
@@ -443,11 +444,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-sm-12" style="min-width: 100%;padding-left: 0px; padding-right: 0px;">
-		<button href="#0"  disabled style="min-width: 100%; margin-top: 50px; margin-bottom: 0px; background: var(--hellgrau); color: var(--secondary);" class="cd-add-to-cart js-cd-add-to-cart">
-			Was alles zur Shisha geliefert wird: Shisha-Set + 1x Anzünder + 9x Kohle Stücke + 20 Gramm Shishatabak (1x Kopf)
-		</button>
-	</div>
+	
 </div>
 <section id="section06" class="demo" style="background: var(--third);">
 	<a href="#auswahl_getränke"><span></span></a>
@@ -461,8 +458,10 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 	<div class="middle">
 		<div class="row">
 			<div class="col-sm-4">
+				
 				<div class="card bg-light"
-					style="width: 100%; border-radius: 2rem; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+					style="width: 100%; border-radius: 2rem;overflow: hidden; background: rgba(255, 255, 255, 0); box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+				<!--	<div class="corner-ribbon">JETZT NEU MIT 1L FLASCHEN</div> -->
 					<img src="img/flasche.svg" id="softdrinksimg" class="card-img-top" alt="..." style="margin: auto; margin-top: 20px; width: 70%;">
 					<div class="card-body">
 						<h5 class="card-title">Softgetränke</h5>
@@ -498,6 +497,11 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) no-repeat center center;">
 										<option value="2.50" data-img="img/redbullzero.svg" data-name="RedBull-sugarfree(0,25l)">RedBull sugarfree 0.25l</option>
 										<option value="2.50" data-img="img/schwarzedose.svg" data-name="SchwarzeDose(0,25l)">Schwarze Dose 0.25l</option>
 										<option value="2.50" data-img="img/moloko.svg" data-name="Moloko(0,25l)">Moloko 0.25l</option>
+										<!-- 1Liter Flaschen 
+										<option value="3.00" data-img="img/cola1.svg" data-name="Cola(1l)">Cola 1l</option>
+										<option value="3.00" data-img="img/orangensaft1.svg" data-name="Orangensaft(1l)">Orangensaft 1l</option>
+										<option value="3.00" data-img="img/effect1.svg" data-name="Effect(1l)">Effect 1l</option>
+										 1Liter Flaschen -->
 									</select>
 								</div>
 							</div>
@@ -827,7 +831,23 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 				
 			</div>
 			<div style="border:1px solid var(--grundfarbe);">
-				<h5 style="margin-bottom: 0px; padding-left: 12.5px;padding-bottom: 5px; font-size:small;"><b style="text-decoration: line-through;">zzgl. Lieferkosten von 3.00 €</b> Aktion!</h5>
+				<div class="row" style="flex-wrap:unset;">
+					<div class="col-sm-6" style="flex-wrap:unset;padding: 0 5px 0 5px;min-width: 50%;">
+						<h5 style="margin: 5px;margin-bottom: 0px;padding-left: 12.5px;padding-bottom: 5px; font-size:small;">zzgl. Lieferkosten </br>von 3.00 €</h5>
+					</div>
+					<div class="col-sm-6"  style="flex-wrap:unset;margin: 0px; padding: 0 5px 0 5px;">
+						<button href="#0" id="gasbrenner" style="margin: 5px;border-radius:0%; background: var(--grundfarbe);" value="" class="cd-add-to-cart js-cd-add-to-cart"
+						data-price="1.50" data-art="Anzünder" data-anzahl="1" data-name="Gasbrenner" value="" data-img="img/gasbrenner.svg">
+							<div class="row" style="flex-wrap:unset;">
+								<div class="col-sm-2" style="display: flex;padding: 0 5px 0 5px;"><span class="material-icons" style="font-size: 18px;">add_circle</span></div>
+								<div class="col-sm-10" style="display: flex;padding:0 5px 0 5px;;font-size: 12px;">Gasbrenner</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				
+				
+				<!--<h5 style="margin-bottom: 0px; padding-left: 12.5px;padding-bottom: 5px; font-size:small;"><b style="text-decoration: line-through;">zzgl. Lieferkosten von 3.00 €</b> Aktion!</h5>-->
 				<hr class="style-two">
 					<form class="was-validated" action=" " style="padding-top: 5px;">
 					 	<div class="form-group form-check">
@@ -903,6 +923,16 @@ rgb(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/people.svg) no-repeat 
 		  <li><a href="#0" onclick="hidePopup('agb','schließen')">Schließen</a></li>
 	   </ul>
 	   <a href="#0" class="cd-popup-close img-replace" onclick="hidePopup('agb','bestätigen')"></a>
+	</div> <!-- cd-popup-container -->
+ </div> <!-- cd-popup -->
+ <div class="cd-popup" id="cd-shisha" role="alert">
+	<div class="cd-popup-container">
+	   <p>Bitte füge eine Shisha zum Warenkorb hinzu, um die Bestellung fortzufahren.</p>
+	   <ul class="cd-buttons">
+		  <li><a href="#auswahl_shisha" onclick="hidePopup('shisha','bestätigen')">zu den shishas</a></li>
+		  <li><a href="#auswahl_shisha" onclick="hidePopup('shisha','schließen')">Schließen</a></li>
+	   </ul>
+	   <a href="#0" class="cd-popup-close img-replace" onclick="hidePopup('shisha','bestätigen')"></a>
 	</div> <!-- cd-popup-container -->
  </div> <!-- cd-popup -->
 </main>
@@ -1027,7 +1057,7 @@ $(document).ready(function(){
 			var widerruf = document.getElementById("widerruf");
 			var x = 'https://wa.me/491787293347?text=Hallo%20Team%20Shisha2you,%20ich%20moechte%20gerne%20Folgendes%20bestellen:'; //"%201x%20Classic-Shisha%20Social-Smoke%20LemonFresh%20an%20folgende%20Adresse%20liefern:%20" + "https://maps.google.com/?q=" + position.coords.latitude + "," +  position.coords.longitude;
 			var gesamtpreis = 0;
-			lieferkosten = 0; 
+			lieferkosten = 3; 
 			var shisha = "";
 			document.getElementById("alter_label").style.color = "#FFFFFF";
 			document.getElementById("agb_label").style.color = "#FFFFFF";
@@ -1057,17 +1087,17 @@ $(document).ready(function(){
 				
 				if (window.hasOwnProperty("positionx")) {
 					x = x + "Bitte%20an%20folgenden%20Standort%20liefern:%20https://maps.google.com/?q=" + positionx + "," + positiony;
-					x = x + "%20%20PayPal-Zahlung:%20https://www.paypal.me/shisha2you/" + gesamtpreis;
-					x = x + "%20Bitte: würde mich freuen wenn du die Zahlung als „an Freunde“ tätigst. ";
 					x = x + "%20Barzahlung bei Lieferung möglich.";
+					x = x + "%20_Gerne kannst du auch per PayPal zahlen, dann bitte per 'an Familie und Freunde senden', um Gebühren zu sparen._";
+					x = x + "%20%20PayPal-Zahlung:%20https://www.paypal.me/shisha2you/" + gesamtpreis + "%20";
 					warenausgang.href = x;
 					console.log("Gesamtlink " + x);
 					return true
 				} else {
-					x = x + "%20%20PayPal-Zahlung:%20https://www.paypal.me/shisha2you/" + gesamtpreis;
-					x = x + "%20Bitte: würde mich freuen wenn du die Zahlung als „an Freunde“ tätigst. ";
 					x = x + "%20Barzahlung bei Lieferung möglich. ";
-					x = x + "Bitte%20an%20folgende%20Adresse%20liefern:%20%20%20%20%20";
+					x = x + "%20_Gerne kannst du auch per PayPal zahlen, dann bitte per 'an Familie und Freunde senden', um Gebühren zu sparen._";
+					x = x + "%20%20PayPal-Zahlung:%20https://www.paypal.me/shisha2you/" + gesamtpreis;
+					x = x + "%20Bitte%20an%20folgende%20Adresse%20liefern:%20%20%20%20%20";
 					warenausgang.href = x;
 					return true
 					
@@ -1082,7 +1112,9 @@ $(document).ready(function(){
 				}
 				
 				} else {
-					alert("Bestellung erst bei mind. einer Shisha möglich.");
+					document.getElementById("cd-shisha").style.visibility = "visible";
+					document.getElementById("cd-shisha").style.opacity = 1;
+					// alert("Bestellung erst bei mind. einer Shisha möglich.");
 					return false
 				}
 			}else {
@@ -1160,6 +1192,18 @@ $(document).ready(function(){
 				if (event == 'schließen') {
 					document.getElementById("cd-alter").style.visibility = "hidden";
 					document.getElementById("cd-alter").style.opacity = 0;
+				}
+			}
+			if(typ == 'shisha') {
+				if (event == 'bestätigen') {
+					var cart = document.getElementsByClassName('js-cd-cart');
+					Util.removeClass(cart[0], 'cd-cart--open');
+					document.getElementById("cd-shisha").style.visibility = "hidden";
+					document.getElementById("cd-shisha").style.opacity = 0;
+				}
+				if (event == 'schließen') {
+					document.getElementById("cd-shisha").style.visibility = "hidden";
+					document.getElementById("cd-shisha").style.opacity = 0;
 				}
 			}
 	}

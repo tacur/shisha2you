@@ -3575,3 +3575,33 @@ xpopup
     margin: 8em auto;
   }
 }
+
+.corner-ribbon{
+  margin: 0;
+  padding: 0;
+  background: var(--grundfarbe);
+  color:white;
+  padding:1em 0;
+  position: absolute;
+  top:0;
+  right:0;
+  transform: translateX(30%) translateY(0%) rotate(45deg);
+  transform-origin: top left;
+}
+.corner-ribbon:before,
+.corner-ribbon:after {
+  content: '';
+  position: absolute;
+  top:0;
+  margin: 0 -1px; /* tweak */
+  width: 100%;
+  height: 100%;
+  background: var(--grundfarbe);
+}
+.corner-ribbon:before {
+  right:100%;
+}
+
+.corner-ribbon:after {
+  left:100%;
+}
